@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 // import Image from "next/image";
-import { ChevronDown, Menu, X, ChevronRight } from "lucide-react";
+import { ChevronDown, Menu, X } from "lucide-react";
 // import NugenLogo from "../../public/logo.png"
 export default function Header() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -27,9 +27,9 @@ export default function Header() {
             document.removeEventListener("mousedown", handleClickOutside);
         };
     }, []);
-    const closeDropdownAndNavigate = () => {
-        setActiveDropdown(null);
-    };
+    // const closeDropdownAndNavigate = () => {
+    //     setActiveDropdown(null);
+    // };
     return (
         <header className="bg-white shadow-md sticky top-0 z-50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -38,7 +38,7 @@ export default function Header() {
                     <div className="flex-shrink-0">
                         <Link href="/" className="flex items-center">
                             <div className="flex items-center">
-                                <span className="font-bold text-2xl text-orange-400">Nu<span className="text-black">Gen</span></span>
+                                <span className="font-bold text-2xl text-orange-500">Nu<span className="text-black">Gen</span></span>
                             </div>
                             {/* <Image
                                 src={NugenLogo} // Replace with your logo image path
@@ -51,14 +51,24 @@ export default function Header() {
                     </div>
                     {/* Navigation  */}
                     <nav className="hidden lg:flex space-x-6">
-                        {/* Courses Dropdown  */}
-                        <div className="relative" ref={dropdownRef}>
+                        <Link
+                            href="/aboutUs"
+                            className="text-black hover:text-[#ff6b3d] font-medium"
+                        >
+                            About Us
+                        </Link>
+                        <div className="relative " ref={dropdownRef}>
                             <button
-                                className="text-black hover:text-[#ff6b3d] font-medium flex items-center"
+                                className="text-black hover:text-[#ff6b3d] font-medium flex items-center cursor-pointer "
                                 onClick={() => toggleDropdown("courses")}
                             >
                                 Courses
-                                <ChevronDown className="w-4 h-4 ml-1" />
+
+                                <ChevronDown
+                                    className={`w-4 h-4 ml-1 transition-transform duration-200 ${activeDropdown === "courses" ? "rotate-180" : "rotate-360"
+                                        }`}
+                                />
+
                             </button>
                             {activeDropdown === "courses" && (
                                 <div className="absolute bg-white shadow-lg rounded-md mt-4 w-64 left-0 z-50">
@@ -82,129 +92,36 @@ export default function Header() {
                                 </div>
                             )}
                         </div>
-                        {/* Technologies */}
                         <Link
-                            href="/technologies"
+                            href="/coporate-training"
                             className="text-black hover:text-[#ff6b3d] font-medium"
                         >
-                            Technologies
+                            Corporate Training
                         </Link>
-                        {/* About Dropdown */}
-                        <div className="relative" ref={dropdownRef}>
-                            <button
-                                className="text-black hover:text-[#ff6b3d] font-medium flex items-center"
-                                onClick={() => toggleDropdown("about")}
-                            >
-                              About Us
-                                <ChevronDown className="w-4 h-4 ml-1" />
-                            </button>
-                            {activeDropdown === "about" && (
-                                <div className="absolute bg-white shadow-lg rounded-md mt-2 w-64 left-0 z-50">
-                                    <div className="divide-y divide-gray-200 divide-dashed">
-                                        <div className="relative group/sub">
-                                            {/* <h4 className="font-semibold px-4 py-2 text-black hover:bg-gray-100 cursor-pointer flex items-center justify-between">
-                                                Company Profile
-                                                <ChevronRight className="w-4 h-4 text-[#ff6b3d]" />
-                                            </h4> */}
-                                            <div className="absolute hidden group-hover/sub:block bg-white shadow-lg rounded-md w-64 top-0 left-full z-50">
-                                                <Link
-                                                    href="/about"
-                                                    className="block px-4 py-2 text-black hover:bg-gray-100"
-                                                    onClick={closeDropdownAndNavigate}
-                                                >
-                                                    Profile
-                                                </Link>
-                                                <Link
-                                                    href="/about/blog"
-                                                    className="block px-4 py-2 text-black hover:bg-gray-100"
-                                                    onClick={closeDropdownAndNavigate}
-                                                >
-                                                    Blog
-                                                </Link>
-                                                <Link
-                                                    href="/about/csr"
-                                                    className="block px-4 py-2 text-black hover:bg-gray-100"
-                                                    onClick={closeDropdownAndNavigate}
-                                                >
-                                                    CSR
-                                                </Link>
-                                            </div>
-                                        </div>
-                                        <div className="relative group/sub">
-                                            <h4 className="font-semibold px-4 py-2 text-black hover:bg-gray-100 cursor-pointer flex items-center justify-between">
-                                                Why Us
-                                                <ChevronRight className="w-4 h-4 text-[#ff6b3d]" />
-                                            </h4>
-                                            <div className="absolute hidden group-hover/sub:block bg-white shadow-lg rounded-md w-64 top-0 left-full z-50">
-                                                <Link
-                                                    href="/about/free-trial"
-                                                    className="block px-4 py-2 text-black hover:bg-gray-100"
-                                                    onClick={closeDropdownAndNavigate}
-                                                >
-                                                    Free Trial
-                                                </Link>
-                                                <Link
-                                                    href="/about/how-we-work"
-                                                    className="block px-4 py-2 text-black hover:bg-gray-100"
-                                                    onClick={closeDropdownAndNavigate}
-                                                >
-                                                    How We Work
-                                                </Link>
-                                                <Link
-                                                    href="/about/top-talent"
-                                                    className="block px-4 py-2 text-black hover:bg-gray-100"
-                                                    onClick={closeDropdownAndNavigate}
-                                                >
-                                                    Work With Top 1%
-                                                </Link>
-                                            </div>
-                                        </div>
-                                        <div className="relative group/sub">
-                                            <h4 className="font-semibold px-4 py-2 text-black hover:bg-gray-100 cursor-pointer flex items-center justify-between">
-                                                How We Collaborate
-                                                <ChevronRight className="w-4 h-4 text-[#ff6b3d]" />
-                                            </h4>
-                                            <div className="absolute hidden group-hover/sub:block bg-white shadow-lg rounded-md w-64 top-0 left-full z-50">
-                                                <Link
-                                                    href="/about/staff-augmentation"
-                                                    className="block px-4 py-2 text-black hover:bg-gray-100"
-                                                    onClick={closeDropdownAndNavigate}
-                                                >
-                                                    Staff Augmentation
-                                                </Link>
-                                                <Link
-                                                    href="/about/fixed-cost"
-                                                    className="block px-4 py-2 text-black hover:bg-gray-100"
-                                                    onClick={closeDropdownAndNavigate}
-                                                >
-                                                    Fixed Cost
-                                                </Link>
-                                                <Link
-                                                    href="/about/agile-pods"
-                                                    className="block px-4 py-2 text-black hover:bg-gray-100"
-                                                    onClick={closeDropdownAndNavigate}
-                                                >
-                                                    Agile Pods
-                                                </Link>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            )}
-                        </div>
-                        {/* Resources  */}
                         <Link
-                            href="/resources"
+                            href="/placement"
                             className="text-black hover:text-[#ff6b3d] font-medium"
                         >
-                            Resources
+                            Placement
+                        </Link>
+                        <Link
+                            href="/blog"
+                            className="text-black hover:text-[#ff6b3d] font-medium"
+                        >
+                            Blog
+                        </Link>
+                        <Link
+                            href="/contactUs"
+                            className="text-black hover:text-[#ff6b3d] font-medium"
+                        >
+                            Contact
                         </Link>
                         <div className="hidden lg:block">
                             <Link
-                                href="/contact"
+                                href="/enroll"
                                 className="bg-[#ff6b3d] text-white px-4 py-2 rounded-md font-medium"
                             >
-                                Contact Us
+                                Enroll Now
                             </Link>
                         </div>
                     </nav>
@@ -227,19 +144,25 @@ export default function Header() {
                             Home
                         </Link>
                         <Link href="/about" className="text-black block py-2">
-                            Courses
-                        </Link>
-                        <Link href="/technologies" className="text-black block py-2">
-                            Technologies
-                        </Link>
-                        <Link href="/about" className="text-black block py-2">
                             About Us
                         </Link>
-                        <Link href="/resources" className="text-black block py-2">
-                            Resources
+                        <Link href="/courses" className="text-black block py-2">
+                            Courses
+                        </Link>
+                        <Link href="/corporate-training" className="text-black block py-2">
+                            Corporate Training
+                        </Link>
+                        <Link href="/placement" className="text-black block py-2">
+                            Placement
+                        </Link>
+                        <Link href="/blog" className="text-black block py-2">
+                            Blog
                         </Link>
                         <Link href="/contact" className="text-black block py-2">
                             Contact
+                        </Link>
+                        <Link href="/enroll" className="text-center text-orange-500 hover:text-gray-900 block py-2 font-bold">
+                            Enroll Now
                         </Link>
                     </div>
                 </div>

@@ -6,7 +6,7 @@ export default function Footer() {
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-14 px-3">
                 <div className="flex gap-1/2 flex-col">
                     <div className="flex items-center">
-                        <span className="font-bold text-2xl text-orange-400">Nu<span className="text-black">Gen</span></span>
+                        <span className="font-bold text-2xl text-orange-500">Nu<span className="text-black">Gen</span></span>
                     </div>
                     <div className="text-md min-w-auto text-balance ">
                         Empowering the next generation of tech professionals with expert-led training and hands-on learning experiences.
