@@ -1,14 +1,23 @@
+import Link from "next/link";
 import { FooterSections, SocialLinks } from "../json";
+import Image from "next/image";
+import NugenLogo from "../../public/logo.png"
 
 export default function Footer() {
     return (
         <footer className="flex flex-col justify-center bg-white text-zinc-800 py-10 px-6 md:px-10">
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-14 px-3">
                 <div className="flex gap-1/2 flex-col">
-                    <div className="flex items-center">
-                        <span className="font-bold text-2xl text-orange-500">Nu<span className="text-black">Gen</span></span>
-                    </div>
-                    <div className="text-md min-w-auto text-balance ">
+                    <Link href="/" className="flex">
+                        <Image
+                            src={NugenLogo}
+                            alt="Logo"
+                            width={350}
+                            height={150}
+                            className="h-20 w-auto"
+                        />
+                    </Link>
+                    <div className="text-sm min-w-auto text-balance ">
                         Empowering the next generation of tech professionals with expert-led training and hands-on learning experiences.
                     </div>
                 </div>

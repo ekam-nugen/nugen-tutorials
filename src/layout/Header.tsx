@@ -1,9 +1,9 @@
 "use client";
 import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
-// import Image from "next/image";
+import Image from "next/image";
 import { ChevronDown, Menu, X } from "lucide-react";
-// import NugenLogo from "../../public/logo.png"
+import NugenLogo from "../../public/logo.png"
 export default function Header() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
@@ -37,21 +37,23 @@ export default function Header() {
                     {/* Logo */}
                     <div className="flex-shrink-0">
                         <Link href="/" className="flex items-center">
-                            <div className="flex items-center">
-                                <span className="font-bold text-2xl text-orange-500">Nu<span className="text-black">Gen</span></span>
-                            </div>
-                            {/* <Image
-                                src={NugenLogo} // Replace with your logo image path
+                            <Image
+                                src={NugenLogo}
                                 alt="Logo"
                                 width={350}
                                 height={150}
-                                className="h-20 w-auto"
-                            /> */}
+                                className="h-16 w-auto"
+                            />
                         </Link>
                     </div>
                     {/* Navigation  */}
                     <nav className="hidden lg:flex space-x-6">
-
+                        <Link
+                            href="/"
+                            className="text-black hover:text-[#ff6b3d] font-medium"
+                        >
+                            Home
+                        </Link>
                         <div className="relative " ref={dropdownRef}>
                             <button
                                 className="text-black hover:text-[#ff6b3d] font-medium flex items-center cursor-pointer "
@@ -102,7 +104,8 @@ export default function Header() {
                         <div className="hidden lg:block">
                             <Link
                                 href="/contactUs"
-                                className="bg-[#ff6b3d] text-white px-4 py-2 rounded-md font-medium"
+                                className="px-4 py-2 bg-gradient-to-r border border-gray-300 from-orange-400 to-purple-400 text-white  rounded-lg  duration-200"
+ 
                             >
                                 Contact Us
                             </Link>
@@ -165,7 +168,7 @@ export default function Header() {
                         <Link href="/blog" className="text-black block py-2">
                             Blog
                         </Link>
-                        <Link href="/about" className="text-black block py-2">
+                        <Link href="/aboutUs" className="text-black block py-2">
                             About Us
                         </Link>
                         <Link href="/contactUs" className="text-black block py-2">
