@@ -1,7 +1,7 @@
 import Link from "next/link";
-import { FooterSections, SocialLinks } from "../json";
 import Image from "next/image";
 import NugenLogo from "../../public/logo.png"
+import { FooterSections, SocialLinks } from "../json/footer";
 
 export default function Footer() {
     return (
