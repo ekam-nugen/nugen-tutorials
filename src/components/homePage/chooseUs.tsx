@@ -120,7 +120,7 @@ export default function WhyNugenIT() {
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
       >
-        <button className="bg-[#f37458] text-white px-7 py-3 rounded-full font-semibold shadow-md hover:scale-105 hover:shadow-lg transition-all duration-300">
+        <button className="bg-gradient-to-r border border-gray-300 from-orange-400 to-purple-400 cursor-pointer text-white px-7 py-3 rounded-full font-semibold shadow-md hover:scale-105 hover:shadow-lg transition-all duration-300">
           Learn More About Nugen →
         </button>
       </motion.div>
