@@ -51,12 +51,7 @@ export default function Header() {
                     </div>
                     {/* Navigation  */}
                     <nav className="hidden lg:flex space-x-6">
-                        <Link
-                            href="/aboutUs"
-                            className="text-black hover:text-[#ff6b3d] font-medium"
-                        >
-                            About Us
-                        </Link>
+
                         <div className="relative " ref={dropdownRef}>
                             <button
                                 className="text-black hover:text-[#ff6b3d] font-medium flex items-center cursor-pointer "
@@ -93,35 +88,23 @@ export default function Header() {
                             )}
                         </div>
                         <Link
-                            href="/coporate-training"
-                            className="text-black hover:text-[#ff6b3d] font-medium"
-                        >
-                            Corporate Training
-                        </Link>
-                        <Link
-                            href="/placement"
-                            className="text-black hover:text-[#ff6b3d] font-medium"
-                        >
-                            Placement
-                        </Link>
-                        <Link
                             href="/blog"
                             className="text-black hover:text-[#ff6b3d] font-medium"
                         >
                             Blog
                         </Link>
                         <Link
-                            href="/contactUs"
+                            href="/aboutUs"
                             className="text-black hover:text-[#ff6b3d] font-medium"
                         >
-                            Contact
+                            About Us
                         </Link>
                         <div className="hidden lg:block">
                             <Link
-                                href="/enroll"
+                                href="/contactUs"
                                 className="bg-[#ff6b3d] text-white px-4 py-2 rounded-md font-medium"
                             >
-                                Enroll Now
+                                Contact Us
                             </Link>
                         </div>
                     </nav>
@@ -143,26 +126,50 @@ export default function Header() {
                         <Link href="/" className="text-black block py-2">
                             Home
                         </Link>
-                        <Link href="/about" className="text-black block py-2">
-                            About Us
-                        </Link>
-                        <Link href="/courses" className="text-black block py-2">
-                            Courses
-                        </Link>
-                        <Link href="/corporate-training" className="text-black block py-2">
-                            Corporate Training
-                        </Link>
-                        <Link href="/placement" className="text-black block py-2">
-                            Placement
-                        </Link>
+                        <div className="text-black" ref={dropdownRef}>
+                            <button
+                                className="hover:text-[#ff6b3d] font-medium flex items-center justify-between w-full cursor-pointer"
+                                onClick={() => toggleDropdown("courses")}
+                            >
+                                <span>Courses</span>
+                                <ChevronDown
+                                    className={`w-4 h-4 ml-2 transform transition-transform duration-300 ${activeDropdown === "courses" ? "rotate-180" : ""
+                                        }`}
+                                />
+                            </button>
+
+                            <div
+                                className={`overflow-hidden transition-all duration-300 ease-in-out ${activeDropdown === "courses" ? "max-h-96" : "max-h-0"
+                                    }`}
+                            >
+                                <div className="flex flex-col mt-2 space-y-1 text-sm">
+                                    <Link href="/about" className="px-4 py-2 text-black hover:bg-gray-100">
+                                        Web Development
+                                    </Link>
+                                    <Link href="/about" className="px-4 py-2 text-black hover:bg-gray-100">
+                                        Data Science
+                                    </Link>
+                                    <Link href="/about" className="px-4 py-2 text-black hover:bg-gray-100">
+                                        Cyber Security
+                                    </Link>
+                                    <Link href="/about" className="px-4 py-2 text-black hover:bg-gray-100">
+                                        Cloud Computing
+                                    </Link>
+                                    <Link href="/about" className="px-4 py-2 text-black hover:bg-gray-100">
+                                        AI and Machine Learning
+                                    </Link>
+                                </div>
+                            </div>
+                        </div>
+
                         <Link href="/blog" className="text-black block py-2">
                             Blog
                         </Link>
-                        <Link href="/contact" className="text-black block py-2">
-                            Contact
+                        <Link href="/about" className="text-black block py-2">
+                            About Us
                         </Link>
-                        <Link href="/enroll" className="text-center text-orange-500 hover:text-gray-900 block py-2 font-bold">
-                            Enroll Now
+                        <Link href="/contactUs" className="text-black block py-2">
+                            Contact Us
                         </Link>
                     </div>
                 </div>
