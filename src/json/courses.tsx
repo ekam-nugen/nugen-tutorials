@@ -4,453 +4,453 @@ export const data = {
       name: "PMP® Certification Training",
       duration: "4 Weeks",
       startDate: "22nd Apr '25",
-      image: "/project-management.jpg"
+      image: "/project-management.jpg",
     },
     {
       name: "Advanced Executive Program in Cybersecurity",
       duration: "6 Months",
       startDate: "23rd Apr '25",
-      image: "/cyberSecurity.jpg"
+      image: "/cyberSecurity.jpg",
     },
     {
       name: "Certified ScrumMaster® (CSM)",
       duration: "3 Days",
       startDate: "23rd Apr '25",
-      image: "/scrum.jpg"
+      image: "/scrum.jpg",
     },
     {
       name: "Professional Certificate Course in Generative AI and Machine Learning",
       duration: "11 Months",
       startDate: "29th Apr '25",
-      image: "/ai_ml.jpg"
+      image: "/ai_ml.jpg",
     },
     {
       name: "Data Analyst",
       duration: "11 Months",
       startDate: "26th Apr '25",
-      image: "/data.jpg"
+      image: "/data.jpg",
     },
     {
       name: "Business Analyst",
       duration: "11 Months",
       startDate: "22nd Apr '25",
-      image: "/business.jpg"
-    }
+      image: "/business.jpg",
+    },
   ],
   "Generative AI": [
     {
       name: "Generative AI for Everyone",
       duration: "8 Weeks",
       startDate: "2nd May '25",
-      image: "/images/genai.jpg"
+      image: "/images/genai.jpg",
     },
     {
       name: "Hands-on GANs Workshop",
       duration: "6 Weeks",
       startDate: "7th May '25",
-      image: "/images/genai.jpg"
+      image: "/images/genai.jpg",
     },
     {
       name: "Large Language Models in Practice",
       duration: "10 Weeks",
       startDate: "10th May '25",
-      image: "/images/genai.jpg"
+      image: "/images/genai.jpg",
     },
     {
       name: "Prompt Engineering Fundamentals",
       duration: "4 Weeks",
       startDate: "15th May '25",
-      image: "/images/genai.jpg"
+      image: "/images/genai.jpg",
     },
     {
       name: "NLP with Transformers",
       duration: "3 Months",
       startDate: "20th May '25",
-      image: "/images/genai.jpg"
-    }
+      image: "/images/genai.jpg",
+    },
   ],
   "AI & Machine Learning": [
     {
       name: "Machine Learning Bootcamp",
       duration: "6 Months",
       startDate: "1st May '25",
-      image: "/images/ml-bootcamp.jpg"
+      image: "/images/ml-bootcamp.jpg",
     },
     {
       name: "AI for Business Leaders",
       duration: "3 Months",
       startDate: "5th May '25",
-      image: "/images/ml-bootcamp.jpg"
+      image: "/images/ml-bootcamp.jpg",
     },
     {
       name: "Deep Learning with TensorFlow",
       duration: "5 Months",
       startDate: "9th May '25",
-      image: "/images/ml-bootcamp.jpg"
+      image: "/images/ml-bootcamp.jpg",
     },
     {
       name: "ML Model Deployment",
       duration: "2 Months",
       startDate: "15th May '25",
-      image: "/images/ml-bootcamp.jpg"
+      image: "/images/ml-bootcamp.jpg",
     },
     {
       name: "AI Strategy & Ethics",
       duration: "6 Weeks",
       startDate: "20th May '25",
-      image: "/images/ml-bootcamp.jpg"
-    }
+      image: "/images/ml-bootcamp.jpg",
+    },
   ],
   "Data Science & Business Analytics": [
     {
       name: "Data Analyst",
       duration: "11 Months",
       startDate: "26th Apr '25",
-      image: "/images/data-analyst.jpg"
+      image: "/images/data-analyst.jpg",
     },
     {
       name: "Business Analyst",
       duration: "11 Months",
       startDate: "22nd Apr '25",
-      image: "/images/business-analyst.jpg"
+      image: "/images/business-analyst.jpg",
     },
     {
       name: "Data Science with Python",
       duration: "6 Months",
       startDate: "5th May '25",
-      image: "/images/data-analyst.jpg"
+      image: "/images/data-analyst.jpg",
     },
     {
       name: "Power BI for Data Insights",
       duration: "8 Weeks",
       startDate: "10th May '25",
-      image: "/images/data-analyst.jpg"
+      image: "/images/data-analyst.jpg",
     },
     {
       name: "Statistics for Business",
       duration: "2 Months",
       startDate: "12th May '25",
-      image: "/images/data-analyst.jpg"
-    }
+      image: "/images/data-analyst.jpg",
+    },
   ],
   "Project Management": [
     {
       name: "PMP® Certification Training",
       duration: "4 Weeks",
       startDate: "22nd Apr '25",
-      image: "/images/pmp.jpg"
+      image: "/images/pmp.jpg",
     },
     {
       name: "Agile Project Management",
       duration: "6 Weeks",
       startDate: "1st May '25",
-      image: "/images/pmp.jpg"
+      image: "/images/pmp.jpg",
     },
     {
       name: "Program Management Professional (PgMP®)",
       duration: "3 Months",
       startDate: "7th May '25",
-      image: "/images/pmp.jpg"
+      image: "/images/pmp.jpg",
     },
     {
       name: "MS Project Training",
       duration: "4 Weeks",
       startDate: "11th May '25",
-      image: "/images/pmp.jpg"
+      image: "/images/pmp.jpg",
     },
     {
       name: "Project Risk Management",
       duration: "5 Weeks",
       startDate: "17th May '25",
-      image: "/images/pmp.jpg"
-    }
+      image: "/images/pmp.jpg",
+    },
   ],
   "Cyber Security": [
     {
       name: "Advanced Executive Program in Cybersecurity",
       duration: "6 Months",
       startDate: "23rd Apr '25",
-      image: "/images/cybersecurity.jpg"
+      image: "/images/cybersecurity.jpg",
     },
     {
       name: "Ethical Hacking Training",
       duration: "4 Months",
       startDate: "28th Apr '25",
-      image: "/images/cybersecurity.jpg"
+      image: "/images/cybersecurity.jpg",
     },
     {
       name: "Network Security Specialist",
       duration: "10 Weeks",
       startDate: "2nd May '25",
-      image: "/images/cybersecurity.jpg"
+      image: "/images/cybersecurity.jpg",
     },
     {
       name: "Cloud Security Basics",
       duration: "2 Months",
       startDate: "6th May '25",
-      image: "/images/cybersecurity.jpg"
+      image: "/images/cybersecurity.jpg",
     },
     {
       name: "Cyber Threat Intelligence",
       duration: "3 Months",
       startDate: "9th May '25",
-      image: "/images/cybersecurity.jpg"
-    }
+      image: "/images/cybersecurity.jpg",
+    },
   ],
   "Agile and Scrum": [
     {
       name: "Certified ScrumMaster® (CSM)",
       duration: "3 Days",
       startDate: "23rd Apr '25",
-      image: "/images/csm.jpg"
+      image: "/images/csm.jpg",
     },
     {
       name: "SAFe® Agilist Certification",
       duration: "2 Weeks",
       startDate: "30th Apr '25",
-      image: "/images/csm.jpg"
+      image: "/images/csm.jpg",
     },
     {
       name: "Agile Fundamentals",
       duration: "1 Month",
       startDate: "5th May '25",
-      image: "/images/csm.jpg"
+      image: "/images/csm.jpg",
     },
     {
       name: "Scrum Product Owner",
       duration: "2 Weeks",
       startDate: "9th May '25",
-      image: "/images/csm.jpg"
+      image: "/images/csm.jpg",
     },
     {
       name: "Agile for Teams",
       duration: "3 Weeks",
       startDate: "12th May '25",
-      image: "/images/csm.jpg"
-    }
+      image: "/images/csm.jpg",
+    },
   ],
   "Cloud Computing & DevOps": [
     {
       name: "Cloud Architect Program",
       duration: "12 Months",
       startDate: "6th May '25",
-      image: "/images/cloud-architect.jpg"
+      image: "/images/cloud-architect.jpg",
     },
     {
       name: "AWS Solutions Architect",
       duration: "4 Months",
       startDate: "10th May '25",
-      image: "/images/cloud-architect.jpg"
+      image: "/images/cloud-architect.jpg",
     },
     {
       name: "DevOps Engineer Certification",
       duration: "6 Months",
       startDate: "14th May '25",
-      image: "/images/cloud-architect.jpg"
+      image: "/images/cloud-architect.jpg",
     },
     {
       name: "Kubernetes for Developers",
       duration: "3 Months",
       startDate: "17th May '25",
-      image: "/images/cloud-architect.jpg"
+      image: "/images/cloud-architect.jpg",
     },
     {
       name: "Azure Fundamentals",
       duration: "8 Weeks",
       startDate: "20th May '25",
-      image: "/images/cloud-architect.jpg"
-    }
+      image: "/images/cloud-architect.jpg",
+    },
   ],
   "Business and Leadership": [
     {
       name: "Executive Leadership Program",
       duration: "8 Months",
       startDate: "10th May '25",
-      image: "/images/leadership.jpg"
+      image: "/images/leadership.jpg",
     },
     {
       name: "Strategic Thinking for Leaders",
       duration: "3 Months",
       startDate: "14th May '25",
-      image: "/images/leadership.jpg"
+      image: "/images/leadership.jpg",
     },
     {
       name: "Business Communication Mastery",
       duration: "6 Weeks",
       startDate: "18th May '25",
-      image: "/images/leadership.jpg"
+      image: "/images/leadership.jpg",
     },
     {
       name: "Change Management",
       duration: "2 Months",
       startDate: "22nd May '25",
-      image: "/images/leadership.jpg"
+      image: "/images/leadership.jpg",
     },
     {
       name: "Innovation and Growth",
       duration: "1 Month",
       startDate: "25th May '25",
-      image: "/images/leadership.jpg"
-    }
+      image: "/images/leadership.jpg",
+    },
   ],
   "Software Development": [
     {
       name: "Full Stack Developer Course",
       duration: "9 Months",
       startDate: "15th May '25",
-      image: "/images/fullstack.jpg"
+      image: "/images/fullstack.jpg",
     },
     {
       name: "Frontend Development with React",
       duration: "4 Months",
       startDate: "20th May '25",
-      image: "/images/fullstack.jpg"
+      image: "/images/fullstack.jpg",
     },
     {
       name: "Backend Development with Node.js",
       duration: "5 Months",
       startDate: "24th May '25",
-      image: "/images/fullstack.jpg"
+      image: "/images/fullstack.jpg",
     },
     {
       name: "Software Engineering Principles",
       duration: "6 Weeks",
       startDate: "28th May '25",
-      image: "/images/fullstack.jpg"
+      image: "/images/fullstack.jpg",
     },
     {
       name: "Clean Code and Architecture",
       duration: "3 Months",
       startDate: "30th May '25",
-      image: "/images/fullstack.jpg"
-    }
+      image: "/images/fullstack.jpg",
+    },
   ],
   "Product and Design": [
     {
       name: "UX/UI Design Certification",
       duration: "6 Months",
       startDate: "5th May '25",
-      image: "/images/uiux.jpg"
+      image: "/images/uiux.jpg",
     },
     {
       name: "Figma Masterclass",
       duration: "2 Months",
       startDate: "9th May '25",
-      image: "/images/uiux.jpg"
+      image: "/images/uiux.jpg",
     },
     {
       name: "Design Thinking for Innovation",
       duration: "4 Weeks",
       startDate: "13th May '25",
-      image: "/images/uiux.jpg"
+      image: "/images/uiux.jpg",
     },
     {
       name: "Interaction Design Essentials",
       duration: "3 Months",
       startDate: "17th May '25",
-      image: "/images/uiux.jpg"
+      image: "/images/uiux.jpg",
     },
     {
       name: "Prototyping & Usability Testing",
       duration: "1 Month",
       startDate: "22nd May '25",
-      image: "/images/uiux.jpg"
-    }
+      image: "/images/uiux.jpg",
+    },
   ],
   "IT Service and Architecture": [
     {
       name: "ITIL® 4 Foundation Certification",
       duration: "2 Weeks",
       startDate: "3rd May '25",
-      image: "/images/itil.jpg"
+      image: "/images/itil.jpg",
     },
     {
       name: "Enterprise Architecture Fundamentals",
       duration: "2 Months",
       startDate: "8th May '25",
-      image: "/images/itil.jpg"
+      image: "/images/itil.jpg",
     },
     {
       name: "IT Service Management with ServiceNow",
       duration: "3 Months",
       startDate: "13th May '25",
-      image: "/images/itil.jpg"
+      image: "/images/itil.jpg",
     },
     {
       name: "Agile ITSM Practices",
       duration: "6 Weeks",
       startDate: "18th May '25",
-      image: "/images/itil.jpg"
+      image: "/images/itil.jpg",
     },
     {
       name: "IT Strategy and Governance",
       duration: "5 Weeks",
       startDate: "22nd May '25",
-      image: "/images/itil.jpg"
-    }
+      image: "/images/itil.jpg",
+    },
   ],
   "Quality Management": [
     {
       name: "Six Sigma Green Belt Certification",
       duration: "1 Month",
       startDate: "4th May '25",
-      image: "/images/sixsigma.jpg"
+      image: "/images/sixsigma.jpg",
     },
     {
       name: "Lean Six Sigma Yellow Belt",
       duration: "2 Weeks",
       startDate: "9th May '25",
-      image: "/images/sixsigma.jpg"
+      image: "/images/sixsigma.jpg",
     },
     {
       name: "Quality Management Systems",
       duration: "2 Months",
       startDate: "13th May '25",
-      image: "/images/sixsigma.jpg"
+      image: "/images/sixsigma.jpg",
     },
     {
       name: "ISO 9001:2015 Training",
       duration: "4 Weeks",
       startDate: "18th May '25",
-      image: "/images/sixsigma.jpg"
+      image: "/images/sixsigma.jpg",
     },
     {
       name: "Root Cause Analysis Workshop",
       duration: "3 Weeks",
       startDate: "23rd May '25",
-      image: "/images/sixsigma.jpg"
-    }
+      image: "/images/sixsigma.jpg",
+    },
   ],
   "Digital Marketing": [
     {
       name: "Digital Marketing Specialist Program",
       duration: "7 Months",
       startDate: "8th May '25",
-      image: "/images/digitalmarketing.jpg"
+      image: "/images/digitalmarketing.jpg",
     },
     {
       name: "SEO & SEM Fundamentals",
       duration: "2 Months",
       startDate: "12th May '25",
-      image: "/images/digitalmarketing.jpg"
+      image: "/images/digitalmarketing.jpg",
     },
     {
       name: "Social Media Marketing",
       duration: "3 Months",
       startDate: "16th May '25",
-      image: "/images/digitalmarketing.jpg"
+      image: "/images/digitalmarketing.jpg",
     },
     {
       name: "Content Strategy Bootcamp",
       duration: "4 Weeks",
       startDate: "21st May '25",
-      image: "/images/digitalmarketing.jpg"
+      image: "/images/digitalmarketing.jpg",
     },
     {
       name: "Google Ads & Analytics",
       duration: "1 Month",
       startDate: "25th May '25",
-      image: "/images/digitalmarketing.jpg"
-    }
-  ]
+      image: "/images/digitalmarketing.jpg",
+    },
+  ],
 };
