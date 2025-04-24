@@ -5,7 +5,7 @@ import ContactUsSection from "./contactUs";
 
 export default function ContactUs() {
   return (
-    <div className="">
+    <div>
       <ContactUsSection />
       <CompanyStatsSection
         data={stats}

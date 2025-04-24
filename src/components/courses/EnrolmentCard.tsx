@@ -5,26 +5,26 @@ import { FileText } from "lucide-react";
 export default function EnrolmentCard() {
     return (
         <div className="relative flex justify-center items-center min-h-screen bg-gradient-to-br from-white via-white to-gray-200 px-4">
-            <div
-                className="p-10 bg-gradient-to-br from-[#fff6f2] to-[#fdeae2]   rounded-2xl shadow-xl max-w-4xl text-center transition-shadow duration-300"
-            >
-                <div className="flex justify-center mb-6">
-                    <FileText size={120} strokeWidth={1} className="text-[#f37458]" />
+            <div className="relative p-10 md:p-14 bg-gradient-to-br from-white via-[#fff1eb] to-white rounded-3xl  max-w-6xl w-full text-center">
+                
+                {/* Icon */}
+                <div className="flex justify-center mb-6 animate-float">
+                    <FileText size={96} strokeWidth={1.4} className="text-[#f37458]" />
                 </div>
 
-                <h2 className="text-2xl md:text-4xl font-bold text-[#333b47] mb-4">
+                {/* Heading */}
+                <h2 className="text-3xl md:text-5xl font-extrabold text-[#1f2b3d] mb-4 leading-tight">
                     Enrolment Requirements
                 </h2>
 
-                <p className="text-[#323c49]  text-base md:text-lg mb-8 leading-relaxed">
-                    Nugen offers direct registration for its Certified Frontend Developer Course.
-                    No application is needed; you can simply enroll and begin your journey right away.
+                {/* Description */}
+                <p className="text-[#2d3b4f] text-base md:text-lg mb-10 leading-relaxed max-w-2xl mx-auto">
+                    Nugen offers direct registration for its <strong>Certified Frontend Developer Course</strong>. No application is needed — simply enroll and start your journey today.
                 </p>
 
-                <button
-                    className="bg-gradient-to-r shadow-sm from-orange-400 to-purple-400 text-white font-semibold py-2 px-5 rounded-full cursor-pointer"
-                >
-                    → Enroll Now
+                {/* Button */}
+                <button className="group relative inline-flex items-center justify-center px-7 cursor-pointer py-3 rounded-full font-semibold  bg-gradient-to-r shadow-sm from-orange-400 to-purple-400 text-white shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105 focus:outline-none overflow-hidden">
+                    <span className="z-10 relative">→ Enroll Now</span>
                 </button>
             </div>
         </div>
