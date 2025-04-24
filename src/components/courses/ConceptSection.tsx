@@ -24,7 +24,7 @@ export default function ConceptsSection() {
                     setScaleX(0);
                 }
             },
-            { threshold: .3 }
+            { threshold: 1 }
         );
 
         const currentRef = sectionRef.current;
@@ -42,12 +42,13 @@ export default function ConceptsSection() {
                 <div className="container w-full mx-auto relative">
                     {/* Connecting Line */}
                     <div
-                        className="absolute h-1 bg-[#f37458] z-0 transition-transform duration-[900ms] ease-out origin-left"
+                        className="absolute h-1 bg-[#f37458] z-0 transition-transform duration-[900ms] ease-[cubic-bezier(0.68,0.55,0.27,0.55)] origin-left"
                         style={{
                             left: 'calc((100% / 6) * 0.5)',
                             width: 'calc((100% / 6) * 5.5)',
                             top: 'calc(50% - 1.9rem)',
                             transform: `scaleX(${scaleX})`,
+                            
                         }}
                     />
 

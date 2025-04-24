@@ -28,9 +28,9 @@ export default function Header() {
             document.removeEventListener("mousedown", handleClickOutside);
         };
     }, []);
-    // const closeDropdownAndNavigate = () => {
-    //     setActiveDropdown(null);
-    // };
+    const closeDropdownAndNavigate = () => {
+        setActiveDropdown(null);
+    };
     return (
         <header className="bg-white shadow-md sticky top-0 z-50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -56,10 +56,10 @@ export default function Header() {
                                                     }`}
                                             />
                                         </button>
-                                        {activeDropdown === item.label && (
-                                            <div className="absolute bg-white shadow-lg rounded-md mt-4 w-64 left-0 z-50">
+                                        {activeDropdown === item?.label && (
+                                            <div ref={dropdownRef} onClick={closeDropdownAndNavigate} className="absolute bg-white shadow-lg rounded-md mt-4 w-64 left-0 z-50">
                                                 <div className="divide-y divide-gray-200 divide-dashed">
-                                                    {item.children.map((subItem) => (
+                                                    {item?.children?.map((subItem) => (
                                                         <Link
                                                             key={subItem.label}
                                                             href={subItem.href}
@@ -114,14 +114,17 @@ export default function Header() {
                                             />
                                         </button>
                                         <div
+                                            ref={dropdownRef}
                                             className={`overflow-hidden transition-all duration-300 ease-in-out ${activeDropdown === item.label ? "max-h-96" : "max-h-0"
                                                 }`}
+                                            onClick={closeDropdownAndNavigate}
                                         >
                                             <div className="flex flex-col mt-2 space-y-1 text-sm">
                                                 {item?.children?.map((subItem) => (
                                                     <Link
                                                         key={subItem.label}
-                                                        href={subItem.href}
+                                                        href={subItem?.href}
+
                                                         className="px-4 py-2 text-black hover:bg-gray-100"
                                                     >
                                                         {subItem.label}

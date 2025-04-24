@@ -1,12 +1,14 @@
 'use client';
 
 import { FileText } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 export default function EnrolmentCard() {
+    const router = useRouter();
     return (
         <div className="relative flex justify-center items-center min-h-screen bg-gradient-to-br from-white via-white to-gray-200 px-4">
             <div className="relative p-10 md:p-14 bg-gradient-to-br from-white via-[#fff1eb] to-white rounded-3xl  max-w-6xl w-full text-center">
-                
+
                 {/* Icon */}
                 <div className="flex justify-center mb-6 animate-float">
                     <FileText size={96} strokeWidth={1.4} className="text-[#f37458]" />
@@ -23,7 +25,7 @@ export default function EnrolmentCard() {
                 </p>
 
                 {/* Button */}
-                <button className="group relative inline-flex items-center justify-center px-7 cursor-pointer py-3 rounded-full font-semibold  bg-gradient-to-r shadow-sm from-orange-400 to-purple-400 text-white shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105 focus:outline-none overflow-hidden">
+                <button className="group relative inline-flex items-center justify-center px-7 cursor-pointer py-3 rounded-full font-semibold  bg-gradient-to-r shadow-sm from-orange-400 to-purple-400 text-white hover:shadow-lg transition-all duration-300 hover:scale-105 focus:outline-none overflow-hidden" onClick={() => router.push("/contactUs")}>
                     <span className="z-10 relative">→ Enroll Now</span>
                 </button>
             </div>
