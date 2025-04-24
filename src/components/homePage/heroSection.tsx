@@ -17,7 +17,7 @@ export default function HeroSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          Learn <span className="text-[#f37458]">In-Demand Tech Skills</span>{" "}
+          Learn <span className="text-[#f37458]">On-Demand Tech Skills</span>{" "}
           With Nugen Training
         </motion.h1>
         <motion.p

@@ -37,7 +37,7 @@ const cardVariants = {
 
 export default function StudentTestimonials() {
   return (
-    <section className="bg-white py-20 px-6 md:px-16 text-center">
+    <section className="bg-gradient-to-br from-[#fff6f0] via-[#fffaf6] to-[#fffcf9] py-20 px-6 md:px-16 text-center">
       <motion.h2
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -55,7 +55,7 @@ export default function StudentTestimonials() {
         {testimonials.map((t, i) => (
           <motion.div
             key={t.name}
-            className="bg-[#fff9f6] rounded-2xl border shadow-xl hover:shadow-2xl transition hover:-translate-y-1 hover:border-[#ff6b3d]/40 p-6 text-left border border-orange-100 shadow-sm hover:shadow-lg transition"
+            className="bg-white rounded-2xl border shadow-xl hover:shadow-2xl transition hover:-translate-y-1 hover:border-[#ff6b3d]/40 p-6 text-left border border-orange-100 shadow-sm hover:shadow-lg transition"
             variants={cardVariants}
             initial="hidden"
             animate="visible"

@@ -8,8 +8,8 @@ export default function Home() {
     <>
       <HeroSection />
       <TechnologyShowcase />
-      <StudentTestimonials />
       <WhyNugenIT />
+      <StudentTestimonials />
     </>
   );
 }

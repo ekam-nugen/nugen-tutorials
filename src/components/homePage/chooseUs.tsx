@@ -10,53 +10,54 @@ import {
   Sparkles,
   Users,
 } from "lucide-react";
+import Image from "next/image";
 
 const features = [
   {
     icon: <Code2 size={28} />,
-    title: "Custom Software Development",
-    desc: "Tailored digital solutions built to meet your business needs and scale efficiently.",
+    title: "Industry-Aligned Courses",
+    desc: "Master real-world tech stacks through hands-on projects built in collaboration with top tech employers.",
   },
   {
     icon: <Network size={28} />,
-    title: "Robust Infrastructure",
-    desc: "Leverage secure, scalable, and reliable IT infrastructure for seamless operations.",
+    title: "Job-Ready Curriculum",
+    desc: "Everything we teach is built around what companies are hiring for—today and tomorrow.",
   },
   {
     icon: <BrainCircuit size={28} />,
-    title: "AI & Automation",
-    desc: "Optimize workflows with intelligent automation and data-driven insights.",
+    title: "AI & Automation Training",
+    desc: "Stay ahead of the curve by gaining deep, practical skills in AI, ML, and workflow automation.",
   },
   {
     icon: <Server size={28} />,
-    title: "Cloud Solutions",
-    desc: "Deploy powerful cloud strategies to enhance agility and reduce overhead.",
+    title: "Cloud & DevOps Labs",
+    desc: "Hands-on labs and real deployment scenarios using AWS, Azure, Docker, and Kubernetes.",
   },
   {
     icon: <Users size={28} />,
-    title: "Expert Team",
-    desc: "Collaborate with a seasoned team of IT professionals and certified engineers.",
+    title: "Mentorship From Experts",
+    desc: "Learn from certified engineers and industry veterans who mentor you beyond just the syllabus.",
   },
   {
     icon: <Headset size={28} />,
-    title: "24/7 Support",
-    desc: "Round-the-clock technical support to keep your systems up and running.",
+    title: "Lifetime Career Support",
+    desc: "Resume reviews, mock interviews, and job referrals—our support doesn’t stop after training.",
   },
   {
     icon: <ShieldCheck size={28} />,
-    title: "Cybersecurity First",
-    desc: "Advanced security frameworks to protect your data and ensure compliance.",
+    title: "Certified & Recognized",
+    desc: "Courses accredited by top bodies and aligned with global certification standards like CompTIA, AWS, and Google.",
   },
   {
     icon: <Sparkles size={28} />,
-    title: "Future-Ready Tech",
-    desc: "Stay ahead with cutting-edge tech adoption and innovation-focused solutions.",
+    title: "Future-Proof Learning",
+    desc: "From Web3 to GenAI, we constantly evolve to deliver skills that matter in a rapidly changing tech world.",
   },
 ];
 
 export default function WhyNugenIT() {
   return (
-    <section className="relative bg-gradient-to-br from-[#fff6f0] via-[#fffaf6] to-[#fffcf9] py-24 px-6 md:px-16 overflow-hidden">
+    <section className="relative bg-white py-24 px-6 md:px-16 overflow-hidden">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 items-start justify-between">
         <motion.div
           className="flex-1"
@@ -66,22 +67,34 @@ export default function WhyNugenIT() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-4xl font-extrabold text-gray-900 mb-6 leading-tight">
-            Why <span className="text-[#ff6b3d]">Nugen IT Services</span>
+            Why Learn With{" "}
+            <span className="text-[#ff6b3d]">Nugen IT Training</span>
           </h2>
           <ul className="list-disc pl-5 text-gray-700 text-lg space-y-3">
             <li>
-              Serving businesses with innovative IT solutions for over a decade.
+              Over a decade of excellence in tech training and industry
+              partnerships.
             </li>
             <li>
-              Delivered 1000+ successful projects across multiple industries.
+              Trained 10,000+ professionals who now work at global tech
+              companies.
             </li>
-            <li>Agile methodology for fast, flexible development cycles.</li>
-            <li>Real-world implementation of AI, ML, and IoT systems.</li>
             <li>
-              Client-first approach with a focus on long-term partnerships.
+              Live instructor-led sessions, peer collaboration, and
+              project-based learning.
+            </li>
+            <li>
+              Exclusive hiring network with direct access to recruiters and
+              internships.
+            </li>
+            <li>
+              A mission-driven team focused on empowering learners to build
+              meaningful tech careers.
             </li>
           </ul>
+          <Image width={500} height={500} src="/whyUs.avif" alt="choose us" />
         </motion.div>
+        
         <motion.div
           className="grid grid-cols-1 sm:grid-cols-2 gap-6 flex-1"
           initial="hidden"
@@ -95,7 +108,7 @@ export default function WhyNugenIT() {
           {features.map((f, idx) => (
             <motion.div
               key={idx}
-              className="bg-white/70 backdrop-blur-lg border border-orange-100 p-5 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 flex items-start gap-4 hover:scale-[1.02]"
+              className="bg-[#fff9f6] backdrop-blur-lg border border-orange-100 p-5 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 flex items-start gap-4 hover:scale-[1.02]"
               variants={{
                 hidden: { opacity: 0, y: 20 },
                 visible: { opacity: 1, y: 0 },
@@ -121,7 +134,7 @@ export default function WhyNugenIT() {
         transition={{ duration: 0.5 }}
       >
         <button className="bg-gradient-to-r border border-gray-300 from-orange-400 to-purple-400 cursor-pointer text-white px-7 py-3 rounded-full font-semibold shadow-md hover:scale-105 hover:shadow-lg transition-all duration-300">
-          Learn More About Nugen →
+          Explore Training Programs →
         </button>
       </motion.div>
     </section>
