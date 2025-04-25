@@ -1,42 +1,4 @@
 export const data = {
-  "Most Popular": [
-    {
-      name: "PMP® Certification Training",
-      duration: "4 Weeks",
-      startDate: "22nd Apr '25",
-      image: "/project-management.jpg",
-    },
-    {
-      name: "Advanced Executive Program in Cybersecurity",
-      duration: "6 Months",
-      startDate: "23rd Apr '25",
-      image: "/cyberSecurity.jpg",
-    },
-    {
-      name: "Certified ScrumMaster® (CSM)",
-      duration: "3 Days",
-      startDate: "23rd Apr '25",
-      image: "/scrum.jpg",
-    },
-    {
-      name: "Professional Certificate Course in Generative AI and Machine Learning",
-      duration: "11 Months",
-      startDate: "29th Apr '25",
-      image: "/ai_ml.jpg",
-    },
-    {
-      name: "Data Analyst",
-      duration: "11 Months",
-      startDate: "26th Apr '25",
-      image: "/data.jpg",
-    },
-    {
-      name: "Business Analyst",
-      duration: "11 Months",
-      startDate: "22nd Apr '25",
-      image: "/business.jpg",
-    },
-  ],
   "Generative AI": [
     {
       name: "Generative AI for Everyone",

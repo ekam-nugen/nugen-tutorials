@@ -49,7 +49,7 @@ export default function TechnologyShowcase() {
 
         <div className="flex-1">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {programs.map((program, i) => (
+            {programs?.map((program, i) => (
               <motion.div
                 key={program.name}
                 initial={{ opacity: 0, scale: 0.95 }}
