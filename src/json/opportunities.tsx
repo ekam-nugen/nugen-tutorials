@@ -1,4 +1,10 @@
-import { GraduationCap, Building2, BriefcaseBusiness, Backpack, BadgeDollarSign } from "lucide-react";
+import {
+  GraduationCap,
+  Building2,
+  BriefcaseBusiness,
+  Backpack,
+  BadgeDollarSign,
+} from "lucide-react";
 
 export const careers = [
   {
@@ -380,9 +386,6 @@ export const fullStackCarreers = [
   },
 ];
 
-
-
-
 export const fullStackConcepts = [
   "HTML, CSS, JS, React Basics",
   "State Management & Routing",
@@ -421,5 +424,112 @@ export const courseFeatures = [
     icon: BadgeDollarSign,
     title: "Exclusive Job Opportunities",
     description: "Top performers gain priority access to placements",
+  },
+];
+
+export const scrumCareers = [
+  {
+    id: 1,
+    title: "Scrum Master",
+    description:
+      "Facilitates Agile processes and helps teams deliver value through Scrum practices.",
+    img: "/frontend.avif",
+
+    benefits: [
+      "🔄 Sprint Planning & Reviews",
+      "📊 Agile Metrics & Reporting",
+      "🤝 Team Facilitation",
+    ],
+  },
+  {
+    id: 2,
+    title: "Agile Coach",
+    description:
+      "Guides organizations and teams in adopting and improving Agile practices.",
+    img: "/frontend.avif",
+
+    benefits: [
+      "🧭 Agile Transformation",
+      "🧠 Mindset Coaching",
+      "📈 Process Optimization",
+    ],
+  },
+  {
+    id: 3,
+    title: "Product Owner",
+    description:
+      "Owns the product backlog and ensures the team delivers value aligned with business goals.",
+    img: "/frontend.avif",
+
+    benefits: [
+      "📋 User Story Mapping",
+      "💡 Stakeholder Collaboration",
+      "✅ Backlog Prioritization",
+    ],
+  },
+  {
+    id: 4,
+    title: "Project Manager (Agile)",
+    description:
+      "Manages timelines, scope, and deliverables while supporting Agile teams.",
+    img: "/frontend.avif",
+
+    benefits: [
+      "📆 Agile Roadmapping",
+      "🗂️ Resource Coordination",
+      "📣 Risk Communication",
+    ],
+  },
+  {
+    id: 5,
+    title: "Release Train Engineer (RTE)",
+    description:
+      "Oversees Agile Release Trains and ensures alignment across multiple teams.",
+    img: "/frontend.avif",
+
+    benefits: [
+      "🚂 SAFe Framework",
+      "🧩 Multi-team Coordination",
+      "📡 Program Increment Planning",
+    ],
+  },
+  {
+    id: 6,
+    title: "Agile Business Analyst",
+    description:
+      "Bridges the gap between business needs and technical solutions in Agile teams.",
+    img: "/frontend.avif",
+
+    benefits: [
+      "📋 Requirements Gathering",
+      "🔍 Impact Analysis",
+      "📝 Agile Documentation",
+    ],
+  },
+  {
+    id: 7,
+    title: "Scrum Trainer",
+    description:
+      "Educates professionals and teams about Scrum principles and practices.",
+    img: "/frontend.avif",
+
+    benefits: [
+      "📚 Workshop Facilitation",
+      "🧑‍🏫 Certification Prep",
+      "🎓 Adult Learning Strategies",
+    ],
+  },
+  {
+    id: 8,
+    title: "Agile QA Lead",
+    description:
+      "Ensures quality and continuous improvement in Agile development cycles.",
+    img: "/frontend.avif",
+
+    benefits: [
+      "✅ Agile Testing Strategies",
+      "🧪 Automation Integration",
+      "📅 Sprint Test Planning",
+    ],
   },
 ];

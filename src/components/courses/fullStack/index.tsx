@@ -1,13 +1,14 @@
 "use client";
 import { ClockFading, BookOpenCheck, School } from "lucide-react";
-import CourseBanner from "../common/heroSection";
-import HowItWorksSection from "../common/howItWorks";
-import EnrolmentCard from "../courses/EnrolmentCard";
-import ConceptsCommon from "../common/conceptCommon";
-import CourseTargets from "../courses/courseTargets";
-import FeaturesSection from "../common/featuresSection";
-import FlipCardSection from "../common/opportunities";
+
 import { courseFeatures, fullStackCarreers, fullStackConcepts } from "@/src/json/opportunities";
+import CourseBanner from "../../common/heroSection";
+import HowItWorksSection from "../../common/howItWorks";
+import ConceptsCommon from "../../common/conceptCommon";
+import FeaturesSection from "../../common/featuresSection";
+import FlipCardSection from "../../common/opportunities";
+import EnrolmentCard from "../frontEnd/EnrolmentCard";
+import CourseTargets from "../frontEnd/courseTargets";
 
 
 export default function FullStack() {

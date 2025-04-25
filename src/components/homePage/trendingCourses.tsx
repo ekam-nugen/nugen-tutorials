@@ -6,6 +6,7 @@ interface Program {
   duration: string;
   startDate: string;
   image: string;
+  onclick?:()=> void;
 }
 
 const trendingCoursesData: Program[] = [
@@ -26,6 +27,7 @@ const trendingCoursesData: Program[] = [
     duration: "3 Days",
     startDate: "23rd Apr '25",
     image: "/scrum.jpg",
+    onclick: () => ("/scrumCourses"),
   },
   {
     name: "Professional Certificate Course in Generative AI and Machine Learning",
