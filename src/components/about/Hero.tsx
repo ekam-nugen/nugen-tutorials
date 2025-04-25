@@ -2,7 +2,7 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { aboutUsData } from "@/src/json/aboutUs/aboutUs";
 
-const HeroSection = () => {
+const TechSection = () => {
   return (
     <section className="bg-white py-16">
       <div className="container mx-auto px-4">
@@ -43,4 +43,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default TechSection;
