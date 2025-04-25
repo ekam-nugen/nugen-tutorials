@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function HeroSection() {
   return (
@@ -41,9 +42,9 @@ export default function HeroSection() {
           <button className="inline-flex items-center px-6 py-3 bg-gradient-to-r border border-gray-300 from-orange-400 to-purple-400 text-white cursor-pointer hover:shadow-lg font-semibold rounded-full  duration-200">
             Explore Courses
           </button>
-          <button className="bg-white text-[#f37458] px-7 py-3 rounded-full font-semibold border border-[#f37458] backdrop-blur-md shadow-sm hover:bg-[#fff0eb] cursor-pointer transition-all duration-300">
+          <Link  href="/contactUs" className="bg-white text-[#f37458] px-7 py-3 rounded-full font-semibold border border-[#f37458] backdrop-blur-md shadow-sm hover:bg-[#fff0eb] cursor-pointer transition-all duration-300">
             Start Free Trial
-          </button>
+          </Link>
         </motion.div>
 
         <motion.div
