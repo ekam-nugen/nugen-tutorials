@@ -21,7 +21,7 @@ export default function TechnologyShowcase() {
       </h1>
 
       {/* Scrollable Category Tabs */}
-      <div className="overflow-x-auto no-scrollbar mb-10">
+      <div className="overflow-x-auto  hide-scrollbar mb-10">
         <div className="flex gap-4 md:gap-6 w-max px-1">
           {Object.keys(data).map((category) => (
             <button
