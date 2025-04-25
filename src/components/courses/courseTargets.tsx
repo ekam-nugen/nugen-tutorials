@@ -39,7 +39,7 @@ export default function CourseTargets() {
           Who should take this course?
         </h2>
         <p className="text-black mb-12">
-          Nugen IT Services Frontend Developer Certification is tailored for:
+          Nugen IT Services Developers Certification is tailored for:
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {courseTargets.map((item, index) => (
