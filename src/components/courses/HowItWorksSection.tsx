@@ -5,7 +5,7 @@ import ConceptsSection from "./ConceptSection";
 
 export default function HowItWorksSection() {
   return (
-    <div className="bg-white py-16 px-4 sm:px-6 lg:px-8 text-center overflow-hidden">
+    <div className="bg-white py-16 px-4 sm:px-6 cursor-pointer lg:px-8 text-center overflow-hidden">
       <div className="max-w-7xl mx-auto w-full">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}

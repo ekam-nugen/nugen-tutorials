@@ -43,7 +43,7 @@ const features = [
 export default function CourseFeatures() {
   return (
     <section className="bg-gradient-to-r from-white via-[#fff1eb] to-white py-16">
-      <div className="max-w-7xl mx-auto px-4 flex flex-col lg:flex-row items-start gap-12">
+      <div className="max-w-7xl mx-auto px-4 flex flex-col cursor-pointer  lg:flex-row items-start gap-12">
         {/* Left Section */}
         <div className="lg:w-1/2">
           <h4 className="uppercase text-sm tracking-widest text-black mb-2">
@@ -70,11 +70,11 @@ export default function CourseFeatures() {
         </div>
 
         {/* Right Section */}
-        <div className="lg:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div className="lg:w-1/2 grid grid-cols-1 cursor-pointer sm:grid-cols-2 gap-6">
           {features.map(({ icon: Icon, title, description }, idx) => (
             <div
               key={idx}
-              className="group bg-white hover:bg-[#fff1eb] hover:shadow-lg transition-all duration-300 ease-in-out rounded-xl p-5 hover:border hover:border-[#f37458] flex gap-4 items-start relative overflow-hidden"
+              className="group bg-white hover:bg-[#fff1eb] cursor-pointer hover:shadow-lg transition-all duration-300 ease-in-out rounded-xl p-5 hover:border hover:border-[#f37458] flex gap-4 items-start relative overflow-hidden"
             >
               {/* Gradient circle */}
               <div className="absolute top-0 left-0 w-full h-full rounded-xl bg-gradient-radial from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition duration-300" />

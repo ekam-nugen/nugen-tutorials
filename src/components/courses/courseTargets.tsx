@@ -33,8 +33,8 @@ const courseTargets = [
 
 export default function CourseTargets() {
   return (
-    <section className="bg-white py-16">
-      <div className="max-w-7xl mx-auto px-4 text-center">
+    <section className="bg-white  py-16">
+      <div className="max-w-7xl mx-auto cursor-pointer px-4 text-center">
         <h2 className="text-3xl font-bold text-black mb-4">
           Who should take this course?
         </h2>
