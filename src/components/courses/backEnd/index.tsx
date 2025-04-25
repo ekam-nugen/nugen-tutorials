@@ -9,15 +9,13 @@ import {
   BriefcaseBusiness,
   GraduationCap,
 } from "lucide-react";
-
-import CourseBanner from "../common/heroSection";
-import HowItWorksSection from "../common/howItWorks";
-import EnrolmentCard from "../courses/EnrolmentCard";
-import ConceptsCommon from "../common/conceptCommon";
-import CourseTargets from "../courses/courseTargets";
-import FeaturesSection from "../common/featuresSection";
-import FlipCardSection from "../common/opportunities";
-
+import CourseBanner from "../../common/heroSection";
+import HowItWorksSection from "../../common/howItWorks";
+import EnrolmentCard from "../frontEnd/EnrolmentCard";
+import ConceptsCommon from "../../common/conceptCommon";
+import CourseTargets from "../frontEnd/courseTargets";
+import FeaturesSection from "../../common/featuresSection";
+import FlipCardSection from "../../common/opportunities";
 import { backendCareers } from "@/src/json/opportunities";
 
 const backendConcepts = [
@@ -87,7 +85,6 @@ export default function Backend() {
           },
         ]}
       />
-
       <HowItWorksSection
         title={
           <>
@@ -108,9 +105,7 @@ export default function Backend() {
         imageSrc="/featureSection.webp"
         features={courseFeatures}
       />
-
       <CourseTargets />
-
       <FlipCardSection
         sectionTitle="Career Opportunities"
         sectionDescription="Backend development powers the logic, data, and scalability behind every digital experience. After completing Nugen’s backend developer course, you'll be ready for the following roles:"
@@ -123,7 +118,6 @@ export default function Backend() {
           backList: career.benefits,
         }))}
       />
-
       <EnrolmentCard />
     </>
   );
