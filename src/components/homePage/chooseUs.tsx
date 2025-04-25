@@ -11,6 +11,7 @@ import {
   Users,
 } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const features = [
   {
@@ -67,7 +68,7 @@ export default function WhyNugenIT() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-4xl font-extrabold text-gray-900 mb-6 leading-tight">
-            Why Learn With{" "}
+            Why Learn With
             <span className="text-[#ff6b3d]">Nugen IT Training</span>
           </h2>
           <ul className="list-disc pl-5 text-gray-700 text-lg space-y-3">
@@ -133,9 +134,9 @@ export default function WhyNugenIT() {
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
       >
-        <button className="bg-gradient-to-r border border-gray-300 from-orange-400 to-purple-400 cursor-pointer text-white px-7 py-3 rounded-full font-semibold shadow-md hover:scale-105 hover:shadow-lg transition-all duration-300">
-          Explore Training Programs →
-        </button>
+        <Link href="/aboutUs" className="bg-gradient-to-r border border-gray-300 from-orange-400 to-purple-400 cursor-pointer text-white px-7 py-3 rounded-full font-semibold shadow-md hover:scale-105 hover:shadow-lg transition-all duration-300">
+          Know More About Us →
+        </Link>
       </motion.div>
     </section>
   );
