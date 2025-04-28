@@ -1,28 +1,15 @@
 "use client";
 
+import { CourseBannerProps } from "@/src/types";
 import { Download, MoveRight } from "lucide-react";
 import Link from "next/link";
-import { JSX } from "react";
-
-interface Feature {
-  icon: JSX.Element;
-  title: string;
-  subtitle: string;
-}
-
-interface CourseBannerProps {
-  title: string;
-  highlight: string;
-  description: string;
-  features: Feature[];
-}
 
 export default function CourseBanner({
   title,
   highlight,
   description,
   features,
-}: CourseBannerProps) {
+}: Readonly<CourseBannerProps>) {
   return (
     <section className="relative bg-gradient-to-br from-[#fff6f2] to-[#fdeae2] py-28 px-6 md:px-16 overflow-hidden">
       <div className="absolute -top-20 -left-10 w-96 h-96 bg-[#fca78c] opacity-30 blur-[100px] rounded-full z-0" />

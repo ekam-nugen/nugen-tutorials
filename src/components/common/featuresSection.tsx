@@ -2,23 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import { LucideIcon } from "lucide-react";
-
-interface Feature {
-  icon: LucideIcon;
-  title: string;
-  description: string;
-}
-
-interface FeaturesSectionProps {
-  title?: string;
-  highlight?: string;
-  subtitle?: string;
-  description?: string;
-  imageSrc?: string;
-  features: Feature[];
-}
-
+import { FeaturesSectionProps } from "@/src/types";
 export default function FeaturesSection({
   title = "Course",
   highlight = "Features",
@@ -26,7 +10,7 @@ export default function FeaturesSection({
   description,
   imageSrc,
   features,
-}: FeaturesSectionProps) {
+}: Readonly<FeaturesSectionProps>) {
   return (
     <section className="bg-gradient-to-r from-white via-[#fff1eb] to-white py-16">
       <div className="max-w-7xl mx-auto px-4 flex flex-col lg:flex-row items-start gap-12">
