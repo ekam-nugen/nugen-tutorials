@@ -21,7 +21,7 @@ export default function TechnologyShowcase() {
       </h1>
 
       {/* Scrollable Category Tabs */}
-      <div className="overflow-x-auto  hide-scrollbar mb-10">
+      <div className="overflow-x-auto hide-scrollbar mb-10">
         <div className="flex gap-4 md:gap-6 w-max px-1">
           {Object.keys(data).map((category) => (
             <button
@@ -29,7 +29,7 @@ export default function TechnologyShowcase() {
               onClick={() => setSelectedCategory(category as Category)}
               className={`whitespace-nowrap px-5 py-2.5 rounded-full border font-semibold transition-all ${
                 selectedCategory === category
-                  ? " border-[#ff6b3d]/50 bg-[#fff5f0] text-orange-600"
+                  ? "border-[#ff6b3d]/50 bg-[#fff5f0] text-orange-600"
                   : "bg-white text-gray-800 border-gray-200"
               }`}
             >
@@ -54,7 +54,7 @@ export default function TechnologyShowcase() {
               key={program.name}
               className="flex flex-col justify-between bg-white p-6 rounded-2xl shadow-md border border-gray-100 hover:shadow-xl transition-transform duration-300 hover:scale-[1.02] hover:border-[#ff6b3d]/50 hover:bg-[#fff5f0]"
             >
-              <div>
+              <div className="relative">
                 <div className="h-40 w-full mb-5 rounded-xl overflow-hidden shadow-sm">
                   <Image
                     src={program.image}
@@ -74,7 +74,29 @@ export default function TechnologyShowcase() {
                   <strong>Cohort Starts:</strong> {program.startDate}
                 </p>
               </div>
-              <button className="w-full mt-auto py-2.5 bg-[#ff6b3d] text-white font-semibold rounded-lg hover:bg-[#ff5c2a] transition-all shadow-md">
+
+              {/* Active Users Section */}
+              <div className="flex justify-end pb-2">
+                <div className="flex items-center gap-1 bg-[#fff5f0] text-[#ff6b3d] text-xs font-semibold px-3 py-1 rounded-full border border-[#ff6b3d]/30 shadow-sm">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1.5}
+                    stroke="currentColor"
+                    className="w-4 h-4"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.5 20.25v-1.125A2.625 2.625 0 017.125 16.5h9.75a2.625 2.625 0 012.625 2.625v1.125"
+                    />
+                  </svg>
+                  {program.activeUsers} Active
+                </div>
+              </div>
+
+              <button className="w-full py-2.5 bg-[#ff6b3d] text-white font-semibold rounded-lg hover:bg-[#ff5c2a] transition-all shadow-md">
                 View Program
               </button>
             </div>
