@@ -74,17 +74,16 @@ export default function TechnologyShowcase() {
                   <strong>Cohort Starts:</strong> {program.startDate}
                 </p>
               </div>
-
               {/* Active Users Section */}
-              <div className="flex justify-end pb-2">
-                <div className="flex items-center gap-1 bg-[#fff5f0] text-[#ff6b3d] text-xs font-semibold px-3 py-1 rounded-full border border-[#ff6b3d]/30 shadow-sm">
+              <div className="flex justify-center pb-2">
+                <div className="flex items-center gap-0.5 bg-[#fff5f0] text-[#ff6b3d] text-[10px] font-medium px-2 py-0.5 rounded-full border border-[#ff6b3d]/40 shadow-sm">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
-                    strokeWidth={1.5}
+                    strokeWidth={1.25}
                     stroke="currentColor"
-                    className="w-4 h-4"
+                    className="w-3 h-3"
                   >
                     <path
                       strokeLinecap="round"
@@ -92,10 +91,9 @@ export default function TechnologyShowcase() {
                       d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.5 20.25v-1.125A2.625 2.625 0 017.125 16.5h9.75a2.625 2.625 0 012.625 2.625v1.125"
                     />
                   </svg>
-                  {program.activeUsers} Active
+                  {program.activeUsers} Active Enrolments
                 </div>
               </div>
-
               <button className="w-full py-2.5 bg-[#ff6b3d] text-white font-semibold rounded-lg hover:bg-[#ff5c2a] transition-all shadow-md">
                 View Program
               </button>
