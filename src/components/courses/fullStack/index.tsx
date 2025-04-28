@@ -1,6 +1,5 @@
 "use client";
 import { ClockFading, BookOpenCheck, School } from "lucide-react";
-
 import { courseFeatures, fullStackCarreers, fullStackConcepts } from "@/src/json/opportunities";
 import CourseBanner from "../../common/heroSection";
 import HowItWorksSection from "../../common/howItWorks";
