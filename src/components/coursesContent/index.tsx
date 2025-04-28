@@ -8,7 +8,6 @@ import CourseTargets from "../courses/frontEnd/courseTargets";
 import EnrolmentCard from "../courses/frontEnd/EnrolmentCard";
 import { ICareer, TechDescriptionProps } from "@/src/types";
 
-
 const CoursesContent: React.FC<TechDescriptionProps> = ({
   techName,
   tagline,
@@ -45,7 +44,7 @@ const CoursesContent: React.FC<TechDescriptionProps> = ({
       <FlipCardSection
         sectionTitle="Career Opportunities"
         sectionDescription="CSM certification opens doors to leadership roles across Agile organizations. Here are the roles you’ll be prepared for after this course:"
-        items={career?.map((career:ICareer) => ({
+        items={career?.map((career: ICareer) => ({
           id: career.id,
           img: career.img,
           title: career.title,
@@ -57,5 +56,5 @@ const CoursesContent: React.FC<TechDescriptionProps> = ({
       <EnrolmentCard />
     </>
   );
-}
+};
 export default CoursesContent;

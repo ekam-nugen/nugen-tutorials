@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import React from "react";
 import Image from "next/image";
@@ -50,9 +50,7 @@ export default function FeaturesSection({
                 <Icon className="w-6 h-6 text-[#f37458]" />
               </div>
               <div>
-                <h3 className="font-semibold text-gray-800 text-lg">
-                  {title}
-                </h3>
+                <h3 className="font-semibold text-gray-800 text-lg">{title}</h3>
                 <p className="text-gray-500 text-sm mt-1">{description}</p>
               </div>
             </div>

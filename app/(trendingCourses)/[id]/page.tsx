@@ -3,12 +3,12 @@ import CoursesContent from "@/src/components/coursesContent";
 import { courseStack } from "@/src/json/coursesContent";
 import { useParams } from "next/navigation";
 
-
 export default function Home() {
   const { id } = useParams();
   const tech = courseStack?.find(
     (t) =>
-      t?.id?.toLowerCase() === (typeof id === "string" && id?.trim().toLowerCase())
+      t?.id?.toLowerCase() ===
+      (typeof id === "string" && id?.trim().toLowerCase())
   );
 
   if (!tech) {
@@ -25,7 +25,9 @@ export default function Home() {
       tagline={tech.tagline}
       bannerFeatures={tech.bannerFeatures}
       courseFeatures={tech.courseFeatures}
-      useCases={tech.useCases} career={tech.career}
-      howItWorks={tech.howItWorks} />
+      useCases={tech.useCases}
+      career={tech.career}
+      howItWorks={tech.howItWorks}
+    />
   );
 }

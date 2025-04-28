@@ -25,7 +25,10 @@ export default function CourseBanner({
           {description}
         </p>
         <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-12">
-          <Link href="/contactUs" className="inline-flex items-center px-6 py-3 bg-gradient-to-r border border-gray-300 from-orange-400 to-purple-400 text-white cursor-pointer hover:shadow-lg font-semibold rounded-full duration-200">
+          <Link
+            href="/contactUs"
+            className="inline-flex items-center px-6 py-3 bg-gradient-to-r border border-gray-300 from-orange-400 to-purple-400 text-white cursor-pointer hover:shadow-lg font-semibold rounded-full duration-200"
+          >
             <MoveRight size={18} className="mr-2" />
             Get Started
           </Link>

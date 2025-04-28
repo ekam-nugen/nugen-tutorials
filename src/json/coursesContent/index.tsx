@@ -1,11 +1,20 @@
-import {
-  ClockFading,
-  BookOpenCheck,
-  School,
-} from "lucide-react";
+import { ClockFading, BookOpenCheck, School } from "lucide-react";
 
 import { TechDescriptionProps } from "../../types";
-import { Ai_MlCareer, Ai_MlCourseFeatures, Ai_MlUseCases, CyberSecurityCareer, CyberSecurityCourseFeatures, CyberSecurityUseCases, PmpCareer, PmpCourseFeatures, PmpUseCases, ScrumCareer, ScrumCourseFeatures, ScrumUseCases } from "./content";
+import {
+  Ai_MlCareer,
+  Ai_MlCourseFeatures,
+  Ai_MlUseCases,
+  CyberSecurityCareer,
+  CyberSecurityCourseFeatures,
+  CyberSecurityUseCases,
+  PmpCareer,
+  PmpCourseFeatures,
+  PmpUseCases,
+  ScrumCareer,
+  ScrumCourseFeatures,
+  ScrumUseCases,
+} from "./content";
 
 export const courseStack: TechDescriptionProps[] = [
   {
@@ -30,17 +39,19 @@ export const courseStack: TechDescriptionProps[] = [
     ],
     courseFeatures: ScrumCourseFeatures,
     useCases: ScrumUseCases,
-    tagline: "Master Agile principles, facilitate high-performing teams, and earn your globally recognized CSM certification.",
+    tagline:
+      "Master Agile principles, facilitate high-performing teams, and earn your globally recognized CSM certification.",
     career: ScrumCareer,
     howItWorks: {
-      title:
+      title: (
         <>
           What <span className="text-[#f37458]">Scrum</span> concepts{" "}
           <span className="text-[#f37458]">will you master</span>?
         </>
-      ,
-      description: "This Certified ScrumMaster® course equips you with the Agile mindset, tools, and confidence to lead Scrum teams effectively and deliver continuous value to customers."
-    }
+      ),
+      description:
+        "This Certified ScrumMaster® course equips you with the Agile mindset, tools, and confidence to lead Scrum teams effectively and deliver continuous value to customers.",
+    },
   },
   {
     id: "pmp",
@@ -64,15 +75,19 @@ export const courseStack: TechDescriptionProps[] = [
     ],
     courseFeatures: PmpCourseFeatures,
     useCases: PmpUseCases,
-    tagline: "Master project management frameworks, processes, and tools to lead successful projects and pass the PMP® exam with confidence.",
+    tagline:
+      "Master project management frameworks, processes, and tools to lead successful projects and pass the PMP® exam with confidence.",
     career: PmpCareer,
     howItWorks: {
-      title: <>
-        What <span className="text-[#f37458]">PMP®</span> concepts{" "}
-        <span className="text-[#f37458]">will you master</span>?
-      </>,
-      description: "This PMP® certification training will help you manage projects effectively across various domains using standardized tools, techniques, and leadership principles."
-    }
+      title: (
+        <>
+          What <span className="text-[#f37458]">PMP®</span> concepts{" "}
+          <span className="text-[#f37458]">will you master</span>?
+        </>
+      ),
+      description:
+        "This PMP® certification training will help you manage projects effectively across various domains using standardized tools, techniques, and leadership principles.",
+    },
   },
   {
     id: "ai-ml",
@@ -96,17 +111,19 @@ export const courseStack: TechDescriptionProps[] = [
     ],
     courseFeatures: Ai_MlCourseFeatures,
     useCases: Ai_MlUseCases,
-    tagline: "Master cutting-edge AI techniques, generative models, and machine learning frameworks to build innovative solutions and excel in the AI industry.",
+    tagline:
+      "Master cutting-edge AI techniques, generative models, and machine learning frameworks to build innovative solutions and excel in the AI industry.",
     career: Ai_MlCareer,
     howItWorks: {
-      title:
+      title: (
         <>
           What <span className="text-[#f37458]">Generative AI & ML</span>{" "}
           concepts <span className="text-[#f37458]">will you master</span>?
         </>
-      ,
-      description: "This certification course equips you with the skills to design, develop, and deploy AI models using modern tools, frameworks, and ethical practices."
-    }
+      ),
+      description:
+        "This certification course equips you with the skills to design, develop, and deploy AI models using modern tools, frameworks, and ethical practices.",
+    },
   },
   {
     id: "cyber-security",
@@ -130,16 +147,18 @@ export const courseStack: TechDescriptionProps[] = [
     ],
     courseFeatures: CyberSecurityCourseFeatures,
     useCases: CyberSecurityUseCases,
-    tagline: "Master cutting-edge cybersecurity strategies, tools, and frameworks to protect organizations and excel in the Advanced Executive Program in Cybersecurity.",
+    tagline:
+      "Master cutting-edge cybersecurity strategies, tools, and frameworks to protect organizations and excel in the Advanced Executive Program in Cybersecurity.",
     career: CyberSecurityCareer,
     howItWorks: {
-      title:
+      title: (
         <>
           What <span className="text-[#f37458]">Cybersecurity</span> concepts{" "}
           <span className="text-[#f37458]">will you master</span>?
         </>
-      ,
-      description: "This Advanced Executive Program in Cybersecurity equips you with the skills to secure digital assets, mitigate threats, and lead cybersecurity initiatives across industries."
-    }
+      ),
+      description:
+        "This Advanced Executive Program in Cybersecurity equips you with the skills to secure digital assets, mitigate threats, and lead cybersecurity initiatives across industries.",
+    },
   },
 ];
