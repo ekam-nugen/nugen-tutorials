@@ -17,12 +17,12 @@ const Services = () => {
             real-world tech skills and launch your digital career with
             confidence.
           </h3>
-          <a
+          {/* <a
             href="#"
             className="inline-block mt-6  font-medium py-2 px-6 rounded-lg hover:bg-gradient-to-r border border-gray-300 from-orange-400 to-purple-400 hover:text-white bg-white text-gray-800 duration-300"
           >
             Explore Our Traning Programs
-          </a>
+          </a> */}
         </div>
 
         {/* Services Grid */}
