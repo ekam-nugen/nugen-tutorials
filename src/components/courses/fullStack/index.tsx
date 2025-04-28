@@ -7,8 +7,8 @@ import HowItWorksSection from "../../common/howItWorks";
 import ConceptsCommon from "../../common/conceptCommon";
 import FeaturesSection from "../../common/featuresSection";
 import FlipCardSection from "../../common/opportunities";
-import EnrolmentCard from "../frontEnd/EnrolmentCard";
-import CourseTargets from "../frontEnd/courseTargets";
+import EnrolmentCard from "../../common/EnrolmentCard";
+import CourseTargets from "../../common/courseTargets";
 
 
 export default function FullStack() {
@@ -40,7 +40,7 @@ export default function FullStack() {
         title={
           <>
             What <span className="text-[#f37458]">full stack</span> skills
-            <span className="text-[#f37458]">will you learn</span>?
+            <span className="text-[#f37458] pl-3">will you learn</span>?
           </>
         }
         description="This Full Stack Developer course walks you through everything from building stunning frontends to designing powerful backends. You'll learn how to structure complete applications, integrate databases, and deploy your projects to the cloud – all using industry-relevant tools and workflows."
