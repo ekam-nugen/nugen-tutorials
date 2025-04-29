@@ -1,28 +1,15 @@
 "use client";
 
+import { CourseBannerProps } from "@/src/types";
 import { Download, MoveRight } from "lucide-react";
 import Link from "next/link";
-import { JSX } from "react";
-
-interface Feature {
-  icon: JSX.Element;
-  title: string;
-  subtitle: string;
-}
-
-interface CourseBannerProps {
-  title: string;
-  highlight: string;
-  description: string;
-  features: Feature[];
-}
 
 export default function CourseBanner({
   title,
   highlight,
   description,
   features,
-}: CourseBannerProps) {
+}: Readonly<CourseBannerProps>) {
   return (
     <section className="relative bg-gradient-to-br from-[#fff6f2] to-[#fdeae2] py-28 px-6 md:px-16 overflow-hidden">
       <div className="absolute -top-20 -left-10 w-96 h-96 bg-[#fca78c] opacity-30 blur-[100px] rounded-full z-0" />
@@ -38,7 +25,10 @@ export default function CourseBanner({
           {description}
         </p>
         <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-12">
-          <Link href="/contactUs" className="inline-flex items-center px-6 py-3 bg-gradient-to-r border border-gray-300 from-orange-400 to-purple-400 text-white cursor-pointer hover:shadow-lg font-semibold rounded-full duration-200">
+          <Link
+            href="/contactUs"
+            className="inline-flex items-center px-6 py-3 bg-gradient-to-r border border-gray-300 from-orange-400 to-purple-400 text-white cursor-pointer hover:shadow-lg font-semibold rounded-full duration-200"
+          >
             <MoveRight size={18} className="mr-2" />
             Get Started
           </Link>
