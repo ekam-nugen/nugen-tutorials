@@ -6,9 +6,9 @@ import FeaturesSection from "../common/featuresSection";
 import FlipCardSection from "../common/opportunities";
 import CourseTargets from "../courses/frontEnd/courseTargets";
 import EnrolmentCard from "../courses/frontEnd/EnrolmentCard";
-import { ICareer, TechDescriptionProps } from "@/src/types";
+import { ICareer, CoursesContentProps } from "@/src/types";
 
-const CoursesContent: React.FC<TechDescriptionProps> = ({
+const CoursesContent: React.FC<CoursesContentProps> = ({
   techName,
   tagline,
   bannerFeatures,

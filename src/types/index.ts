@@ -35,7 +35,7 @@ export interface IhowItWorks {
   title: JSX.Element;
   description: string;
 }
-export type TechDescriptionProps = {
+export type CoursesContentProps = {
   id?: string;
   techName: string;
   tagline: string;
@@ -45,3 +45,11 @@ export type TechDescriptionProps = {
   career: ICareer[];
   howItWorks: IhowItWorks;
 };
+export interface ICoursesUseCases {
+  name: string;
+  image: string;
+}
+export type PackageCourseProps = Omit<
+  CoursesContentProps,
+  "howItWorks" | "career" | "useCases"
+> & { useCases: ICoursesUseCases[] };
