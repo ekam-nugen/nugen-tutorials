@@ -36,17 +36,15 @@ export default function Home() {
       {loading ? (
         <Loader />
       ) : (
-        <>
-          <CoursesContent
-            techName={tech.techName}
-            tagline={tech.tagline}
-            bannerFeatures={tech.bannerFeatures}
-            courseFeatures={tech.courseFeatures}
-            useCases={tech.useCases}
-            career={tech.career}
-            howItWorks={tech.howItWorks}
-          />
-        </>
+        <CoursesContent
+          techName={tech.techName}
+          tagline={tech.tagline}
+          bannerFeatures={tech.bannerFeatures}
+          courseFeatures={tech.courseFeatures}
+          useCases={tech.useCases}
+          career={tech.career}
+          howItWorks={tech.howItWorks}
+        />
       )}
     </>
   );
