@@ -1,7 +1,7 @@
 "use client";
 
 import { CourseBannerProps } from "@/src/types";
-import { Download, MoveRight } from "lucide-react";
+import { MoveRight } from "lucide-react";
 import Link from "next/link";
 
 export default function CourseBanner({
@@ -32,10 +32,10 @@ export default function CourseBanner({
             <MoveRight size={18} className="mr-2" />
             Get Started
           </Link>
-          <button className="flex items-center justify-center gap-2 px-6 py-3 border border-[#f37458] text-[#f37458] bg-white font-semibold rounded-full transition-all duration-300 hover:bg-[#fff0eb] shadow-sm">
+          {/* <button className="flex items-center justify-center gap-2 px-6 py-3 border border-[#f37458] text-[#f37458] bg-white font-semibold rounded-full transition-all duration-300 hover:bg-[#fff0eb] shadow-sm">
             <Download size={18} />
             <span className="text-base">Curriculum</span>
-          </button>
+          </button> */}
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
           {features.map((item, idx) => (

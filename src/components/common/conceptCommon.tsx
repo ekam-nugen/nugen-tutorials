@@ -11,24 +11,42 @@ export default function ConceptsCommon({ items }: ConceptsSectionProps) {
   const [scaleX, setScaleX] = useState(0);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setScaleX(0.9);
-        } else {
-          setScaleX(0);
-        }
-      },
-      { threshold: 1 }
-    );
-
-    const currentRef = sectionRef.current;
-    if (currentRef) observer.observe(currentRef);
-
-    return () => {
-      if (currentRef) observer.unobserve(currentRef);
+    const handleScroll = () => {
+      if (!sectionRef.current) return;
+  
+      const rect = sectionRef.current.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+  
+      const scrollStart = windowHeight * 0.2;
+      const scrollEnd = windowHeight * 0.8;
+  
+      if (rect.bottom < scrollStart || rect.top > scrollEnd) {
+        // OUTSIDE viewport -> No scale
+        setScaleX(0);
+      } else {
+        const totalHeight = scrollEnd - scrollStart;
+        const scrolled = Math.min(Math.max(scrollEnd - rect.top, 0), totalHeight);
+        const progress = scrolled / totalHeight;
+  
+        // Step-wise scaling
+        const steps = items.length - 1;
+        const stepProgress = 1 / steps;
+        const snappedProgress = Math.ceil(progress / stepProgress) * stepProgress;
+  
+        setScaleX(Math.min(snappedProgress, 0.9));
+      }
     };
-  }, []);
+  
+    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleScroll);
+    handleScroll(); // Initial check
+  
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleScroll);
+    };
+  }, [items.length]);
+  
 
   return (
     <>
@@ -40,7 +58,7 @@ export default function ConceptsCommon({ items }: ConceptsSectionProps) {
         <div className="container w-full mx-auto relative">
           {/* Connecting Line */}
           <div
-            className="absolute h-1 bg-[#f37458] z-0 transition-transform duration-[900ms] ease-[cubic-bezier(0.68,0.55,0.27,0.55)] origin-left"
+            className="absolute h-1 bg-[#f37458] z-0 transition-transform duration-300 ease-out origin-left"
             style={{
               left: `calc((100% / ${items.length}) * 0.5)`,
               width: `calc((100% / ${items.length}) * ${items.length - 0.5})`,

@@ -6,7 +6,7 @@ import {
   BadgeDollarSign,
 } from "lucide-react";
 
-export const careers = [
+export const frontEndCareers = [
   {
     id: 1,
     title: "Front-end JavaScript Developer",

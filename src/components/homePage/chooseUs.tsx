@@ -69,7 +69,7 @@ export default function WhyNugenIT() {
         >
           <h2 className="text-4xl font-extrabold text-gray-900 mb-6 leading-tight">
             Why Learn With
-            <span className="text-[#ff6b3d]">Nugen IT Training</span>
+            <span className="pl-2 text-[#ff6b3d]">Nugen IT Training</span>
           </h2>
           <ul className="list-disc pl-5 text-gray-700 text-lg space-y-3">
             <li>

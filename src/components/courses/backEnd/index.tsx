@@ -11,9 +11,9 @@ import {
 } from "lucide-react";
 import CourseBanner from "../../common/heroSection";
 import HowItWorksSection from "../../common/howItWorks";
-import EnrolmentCard from "../frontEnd/EnrolmentCard";
+import EnrolmentCard from "../../common/EnrolmentCard";
 import ConceptsCommon from "../../common/conceptCommon";
-import CourseTargets from "../frontEnd/courseTargets";
+import CourseTargets from "../../common/courseTargets";
 import FeaturesSection from "../../common/featuresSection";
 import FlipCardSection from "../../common/opportunities";
 import { backendCareers } from "@/src/json/opportunities";
@@ -88,8 +88,8 @@ export default function Backend() {
       <HowItWorksSection
         title={
           <>
-            What <span className="text-[#f37458]">backend</span> skills{" "}
-            <span className="text-[#f37458]">will you master</span>?
+            What <span className="text-[#f37458]">backend</span> skills
+            <span className="text-[#f37458] pl-3">will you master</span>?
           </>
         }
         description="This Backend Developer course focuses on the core skills to build APIs, integrate databases, ensure secure authentication, and deploy robust backends. Get hands-on experience with tools companies use today."
