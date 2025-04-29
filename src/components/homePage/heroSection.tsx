@@ -39,10 +39,17 @@ export default function HeroSection() {
           viewport={{ once: true }}
           transition={{ delay: 0.4, duration: 0.6 }}
         >
-          <button className="inline-flex items-center px-6 py-3 bg-gradient-to-r border border-gray-300 from-orange-400 to-purple-400 text-white cursor-pointer hover:shadow-lg font-semibold rounded-full  duration-200">
+          <Link
+            href="/exploreCourses"
+            className="relative overflow-hidden px-6 py-3 bg-gradient-to-r from-orange-400 to-purple-400 text-white font-semibold rounded-full shadow-lg transform hover:scale-105 transition"
+          >
+            <span className="absolute inset-0 bg-white opacity-0 hover:opacity-10 transition-opacity duration-300 rounded-full" />
             Explore Courses
-          </button>
-          <Link  href="/contactUs" className="bg-white text-[#f37458] px-7 py-3 rounded-full font-semibold border border-[#f37458] backdrop-blur-md shadow-sm hover:bg-[#fff0eb] cursor-pointer transition-all duration-300">
+          </Link>
+          <Link
+            href="/contactUs"
+            className="px-7 py-3 bg-white text-[#f37458] font-semibold rounded-full border border-[#f37458] hover:bg-white/90 transition"
+          >
             Start Free Trial
           </Link>
         </motion.div>
