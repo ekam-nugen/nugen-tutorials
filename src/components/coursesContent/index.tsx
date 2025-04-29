@@ -4,11 +4,11 @@ import HowItWorksSection from "../common/howItWorks";
 import ConceptsCommon from "../common/conceptCommon";
 import FeaturesSection from "../common/featuresSection";
 import FlipCardSection from "../common/opportunities";
-import { ICareer, TechDescriptionProps } from "@/src/types";
 import CourseTargets from "../common/courseTargets";
 import EnrolmentCard from "../common/EnrolmentCard";
+import { ICareer, CoursesContentProps } from "@/src/types";
 
-const CoursesContent: React.FC<TechDescriptionProps> = ({
+const CoursesContent: React.FC<CoursesContentProps> = ({
   techName,
   tagline,
   bannerFeatures,
