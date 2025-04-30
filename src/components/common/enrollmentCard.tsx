@@ -3,7 +3,7 @@
 import { FileText } from "lucide-react";
 import { useRouter } from "next/navigation";
 
-export default function EnrolmentCard() {
+export default function EnrollmentCard() {
   const router = useRouter();
   return (
     <section className="relative flex justify-center items-center py-10 bg-gradient-to-br from-white via-white to-gray-100 px-4">
@@ -13,7 +13,7 @@ export default function EnrolmentCard() {
             <FileText size={96} strokeWidth={1.2} className="text-white" />
           </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Enrolment Requirements
+            Enrollment Requirements
           </h2>
           <p className="text-lg md:text-xl mb-6">
             Unlock your potential with{" "}

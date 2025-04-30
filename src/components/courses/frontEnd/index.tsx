@@ -7,7 +7,7 @@ import HowItWorksSection from "../../common/howItWorks";
 import ConceptsCommon from "../../common/conceptCommon";
 import FeaturesSection from "../../common/featuresSection";
 import FlipCardSection from "../../common/opportunities";
-import EnrolmentCard from "../../common/EnrolmentCard";
+import EnrollmentCard from "../../common/enrollmentCard";
 import CourseTargets from "../../common/courseTargets";
 const frontEndConcepts = [
   "Basics of HTML and CSS",
@@ -74,7 +74,7 @@ export default function FrontEnd() {
           backList: career.benefits,
         }))}
       />
-      <EnrolmentCard />
+      <EnrollmentCard />
     </>
   );
 }
