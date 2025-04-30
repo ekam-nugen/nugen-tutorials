@@ -67,3 +67,26 @@ export const stats = [
     subtitle: "Partner",
   },
 ];
+
+
+export const logos = [
+  "/logo/ivoyant.png",
+  "/logo/quay.png",
+  "/logo/blinkPayment.svg",
+  "/logo/capitalNumber.png",
+  "/logo/simply5.svg",
+  "/logo/protaxCanada.png",
+  "/logo/Scott.png",
+  "/logo/ganpatiLogo.jpeg",
+  "/logo/sunriseIntegration.jpg",
+  "/logo/indiaCar.png",
+  "/logo/madEngine.webp",
+  "/logo/insideInjuries.png",
+  "/logo/Qudos.png",
+  "/logo/luckyR.jpeg",
+  "/logo/magicEdt.jpeg",
+  "/logo/dapt.png",
+  "/logo/cloudways.webp",
+  "/logo/optumLogo.png",
+  "/logo/skeepLogo.webp",
+];
