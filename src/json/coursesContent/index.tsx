@@ -1,6 +1,6 @@
 import { ClockFading, BookOpenCheck, School } from "lucide-react";
 
-import { TechDescriptionProps } from "../../types";
+import { CoursesContentProps } from "../../types";
 import {
   Ai_MlCareer,
   Ai_MlCourseFeatures,
@@ -16,7 +16,7 @@ import {
   ScrumUseCases,
 } from "./content";
 
-export const courseStack: TechDescriptionProps[] = [
+export const courseStack: CoursesContentProps[] = [
   {
     id: "scrum-master",
     techName: "Certified ScrumMaster®",
