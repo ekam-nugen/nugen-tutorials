@@ -102,6 +102,41 @@ import {
   agileForTeamsCourseFeatures,
   agileForTeamsUseCases,
 } from "./aglieAndScrum";
+import {
+  itil4FoundationCourseFeatures,
+  itil4FoundationUseCases,
+  itil4FoundationCareer,
+  AgileITSMPracticesCourseFeatures,
+  AgileITSMPracticesUseCases,
+  AgileITSMPracticesCareer,
+  enterpriseArchitectureFundamentalsCareer,
+  enterpriseArchitectureFundamentalsCourseFeatures,
+  enterpriseArchitectureFundamentalsUseCases,
+  ITServiceManagementWithServiceNowCareer,
+  ITServiceManagementWithServiceNowCourseFeatures,
+  ITServiceManagementWithServiceNowUseCases,
+  ITStrategyAndGovernanceCareer,
+  ITStrategyAndGovernanceCourseFeatures,
+  ITStrategyAndGovernanceUseCases,
+} from "./itServiceAndArchitecture";
+import {
+  sixSigmaGreenBeltCourseFeatures,
+  sixSigmaGreenBeltUseCases,
+  sixSigmaGreenBeltCareer,
+  leanSixSigmaYellowBeltCareer,
+  leanSixSigmaYellowBeltCourseFeatures,
+  leanSixSigmaYellowBeltUseCases,
+  qualityManagementSystemsCareer,
+  qualityManagementSystemsCourseFeatures,
+  qualityManagementSystemsUseCases,
+  iso90012015TrainingCareer,
+  iso90012015TrainingCourseFeatures,
+  iso90012015TrainingUseCases,
+  rootCauseAnalysisWorkshopCareer,
+  rootCauseAnalysisWorkshopCourseFeatures,
+  rootCauseAnalysisWorkshopUseCases,
+} from "./qualityManagement";
+import { digitalMarketingSpecialistCourseFeatures, digitalMarketingSpecialistUseCases, digitalMarketingSpecialistCareer, seoSemFundamentalsCareer, seoSemFundamentalsCourseFeatures, seoSemFundamentalsUseCases, socialMediaMarketingCareer, socialMediaMarketingCourseFeatures, socialMediaMarketingUseCases, contentStrategyBootcampCareer, contentStrategyBootcampCourseFeatures, contentStrategyBootcampUseCases, googleAdsAnalyticsCareer, googleAdsAnalyticsCourseFeatures, googleAdsAnalyticsUseCases } from "./digitalMarketing";
 
 export const exploreProgramsStack: CoursesContentProps[] = [
   {
@@ -1186,4 +1221,546 @@ export const exploreProgramsStack: CoursesContentProps[] = [
         "This course focuses on team-based learning and how to implement Agile practices effectively, with hands-on activities and real-world examples.",
     },
   },
+  {
+    id: "itil-4-foundation",
+    techName: "ITIL® 4 Foundation Certification",
+    bannerFeatures: [
+      {
+        icon: <ClockFading className="text-[#f7846f]" />,
+        title: "3 Weeks",
+        subtitle: "Training Duration",
+      },
+      {
+        icon: <BookOpenCheck className="text-[#f7846f]" />,
+        title: "Weekends & Weekdays",
+        subtitle: "Flexible Scheduling",
+      },
+      {
+        icon: <School className="text-[#f7846f]" />,
+        title: "Live + Interactive",
+        subtitle: "Learning Mode",
+      },
+    ],
+    tagline:
+      "Master ITIL® 4 Foundation principles to improve service management and align IT with business needs.",
+    courseFeatures: itil4FoundationCourseFeatures,
+    useCases: itil4FoundationUseCases,
+    career: itil4FoundationCareer,
+    howItWorks: {
+      title: (
+        <>
+          What <span className="text-[#f37458]">ITIL® 4</span> skills will you{" "}
+          <span className="text-[#f37458]">develop?</span>
+        </>
+      ),
+      description:
+        "This course helps you gain essential knowledge on the ITIL® 4 framework, allowing you to optimize IT service management processes and align them with modern business needs.",
+    },
+  },
+  {
+    id: "enterprise-architecture-fundamentals",
+    techName: "Enterprise Architecture Fundamentals",
+    bannerFeatures: [
+      {
+        icon: <ClockFading className="text-[#f7846f]" />,
+        title: "6 Weeks",
+        subtitle: "Training Duration",
+      },
+      {
+        icon: <BookOpenCheck className="text-[#f7846f]" />,
+        title: "Weekends Only",
+        subtitle: "Ideal for Working Professionals",
+      },
+      {
+        icon: <School className="text-[#f7846f]" />,
+        title: "Live + Project-Based",
+        subtitle: "Learning Mode",
+      },
+    ],
+    tagline:
+      "Build a strong foundation in Enterprise Architecture to support business transformation and align IT strategy with business goals.",
+    courseFeatures: enterpriseArchitectureFundamentalsCourseFeatures,
+    useCases: enterpriseArchitectureFundamentalsUseCases,
+    career: enterpriseArchitectureFundamentalsCareer,
+    howItWorks: {
+      title: (
+        <>
+          What <span className="text-[#f37458]">Enterprise Architecture</span>
+          skills will you <span className="text-[#f37458]">develop?</span>
+        </>
+      ),
+      description:
+        "This course provides the core knowledge and tools to understand and design enterprise architectures, enabling you to bridge the gap between business strategy and IT systems.",
+    },
+  },
+  {
+    id: "it-service-management-servicenow",
+    techName: "IT Service Management with ServiceNow",
+    bannerFeatures: [
+      {
+        icon: <ClockFading className="text-[#f7846f]" />,
+        title: "8 Weeks",
+        subtitle: "Training Duration",
+      },
+      {
+        icon: <BookOpenCheck className="text-[#f7846f]" />,
+        title: "Weekends Only",
+        subtitle: "Ideal for Working Professionals",
+      },
+      {
+        icon: <School className="text-[#f7846f]" />,
+        title: "Live + Project-Based",
+        subtitle: "Learning Mode",
+      },
+    ],
+    tagline:
+      "Learn how to implement and manage IT Service Management processes using ServiceNow to improve service delivery, streamline operations, and enhance customer experience.",
+    courseFeatures: ITServiceManagementWithServiceNowCourseFeatures,
+    useCases: ITServiceManagementWithServiceNowUseCases,
+    career: ITServiceManagementWithServiceNowCareer,
+    howItWorks: {
+      title: (
+        <>
+          What <span className="text-[#f37458]">ServiceNow</span> skills will
+          you <span className="text-[#f37458]">master?</span>
+        </>
+      ),
+      description:
+        "This course focuses on using ServiceNow to manage IT service delivery, automate workflows, and ensure optimal IT operations and service management, all with hands-on projects.",
+    },
+  },
+  {
+    id: "agile-itsm-practices",
+    techName: "Agile ITSM Practices",
+    bannerFeatures: [
+      {
+        icon: <ClockFading className="text-[#f7846f]" />,
+        title: "6 Weeks",
+        subtitle: "Training Duration",
+      },
+      {
+        icon: <BookOpenCheck className="text-[#f7846f]" />,
+        title: "Weekdays & Weekends",
+        subtitle: "Flexible Schedule for All",
+      },
+      {
+        icon: <School className="text-[#f7846f]" />,
+        title: "Live + Project-Based",
+        subtitle: "Learning Mode",
+      },
+    ],
+    tagline:
+      "Master Agile practices tailored to IT Service Management (ITSM) to drive continuous improvement and accelerate service delivery.",
+    courseFeatures: AgileITSMPracticesCourseFeatures,
+    useCases: AgileITSMPracticesUseCases,
+    career: AgileITSMPracticesCareer,
+    howItWorks: {
+      title: (
+        <>
+          What <span className="text-[#f37458]">Agile ITSM</span> skills will
+          you <span className="text-[#f37458]">develop?</span>
+        </>
+      ),
+      description:
+        "This course will help you adopt Agile methodologies within IT Service Management, equipping you with the tools and skills to drive service improvements and enhance team collaboration.",
+    },
+  },
+  {
+    id: "it-strategy-governance",
+    techName: "IT Strategy and Governance",
+    bannerFeatures: [
+      {
+        icon: <ClockFading className="text-[#f7846f]" />,
+        title: "8 Weeks",
+        subtitle: "Training Duration",
+      },
+      {
+        icon: <BookOpenCheck className="text-[#f7846f]" />,
+        title: "Weekdays & Weekends",
+        subtitle: "Flexible Schedule",
+      },
+      {
+        icon: <School className="text-[#f7846f]" />,
+        title: "Live + Project-Based",
+        subtitle: "Learning Mode",
+      },
+    ],
+    tagline:
+      "Develop strategic IT governance and management skills to align IT initiatives with business goals and drive transformation.",
+    courseFeatures: ITStrategyAndGovernanceCourseFeatures,
+    useCases: ITStrategyAndGovernanceUseCases,
+    career: ITStrategyAndGovernanceCareer,
+    howItWorks: {
+      title: (
+        <>
+          What <span className="text-[#f37458]">IT Strategy</span> and{" "}
+          <span className="text-[#f37458]">Governance</span> skills will you
+          build?
+        </>
+      ),
+      description:
+        "This course empowers you to design, implement, and evaluate IT strategies that support business transformation, with a strong focus on governance, compliance, and risk management.",
+    },
+  },
+  {
+    id: "six-sigma-green-belt",
+    techName: "Six Sigma Green Belt Certification",
+    bannerFeatures: [
+      {
+        icon: <ClockFading className="text-[#f7846f]" />,
+        title: "3 Months",
+        subtitle: "Training Duration",
+      },
+      {
+        icon: <BookOpenCheck className="text-[#f7846f]" />,
+        title: "Weekdays & Weekends",
+        subtitle: "Flexible Schedule",
+      },
+      {
+        icon: <School className="text-[#f7846f]" />,
+        title: "Live + Project-Based",
+        subtitle: "Learning Mode",
+      },
+    ],
+    tagline:
+      "Master Six Sigma methodologies to drive process improvement, reduce defects, and enhance organizational efficiency.",
+    courseFeatures: sixSigmaGreenBeltCourseFeatures,
+    useCases: sixSigmaGreenBeltUseCases,
+    career: sixSigmaGreenBeltCareer,
+    howItWorks: {
+      title: (
+        <>
+          What <span className="text-[#f37458]">Six Sigma</span> skills will{" "}
+          <span className="text-[#f37458]">you build?</span>
+        </>
+      ),
+      description:
+        "This course equips you with the tools to lead process improvement projects, apply DMAIC (Define, Measure, Analyze, Improve, Control), and drive measurable business impact in any industry.",
+    },
+  },
+  {
+    id: "lean-six-sigma-yellow-belt",
+    techName: "Lean Six Sigma Yellow Belt",
+    bannerFeatures: [
+      {
+        icon: <ClockFading className="text-[#f7846f]" />,
+        title: "1-2 Months",
+        subtitle: "Training Duration",
+      },
+      {
+        icon: <BookOpenCheck className="text-[#f7846f]" />,
+        title: "Weekdays & Weekends",
+        subtitle: "Flexible Schedule",
+      },
+      {
+        icon: <School className="text-[#f7846f]" />,
+        title: "Live + Project-Based",
+        subtitle: "Learning Mode",
+      },
+    ],
+    tagline:
+      "Gain foundational knowledge in Lean Six Sigma principles and contribute to process improvements at an organizational level.",
+    courseFeatures: leanSixSigmaYellowBeltCourseFeatures,
+    useCases: leanSixSigmaYellowBeltUseCases,
+    career: leanSixSigmaYellowBeltCareer,
+    howItWorks: {
+      title: (
+        <>
+          What <span className="text-[#f37458]">Lean Six Sigma</span> skills{" "}
+          <span className="text-[#f37458]">will you build?</span>
+        </>
+      ),
+      description:
+        "This course provides the essential tools to support Lean Six Sigma projects and effectively collaborate with Green and Black Belts to improve processes and reduce waste.",
+    },
+  },
+  {
+    id: "quality-management-systems",
+    techName: "Quality Management Systems",
+    bannerFeatures: [
+      {
+        icon: <ClockFading className="text-[#f7846f]" />,
+        title: "2-3 Months",
+        subtitle: "Training Duration",
+      },
+      {
+        icon: <BookOpenCheck className="text-[#f7846f]" />,
+        title: "Weekdays & Weekends",
+        subtitle: "Flexible Schedule",
+      },
+      {
+        icon: <School className="text-[#f7846f]" />,
+        title: "Live + Project-Based",
+        subtitle: "Learning Mode",
+      },
+    ],
+    tagline:
+      "Learn the principles and practices of quality management systems to enhance the effectiveness and efficiency of organizational processes.",
+    courseFeatures: qualityManagementSystemsCourseFeatures,
+    useCases: qualityManagementSystemsUseCases,
+    career: qualityManagementSystemsCareer,
+    howItWorks: {
+      title: (
+        <>
+          What <span className="text-[#f37458]">Quality Management</span> skills{" "}
+          <span className="text-[#f37458]">will you build?</span>
+        </>
+      ),
+      description:
+        "This course prepares you to understand and apply quality management principles like ISO 9001, continuous improvement, and audit methodologies in various industries.",
+    },
+  },
+  {
+    id: "iso-9001-2015-training",
+    techName: "ISO 9001:2015 Training",
+    bannerFeatures: [
+      {
+        icon: <ClockFading className="text-[#f7846f]" />,
+        title: "3 Months",
+        subtitle: "Training Duration",
+      },
+      {
+        icon: <BookOpenCheck className="text-[#f7846f]" />,
+        title: "Weekdays & Weekends",
+        subtitle: "Flexible Schedule",
+      },
+      {
+        icon: <School className="text-[#f7846f]" />,
+        title: "Live + Project-Based",
+        subtitle: "Learning Mode",
+      },
+    ],
+    tagline:
+      "Master the principles of quality management and the ISO 9001:2015 standards to improve organizational processes and performance.",
+    courseFeatures: iso90012015TrainingCourseFeatures,
+    useCases: iso90012015TrainingUseCases,
+    career: iso90012015TrainingCareer,
+    howItWorks: {
+      title: (
+        <>
+          What <span className="text-[#f37458]">ISO 9001:2015</span> skills{" "}
+          <span className="text-[#f37458]">will you build?</span>
+        </>
+      ),
+      description:
+        "This course prepares you to implement, manage, and audit quality management systems according to the internationally recognized ISO 9001:2015 standard.",
+    },
+  },
+  {
+    id: "root-cause-analysis-workshop",
+    techName: "Root Cause Analysis Workshop",
+    bannerFeatures: [
+      {
+        icon: <ClockFading className="text-[#f7846f]" />,
+        title: "2 Days",
+        subtitle: "Workshop Duration",
+      },
+      {
+        icon: <BookOpenCheck className="text-[#f7846f]" />,
+        title: "Weekends Only",
+        subtitle: "Ideal for Working Professionals",
+      },
+      {
+        icon: <School className="text-[#f7846f]" />,
+        title: "Interactive + Case Studies",
+        subtitle: "Learning Mode",
+      },
+    ],
+    tagline:
+      "Learn to identify and analyze root causes of issues in your organization with hands-on exercises and practical tools.",
+    courseFeatures: rootCauseAnalysisWorkshopCourseFeatures,
+    useCases: rootCauseAnalysisWorkshopUseCases,
+    career: rootCauseAnalysisWorkshopCareer,
+    howItWorks: {
+      title: (
+        <>
+          What <span className="text-[#f37458]">Root Cause Analysis</span>{" "}
+          skills <span className="text-[#f37458]">will you build?</span>
+        </>
+      ),
+      description:
+        "This workshop equips you with effective techniques to identify underlying causes of problems and apply solutions to enhance business processes.",
+    },
+  },
+  {
+    id: "digital-marketing-specialist-program",
+    techName: "Digital Marketing Specialist Program",
+    bannerFeatures: [
+      {
+        icon: <ClockFading className="text-[#f7846f]" />,
+        title: "6 Months",
+        subtitle: "Training Duration",
+      },
+      {
+        icon: <BookOpenCheck className="text-[#f7846f]" />,
+        title: "Weekends & Weekdays",
+        subtitle: "Ideal for Working Professionals",
+      },
+      {
+        icon: <School className="text-[#f7846f]" />,
+        title: "Live + Project-Based",
+        subtitle: "Learning Mode",
+      },
+    ],
+    tagline:
+      "Master the core digital marketing skills with hands-on projects and prepare for a rewarding career in marketing.",
+    courseFeatures: digitalMarketingSpecialistCourseFeatures,
+    useCases: digitalMarketingSpecialistUseCases,
+    career: digitalMarketingSpecialistCareer,
+    howItWorks: {
+      title: (
+        <>
+          What <span className="text-[#f37458]">Digital Marketing</span> skills{" "}
+          <span className="text-[#f37458]">will you build?</span>
+        </>
+      ),
+      description:
+        "This program empowers you to leverage digital marketing strategies to drive business growth across various channels, including SEO, SEM, content, and social media.",
+    },
+  },
+  {
+    id: "seo-sem-fundamentals",
+    techName: "SEO & SEM Fundamentals",
+    bannerFeatures: [
+      {
+        icon: <ClockFading className="text-[#f7846f]" />,
+        title: "3 Months",
+        subtitle: "Training Duration",
+      },
+      {
+        icon: <BookOpenCheck className="text-[#f7846f]" />,
+        title: "Weekends & Weekdays",
+        subtitle: "Ideal for Working Professionals",
+      },
+      {
+        icon: <School className="text-[#f7846f]" />,
+        title: "Live + Project-Based",
+        subtitle: "Learning Mode",
+      },
+    ],
+    tagline:
+      "Gain a deep understanding of SEO and SEM to drive organic and paid traffic to websites and improve online visibility.",
+    courseFeatures: seoSemFundamentalsCourseFeatures,
+    useCases: seoSemFundamentalsUseCases,
+    career: seoSemFundamentalsCareer,
+    howItWorks: {
+      title: (
+        <>
+          What <span className="text-[#f37458]">SEO & SEM</span> skills{" "}
+          <span className="text-[#f37458]">will you build?</span>
+        </>
+      ),
+      description:
+        "This course equips you with hands-on skills in search engine optimization and search engine marketing to maximize online presence and drive business success.",
+    },
+  },
+  {
+    id: "social-media-marketing",
+    techName: "Social Media Marketing",
+    bannerFeatures: [
+      {
+        icon: <ClockFading className="text-[#f7846f]" />,
+        title: "3 Months",
+        subtitle: "Training Duration",
+      },
+      {
+        icon: <BookOpenCheck className="text-[#f7846f]" />,
+        title: "Weekends & Weekdays",
+        subtitle: "Ideal for Working Professionals",
+      },
+      {
+        icon: <School className="text-[#f7846f]" />,
+        title: "Live + Project-Based",
+        subtitle: "Learning Mode",
+      },
+    ],
+    tagline:
+      "Master the art of building brand presence, engaging with audiences, and driving conversions on platforms like Facebook, Instagram, LinkedIn, and Twitter.",
+    courseFeatures: socialMediaMarketingCourseFeatures,
+    useCases: socialMediaMarketingUseCases,
+    career: socialMediaMarketingCareer,
+    howItWorks: {
+      title: (
+        <>
+          What <span className="text-[#f37458]">Social Media</span> skills{" "}
+          <span className="text-[#f37458]">will you build?</span>
+        </>
+      ),
+      description:
+        "This course provides hands-on training in creating, managing, and analyzing successful social media campaigns that drive growth and engagement for brands.",
+    },
+  },
+  {
+    id: "content-strategy-bootcamp",
+    techName: "Content Strategy Bootcamp",
+    bannerFeatures: [
+      {
+        icon: <ClockFading className="text-[#f7846f]" />,
+        title: "4 Months",
+        subtitle: "Training Duration",
+      },
+      {
+        icon: <BookOpenCheck className="text-[#f7846f]" />,
+        title: "Weekends & Weekdays",
+        subtitle: "Ideal for Working Professionals",
+      },
+      {
+        icon: <School className="text-[#f7846f]" />,
+        title: "Live + Project-Based",
+        subtitle: "Learning Mode",
+      },
+    ],
+    tagline:
+      "Learn to craft compelling content strategies that drive engagement, align with business goals, and improve brand awareness and conversions.",
+    courseFeatures: contentStrategyBootcampCourseFeatures,
+    useCases: contentStrategyBootcampUseCases,
+    career: contentStrategyBootcampCareer,
+    howItWorks: {
+      title: (
+        <>
+          What <span className="text-[#f37458]">Content Strategy</span> skills{" "}
+          <span className="text-[#f37458]">will you build?</span>
+        </>
+      ),
+      description:
+        "This bootcamp will teach you how to develop strategic content plans, create compelling narratives, and measure the impact of your content for different platforms and audiences.",
+    },
+  },
+  {
+    id: "google-ads-analytics",
+    techName: "Google Ads & Analytics",
+    bannerFeatures: [
+      {
+        icon: <ClockFading className="text-[#f7846f]" />,
+        title: "3 Months",
+        subtitle: "Training Duration",
+      },
+      {
+        icon: <BookOpenCheck className="text-[#f7846f]" />,
+        title: "Weekends & Weekdays",
+        subtitle: "Ideal for Working Professionals",
+      },
+      {
+        icon: <School className="text-[#f7846f]" />,
+        title: "Live + Project-Based",
+        subtitle: "Learning Mode",
+      },
+    ],
+    tagline:
+      "Master Google Ads and Google Analytics to effectively manage campaigns, measure performance, and optimize marketing strategies for better ROI.",
+    courseFeatures: googleAdsAnalyticsCourseFeatures,
+    useCases: googleAdsAnalyticsUseCases,
+    career: googleAdsAnalyticsCareer,
+    howItWorks: {
+      title: (
+        <>
+          What <span className="text-[#f37458]">Google Ads</span> &{" "}
+          <span className="text-[#f37458]">Analytics</span> skills{" "}
+          <span className="text-[#f37458]">will you build?</span>
+        </>
+      ),
+      description:
+        "This course will turn you into an expert in digital marketing with Google Ads and Analytics, teaching you to run campaigns, analyze traffic, and optimize performance for successful marketing strategies.",
+    },
+  },          
 ];
