@@ -3,7 +3,7 @@ import Loader from "@/src/components/common/Loader";
 import WhyNugenIT from "@/src/components/homePage/chooseUs";
 import TechnologyShowcase from "@/src/components/homePage/courses";
 import HeroSection from "@/src/components/homePage/heroSection";
-import StudentTestimonials from "@/src/components/homePage/testimonialSection";
+import TestimonialStatic from "@/src/components/homePage/testimonialStatic";
 import TrendingCourses from "@/src/components/homePage/trendingCourses";
 import { useEffect, useState } from "react";
 
@@ -28,7 +28,7 @@ export default function Home() {
           <TrendingCourses />
           <TechnologyShowcase />
           <WhyNugenIT />
-          <StudentTestimonials />
+          <TestimonialStatic />
         </>
       )}
     </>

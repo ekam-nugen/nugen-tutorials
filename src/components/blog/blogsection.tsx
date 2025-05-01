@@ -1,86 +1,127 @@
 "use client";
 
-import { blogs } from "@/src/json/blog";
+import React, { useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
-import { useState } from "react";
+import { blogData, blogSidebar } from "@/src/json/blog";
 
-const blogsPerPage = 12;
+// Helper to generate slug from title
+const slugify = (title: string) =>
+  title
+    .toLowerCase()
+    .replace(/\s+/g, "-")
+    .replace(/[^\w-]+/g, "");
 
-export default function BlogSectionPage() {
-  const [currentPage, setCurrentPage] = useState(1);
-  const totalPages = Math.ceil(blogs.length / blogsPerPage);
-  const paginatedBlogs = blogs.slice(
-    (currentPage - 1) * blogsPerPage,
-    currentPage * blogsPerPage
-  );
+const BlogSection = () => {
+  const [selectedCategory, setSelectedCategory] = useState<string>("");
+
+  const filteredBlogs =
+    selectedCategory === ""
+      ? blogData
+      : blogData.filter((blog) => blog.categorie === selectedCategory);
 
   return (
-    <section className="bg-white py-20 px-4 text-gray-900">
-      <div className="max-w-7xl mx-auto">
-        {/* Header */}
-        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-12 gap-4">
-          <h2 className="text-3xl sm:text-4xl font-bold">News & Blogs</h2>
-        </div>
+    <section className="bg-white py-16 px-4 md:px-20">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8">
+        {/* Blog List */}
+        <div className="lg:col-span-2 space-y-14">
+          <div>
+            <h2 className="text-sm text-gray-500 font-semibold uppercase mb-2">
+              Blogs
+            </h2>
+            <h1 className="text-4xl font-bold mb-12">
+              Discover Our Digital Insights
+            </h1>
+          </div>
 
-        {/* Blog Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-          {paginatedBlogs.map((blog, idx) => (
-            <div
-              key={idx}
-              className="rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 bg-white hover:scale-[1.02]"
-            >
-              <div className="relative w-full h-64">
-                <Image
-                  src={blog.image}
-                  alt={blog.title}
-                  layout="fill"
-                  objectFit="cover"
-                  className="z-0"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10" />
-              </div>
-              <div className="p-6 space-y-3 z-20 relative">
-                <div className="text-sm text-gray-500 flex items-center gap-4">
-                  <span>By {blog.author}</span>
-                  <span className="text-[#ff6b3d]">|</span>
-                  <span>{blog.date}</span>
+          {filteredBlogs.length === 0 ? (
+            <p className="text-gray-500 text-lg italic">
+              No blogs found for this category.
+            </p>
+          ) : (
+            filteredBlogs.map((blog, index) => (
+              <div
+                key={index}
+                className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center"
+              >
+                <div className="col-span-1">
+                  <Image
+                    width={100}
+                    height={100}
+                    src={blog.featuredImage}
+                    alt={blog.title}
+                    className="w-full h-52 object-cover rounded-lg shadow-md"
+                  />
                 </div>
-                <h3 className="text-xl font-semibold leading-snug text-gray-900">
-                  {blog.title}
-                </h3>
-                <p className="text-sm text-gray-600">{blog.description}</p>
-                <Link
-                  href="#"
-                  className="inline-flex items-center gap-2 font-semibold text-[#ff6b3d] group"
-                >
-                  READ MORE
-                  <span className="group-hover:translate-x-1 transition-transform">
-                    →
-                  </span>
-                </Link>
+                <div className="md:col-span-2">
+                  <h3 className="text-xl font-bold mb-1">{blog.title}</h3>
+                  <p className="text-sm text-gray-500 mb-2">
+                    {blog.author} | {blog.date}
+                  </p>
+                  <p className="text-gray-700 mb-3">{blog.shortDescription}</p>
+                  <a
+                    href={`/blog/${slugify(blog.title)}`}
+                    className="text-[#ef8961] font-medium hover:underline"
+                  >
+                    Learn More →
+                  </a>
+                </div>
               </div>
-            </div>
-          ))}
+            ))
+          )}
         </div>
 
-        {/* Pagination */}
-        <div className="flex justify-center mt-10 space-x-2">
-          {Array.from({ length: totalPages }, (_, i) => (
-            <button
-              key={i}
-              onClick={() => setCurrentPage(i + 1)}
-              className={`w-10 h-10 rounded-full border ${
-                currentPage === i + 1
-                  ? "bg-[#ff6b3d] text-white"
-                  : "bg-white text-black"
-              } hover:bg-[#ff6b3d]/80 hover:text-white transition`}
+        {/* Sticky Sidebar */}
+        <aside className="lg:sticky top-20 h-fit space-y-10 self-start">
+          <div className="bg-gray-50 rounded-lg p-6 shadow-sm">
+            <h2 className="text-lg font-semibold mb-4 text-gray-800">
+              Filter by Category
+            </h2>
+            <ul className="space-y-3 text-sm text-gray-700">
+              {blogSidebar.categories.map((category, index) => (
+                <li key={index}>
+                  <button
+                    onClick={() => setSelectedCategory(category)}
+                    className={`transition-all ${
+                      selectedCategory === category
+                        ? "font-bold text-[#ef8961]"
+                        : "hover:text-[#ef8961]"
+                    }`}
+                  >
+                    {category}
+                  </button>
+                </li>
+              ))}
+              <li>
+                <button
+                  onClick={() => setSelectedCategory("")}
+                  className={`transition-all ${
+                    selectedCategory === ""
+                      ? "font-bold text-[#ef8961]"
+                      : "hover:text-[#ef8961]"
+                  }`}
+                >
+                  All Categories
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <div className="bg-gradient-to-r from-pink-500 to-orange-400 rounded-lg p-6 text-white shadow-lg">
+            <h3 className="text-xl font-semibold mb-2">
+              {blogSidebar.cta.title}
+            </h3>
+            <p className="text-sm">{blogSidebar.cta.description}</p>
+            <a
+              href={blogSidebar.cta.button.url}
+              className="inline-block mt-4 bg-white text-[#ef8961] font-semibold text-sm px-4 py-2 rounded hover:bg-gray-100"
             >
-              {i + 1}
-            </button>
-          ))}
-        </div>
+              {blogSidebar.cta.button.label}
+            </a>
+          </div>
+        </aside>
       </div>
     </section>
   );
-}
+};
+
+export default BlogSection;

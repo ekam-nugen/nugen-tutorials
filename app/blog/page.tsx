@@ -1,29 +1,18 @@
 "use client";
-import BlogSectionPage from "@/src/components/blog/blogsection";
+import { useEffect, useState } from "react";
 import Loader from "@/src/components/common/Loader";
-import React, { useEffect, useState } from "react";
+import BlogPageSection from "@/src/components/blog";
 
-function BlogPage() {
+export default function Blog() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1000);
+    }, 1000); // Adjust duration as needed
 
     return () => clearTimeout(timer);
   }, []);
-  return (
-    <>
-      {loading ? (
-        <Loader />
-      ) : (
-        <>
-          <BlogSectionPage />
-        </>
-      )}
-    </>
-  );
-}
 
-export default BlogPage;
+  return <>{loading ? <Loader /> : <BlogPageSection />}</>;
+}
