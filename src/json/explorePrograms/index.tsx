@@ -204,6 +204,23 @@ import {
   SoftwareEngineeringPrinciplesCourseFeatures,
   CleanCodeArchitectureCourseFeatures,
 } from "./softwareDevelopment";
+import {
+  BusinessCommunicationCareer,
+  BusinessCommunicationCourseFeatures,
+  BusinessCommunicationUseCases,
+  ChangeManagementCareer,
+  ChangeManagementCourseFeatures,
+  ChangeManagementUseCases,
+  ExecutiveLeadershipCareer,
+  ExecutiveLeadershipCourseFeatures,
+  ExecutiveLeadershipUseCases,
+  InnovationCareer,
+  InnovationCourseFeatures,
+  InnovationUseCases,
+  StrategicThinkingCareer,
+  StrategicThinkingCourseFeatures,
+  StrategicThinkingUseCases,
+} from "./businessAndLeadership";
 
 export const exploreProgramsStack: CoursesContentProps[] = [
   {
@@ -270,7 +287,7 @@ export const exploreProgramsStack: CoursesContentProps[] = [
     howItWorks: {
       title: (
         <>
-          What <span className="text-[#f7846f]">GANs</span> techniques{" "}
+          What <span className="text-[#f37458]">GANs</span> techniques{" "}
           <span className="text-[#f37458]">will you master</span>?
         </>
       ),
@@ -306,8 +323,8 @@ export const exploreProgramsStack: CoursesContentProps[] = [
     howItWorks: {
       title: (
         <>
-          How do <span className="text-[#f7846f]">LLMs</span> work in{" "}
-          <span className="text-[#f7846f]">practical use cases</span>?
+          How do <span className="text-[#f37458]">LLMs</span> work in{" "}
+          <span className="text-[#f37458]">practical use cases</span>?
         </>
       ),
       description:
@@ -342,8 +359,8 @@ export const exploreProgramsStack: CoursesContentProps[] = [
     howItWorks: {
       title: (
         <>
-          What <span className="text-[#f7846f]">prompt strategies</span>{" "}
-          <span className="text-[#f7846f]">will you learn</span>?
+          What <span className="text-[#f37458]">prompt strategies</span>{" "}
+          <span className="text-[#f37458]">will you learn</span>?
         </>
       ),
       description:
@@ -746,7 +763,6 @@ export const exploreProgramsStack: CoursesContentProps[] = [
         "Learn to use core statistical tools for real business scenarios—from forecasts to decision trees to hypothesis testing.",
     },
   },
-
   {
     id: "pmp-certification",
     techName: "PMP® Certification Training",
@@ -783,7 +799,6 @@ export const exploreProgramsStack: CoursesContentProps[] = [
         "This training prepares you for the PMP® exam and equips you with the practical skills and knowledge required to manage projects of all sizes and complexities.",
     },
   },
-
   {
     id: "agile-project-management",
     techName: "Agile Project Management",
@@ -2369,6 +2384,186 @@ export const exploreProgramsStack: CoursesContentProps[] = [
       ),
       description:
         "This course dives deep into writing clean, readable, and maintainable code. It covers the architecture of software systems and how to structure your code to be scalable, testable, and easy to modify over time.",
+    },
+  },
+  {
+    id: "executive-leadership",
+    techName: "Executive Leadership Program",
+    bannerFeatures: [
+      {
+        icon: <ClockFading className="text-[#f7846f]" />,
+        title: "8 Months",
+        subtitle: "Training Duration",
+      },
+      {
+        icon: <BookOpenCheck className="text-[#f7846f]" />,
+        title: "Weekend",
+        subtitle: "Designed for Busy Executives",
+      },
+      {
+        icon: <School className="text-[#f7846f]" />,
+        title: "Live Online + Capstone",
+        subtitle: "Learning Mode",
+      },
+    ],
+    courseFeatures: ExecutiveLeadershipCourseFeatures,
+    useCases: ExecutiveLeadershipUseCases,
+    tagline:
+      "Accelerate your leadership career with hands-on boardroom simulations and executive mentorship.",
+    career: ExecutiveLeadershipCareer,
+    howItWorks: {
+      title: (
+        <>
+          What <span className="text-[#f37458]">Executive Leadership</span>{" "}
+          capabilities will you <span className="text-[#f37458]">master</span>?
+        </>
+      ),
+      description:
+        "Gain decision-making skills, lead organizational change, and grow into CXO-level leadership roles with real-world business insights.",
+    },
+  },
+  {
+    id: "strategic-thinking",
+    techName: "Strategic Thinking for Leaders",
+    bannerFeatures: [
+      {
+        icon: <ClockFading className="text-[#f7846f]" />,
+        title: "3 Months",
+        subtitle: "Training Duration",
+      },
+      {
+        icon: <BookOpenCheck className="text-[#f7846f]" />,
+        title: "Weekday Evenings",
+        subtitle: "Flexible Timings",
+      },
+      {
+        icon: <School className="text-[#f7846f]" />,
+        title: "Live Online",
+        subtitle: "Learning Mode",
+      },
+    ],
+    courseFeatures: StrategicThinkingCourseFeatures,
+    useCases: StrategicThinkingUseCases,
+    tagline:
+      "Learn to think like a strategist and apply proven models to complex business decisions and growth challenges.",
+    career: StrategicThinkingCareer,
+    howItWorks: {
+      title: (
+        <>
+          What <span className="text-[#f37458]">Strategic Thinking</span> skills{" "}
+          will you <span className="text-[#f37458]">develop</span>?
+        </>
+      ),
+      description:
+        "Apply industry-leading frameworks to structure business problems, align with long-term goals, and design strategic initiatives.",
+    },
+  },
+  {
+    id: "business-communication",
+    techName: "Business Communication Mastery",
+    bannerFeatures: [
+      {
+        icon: <ClockFading className="text-[#f7846f]" />,
+        title: "6 Weeks",
+        subtitle: "Training Duration",
+      },
+      {
+        icon: <BookOpenCheck className="text-[#f7846f]" />,
+        title: "Weekday Evenings",
+        subtitle: "Flexible Timing",
+      },
+      {
+        icon: <School className="text-[#f7846f]" />,
+        title: "Live Online + Peer Practice",
+        subtitle: "Learning Mode",
+      },
+    ],
+    courseFeatures: BusinessCommunicationCourseFeatures,
+    useCases: BusinessCommunicationUseCases,
+    tagline:
+      "Master the art of professional communication—from writing and pitching to high-impact executive delivery.",
+    career: BusinessCommunicationCareer,
+    howItWorks: {
+      title: (
+        <>
+          What <span className="text-[#f37458]">Business Communication</span>{" "}
+          skills will you <span className="text-[#f37458]">gain</span>?
+        </>
+      ),
+      description:
+        "From persuasive presentations to conflict resolution, this course builds your executive presence and communication clarity.",
+    },
+  },
+  {
+    id: "change-management",
+    techName: "Change Management",
+    bannerFeatures: [
+      {
+        icon: <ClockFading className="text-[#f7846f]" />,
+        title: "2 Months",
+        subtitle: "Training Duration",
+      },
+      {
+        icon: <BookOpenCheck className="text-[#f7846f]" />,
+        title: "Weekend Cohorts",
+        subtitle: "For Working Professionals",
+      },
+      {
+        icon: <School className="text-[#f7846f]" />,
+        title: "Live Online",
+        subtitle: "Learning Mode",
+      },
+    ],
+    courseFeatures: ChangeManagementCourseFeatures,
+    useCases: ChangeManagementUseCases,
+    tagline:
+      "Lead successful change initiatives with structured frameworks and real-world tools for organizational transformation.",
+    career: ChangeManagementCareer,
+    howItWorks: {
+      title: (
+        <>
+          What <span className="text-[#f37458]">Change Management</span>{" "}
+          capabilities will you <span className="text-[#f37458]">build</span>?
+        </>
+      ),
+      description:
+        "Learn to lead transformation, reduce resistance, and align people and processes for long-term change success.",
+    },
+  },
+  {
+    id: "innovation-growth",
+    techName: "Innovation and Growth",
+    bannerFeatures: [
+      {
+        icon: <ClockFading className="text-[#f7846f]" />,
+        title: "1 Month",
+        subtitle: "Training Duration",
+      },
+      {
+        icon: <BookOpenCheck className="text-[#f7846f]" />,
+        title: "Evenings & Weekends",
+        subtitle: "Accelerated Format",
+      },
+      {
+        icon: <School className="text-[#f7846f]" />,
+        title: "Live Online + Workshops",
+        subtitle: "Learning Mode",
+      },
+    ],
+    courseFeatures: InnovationCourseFeatures,
+    useCases: InnovationUseCases,
+    tagline:
+      "Apply innovation frameworks to launch ideas, drive growth, and lead market-disrupting initiatives.",
+    career: InnovationCareer,
+    howItWorks: {
+      title: (
+        <>
+          What <span className="text-[#f37458]">Innovation and Growth</span>{" "}
+          skills will you <span className="text-[#f37458]">learn</span>?
+        </>
+      ),
+      description:
+        "Master design thinking, business model innovation, and lean execution to bring bold ideas to life in real markets.",
     },
   },
 ];
