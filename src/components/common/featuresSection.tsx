@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import { FeaturesSectionProps } from "@/src/types";
 export default function FeaturesSection({
   title = "Course",
@@ -28,13 +29,20 @@ export default function FeaturesSection({
             <p className="text-gray-600 leading-relaxed mb-6">{description}</p>
           )}
           {imageSrc && (
-            <Image
-              width={500}
-              height={500}
-              src={imageSrc}
-              alt="Feature illustration"
-              className="w-full max-w-lg object-contain"
-            />
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+            >
+              <Image
+                width={500}
+                height={500}
+                src={imageSrc}
+                alt="Feature illustration"
+                className="w-full max-w-lg object-contain cursor-pointer"
+              />
+            </motion.div>
           )}
         </div>
 

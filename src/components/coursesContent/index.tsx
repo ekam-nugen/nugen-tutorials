@@ -5,7 +5,7 @@ import ConceptsCommon from "../common/conceptCommon";
 import FeaturesSection from "../common/featuresSection";
 import FlipCardSection from "../common/opportunities";
 import CourseTargets from "../common/courseTargets";
-import EnrolmentCard from "../common/EnrolmentCard";
+import EnrollmentCard from "../common/enrollmentCard";
 import { ICareer, CoursesContentProps } from "@/src/types";
 
 const CoursesContent: React.FC<CoursesContentProps> = ({
@@ -53,7 +53,7 @@ const CoursesContent: React.FC<CoursesContentProps> = ({
           backList: career.benefits,
         }))}
       />
-      <EnrolmentCard />
+      <EnrollmentCard />
     </>
   );
 };

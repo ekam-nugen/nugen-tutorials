@@ -1,5 +1,6 @@
 "use client";
 
+import SphereAnimation from "@/src/animation/AnimatedSphere";
 import { CourseBannerProps } from "@/src/types";
 import { MoveRight } from "lucide-react";
 import Link from "next/link";
@@ -12,10 +13,13 @@ export default function CourseBanner({
 }: Readonly<CourseBannerProps>) {
   return (
     <section className="relative bg-gradient-to-br from-[#fff6f2] to-[#fdeae2] py-28 px-6 md:px-16 overflow-hidden">
+      <div className="absolute inset-0 z-0 cursor-pointer">
+        <SphereAnimation />
+      </div>
       <div className="absolute -top-20 -left-10 w-96 h-96 bg-[#fca78c] opacity-30 blur-[100px] rounded-full z-0" />
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#fca78c] opacity-20 blur-[120px] rounded-full z-0" />
-      <div className="absolute top-32 left-20 w-32 h-32 border-2 border-[#fca78c] rounded-full opacity-20 z-0" />
-      <div className="absolute bottom-28 left-24 w-20 h-20 bg-[#fca78c] rounded-xl rotate-12 opacity-20 z-0" />
+      <div className="animate-bounce absolute top-28 left-20 w-32 h-32 border-2 border-[#fca78c] rounded-full opacity-20 z-0" />
+      <div className="animate-bounce absolute bottom-28 right-24 w-20 h-20 bg-[#fca78c] rounded-xl rotate-12 opacity-20 z-0" />
       <div className="relative z-10 max-w-6xl mx-auto text-center">
         <h2 className="text-4xl md:text-6xl font-extrabold leading-tight text-[#1c1c1c] mb-6">
           {title} <span className="text-[#f37458]">{highlight}</span>

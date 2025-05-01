@@ -91,7 +91,7 @@ export default function TechnologyShowcase() {
                       d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.5 20.25v-1.125A2.625 2.625 0 017.125 16.5h9.75a2.625 2.625 0 012.625 2.625v1.125"
                     />
                   </svg>
-                  {program.activeUsers} Active Enrolments
+                  {program.activeUsers} Active Enrollments
                 </div>
               </div>
               <button className="w-full py-2.5 bg-[#ff6b3d] text-white font-semibold rounded-lg hover:bg-[#ff5c2a] transition-all shadow-md">
