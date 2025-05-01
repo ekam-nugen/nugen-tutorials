@@ -163,6 +163,39 @@ export const AiBusinessCareer = [
       "📊 Data Opportunity Sizing",
     ],
   },
+  {
+    id: 4,
+    title: "AI Ethics & Governance Specialist",
+    description: "Ensures ethical AI deployment and regulatory compliance.",
+    img: "/frontend.avif",
+    benefits: [
+      "⚖️ Responsible AI Frameworks",
+      "📜 Compliance Monitoring",
+      "🔐 Data Privacy Assurance",
+    ],
+  },
+  {
+    id: 5,
+    title: "AI Innovation Strategist",
+    description: "Drives innovation through AI-powered business models.",
+    img: "/frontend.avif",
+    benefits: [
+      "🚀 Emerging Tech Scouting",
+      "🧠 AI-Driven Value Creation",
+      "💡 Ideation Workshops",
+    ],
+  },
+  {
+    id: 6,
+    title: "AI Project Manager",
+    description: "Manages timelines, teams, and budgets for AI projects.",
+    img: "/frontend.avif",
+    benefits: [
+      "📆 Agile Project Management",
+      "👥 Cross-Team Coordination",
+      "💰 Budget Oversight",
+    ],
+  },  
 ];
 
 export const deepLearningCourseFeatures = [
@@ -234,6 +267,39 @@ export const deepLearningCareer = [
     img: "/frontend.avif",
     benefits: ["📸 CNN Design", "🎞️ Video Processing", "🔍 Image Segmentation"],
   },
+  {
+    id: 4,
+    title: "NLP Engineer (Deep Learning)",
+    description: "Develops DL models for language understanding and generation.",
+    img: "/frontend.avif",
+    benefits: [
+      "🗣️ Transformer Architectures",
+      "📚 Language Modeling",
+      "🧾 Text Classification",
+    ],
+  },
+  {
+    id: 5,
+    title: "DL Research Scientist",
+    description: "Explores new architectures and training methods for deep learning.",
+    img: "/frontend.avif",
+    benefits: [
+      "🔬 Experimental Design",
+      "🧪 Novel Architectures",
+      "📊 Benchmarking & Papers",
+    ],
+  },
+  {
+    id: 6,
+    title: "Speech Recognition Engineer",
+    description: "Applies DL techniques to audio and speech processing.",
+    img: "/frontend.avif",
+    benefits: [
+      "🎤 Audio Preprocessing",
+      "🧠 RNNs & Transformers",
+      "🔊 Real-time Inference",
+    ],
+  },  
 ];
 
 export const mlModelCourseFeatures = [
@@ -305,6 +371,39 @@ export const mlModelCareer = [
       "📈 Uptime Monitoring",
     ],
   },
+  {
+    id: 4,
+    title: "ML Model Governance Analyst",
+    description: "Ensures compliance, traceability, and auditability of ML models.",
+    img: "/frontend.avif",
+    benefits: [
+      "📋 Model Documentation",
+      "🔎 Audit Trails",
+      "⚖️ Compliance Reporting",
+    ],
+  },
+  {
+    id: 5,
+    title: "Model Performance Analyst",
+    description: "Monitors and tunes models post-deployment for drift and decay.",
+    img: "/frontend.avif",
+    benefits: [
+      "📊 A/B Testing",
+      "📉 Drift Detection",
+      "🔧 Performance Tuning",
+    ],
+  },
+  {
+    id: 6,
+    title: "ML Deployment Specialist",
+    description: "Manages rollout strategies and safe updates of ML systems.",
+    img: "/frontend.avif",
+    benefits: [
+      "🚀 Blue-Green Deployments",
+      "🔁 Canary Releases",
+      "🔒 Rollback Handling",
+    ],
+  },  
 ];
 
 export const AiStrategyCourseFeatures = [
@@ -385,5 +484,38 @@ export const AiStrategyCareer = [
       "Ensures AI aligns with business values, regulations, and human rights.",
     img: "/frontend.avif",
     benefits: ["📈 ESG Strategy", "🧠 Strategic Ethics", "🔍 AI Governance"],
+  },
+  {
+    id: 4,
+    title: "AI Risk Manager",
+    description: "Identifies and mitigates potential risks in AI deployment.",
+    img: "/frontend.avif",
+    benefits: [
+      "⚠️ Risk Frameworks",
+      "📉 Bias Detection",
+      "📋 Mitigation Planning",
+    ],
+  },
+  {
+    id: 5,
+    title: "AI Governance Consultant",
+    description: "Designs organizational structures for accountable AI use.",
+    img: "/frontend.avif",
+    benefits: [
+      "🏢 Governance Models",
+      "🔍 Oversight Mechanisms",
+      "📎 Stakeholder Reporting",
+    ],
+  },
+  {
+    id: 6,
+    title: "AI Transparency Advocate",
+    description: "Promotes explainability and openness in AI systems.",
+    img: "/frontend.avif",
+    benefits: [
+      "🔍 Explainable AI (XAI)",
+      "📣 Public Communication",
+      "📊 Model Interpretability",
+    ],
   },
 ];
