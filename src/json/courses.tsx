@@ -1,6 +1,7 @@
 export const data = {
   "Generative AI": [
     {
+      id: "gen-ai-everyone",
       name: "Generative AI for Everyone",
       duration: "8 Weeks",
       startDate: "2nd May '25",
@@ -8,6 +9,7 @@ export const data = {
       activeUsers: 120,
     },
     {
+      id: "gans-workshop",
       name: "Hands-on GANs Workshop",
       duration: "6 Weeks",
       startDate: "7th May '25",
@@ -15,6 +17,7 @@ export const data = {
       activeUsers: 120,
     },
     {
+      id: "llm-practice",
       name: "Large Language Models in Practice",
       duration: "10 Weeks",
       startDate: "10th May '25",
@@ -22,6 +25,7 @@ export const data = {
       activeUsers: 120,
     },
     {
+      id: "prompt-engineering",
       name: "Prompt Engineering Fundamentals",
       duration: "4 Weeks",
       startDate: "15th May '25",
@@ -29,6 +33,7 @@ export const data = {
       activeUsers: 120,
     },
     {
+      id: "nlp-transformers",
       name: "NLP with Transformers",
       duration: "3 Months",
       startDate: "20th May '25",
