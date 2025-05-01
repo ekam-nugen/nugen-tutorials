@@ -6,13 +6,12 @@ import { MoveRight } from "lucide-react";
 import Link from "next/link";
 
 export default function CourseBanner({
-  title,
   highlight,
   description,
   features,
 }: Readonly<CourseBannerProps>) {
   return (
-    <section className="relative bg-gradient-to-br from-[#fff6f2] to-[#fdeae2] py-28 px-6 md:px-16 overflow-hidden">
+    <section className="relative bg-gradient-to-br from-[#fff6f2] to-[#fdeae2] py-32 px-6 md:px-16 overflow-hidden">
       <div className="absolute inset-0 z-0 cursor-pointer">
         <SphereAnimation />
       </div>
@@ -21,8 +20,8 @@ export default function CourseBanner({
       <div className="animate-bounce absolute top-28 left-20 w-32 h-32 border-2 border-[#fca78c] rounded-full opacity-20 z-0" />
       <div className="animate-bounce absolute bottom-28 right-24 w-20 h-20 bg-[#fca78c] rounded-xl rotate-12 opacity-20 z-0" />
       <div className="relative z-10 max-w-6xl mx-auto text-center">
-        <h2 className="text-4xl md:text-6xl font-extrabold leading-tight text-[#1c1c1c] mb-6">
-          {title} <span className="text-[#f37458]">{highlight}</span>
+        <h2 className="text-4xl md:text-6xl font-extrabold leading-tight text-[#f37458] mb-6">
+          {highlight}
         </h2>
 
         <p className="text-[#4a4a4a] text-lg md:text-xl mb-10 max-w-3xl mx-auto">

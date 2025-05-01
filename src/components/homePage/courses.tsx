@@ -3,11 +3,13 @@ import { data } from "@/src/json/courses";
 import { useState } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
+import { useRouter } from "next/navigation";
 
 type DataType = typeof data;
 type Category = keyof DataType;
 
 export default function TechnologyShowcase() {
+  const router = useRouter();
   const [selectedCategory, setSelectedCategory] = useState<Category>(
     Object.keys(data)[0] as Category
   );
@@ -94,7 +96,13 @@ export default function TechnologyShowcase() {
                   {program.activeUsers} Active Enrollments
                 </div>
               </div>
-              <button className="w-full py-2.5 bg-[#ff6b3d] text-white font-semibold rounded-lg hover:bg-[#ff5c2a] transition-all shadow-md">
+              <button
+                onClick={() =>
+                  "id" in program &&
+                  router.push(`/explore-programs/${program.id}`)
+                }
+                className="w-full py-2.5 bg-[#ff6b3d] text-white font-semibold rounded-lg hover:bg-[#ff5c2a] transition-all shadow-md"
+              >
                 View Program
               </button>
             </div>
