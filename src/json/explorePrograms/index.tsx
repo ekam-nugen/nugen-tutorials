@@ -136,7 +136,40 @@ import {
   rootCauseAnalysisWorkshopCourseFeatures,
   rootCauseAnalysisWorkshopUseCases,
 } from "./qualityManagement";
-import { digitalMarketingSpecialistCourseFeatures, digitalMarketingSpecialistUseCases, digitalMarketingSpecialistCareer, seoSemFundamentalsCareer, seoSemFundamentalsCourseFeatures, seoSemFundamentalsUseCases, socialMediaMarketingCareer, socialMediaMarketingCourseFeatures, socialMediaMarketingUseCases, contentStrategyBootcampCareer, contentStrategyBootcampCourseFeatures, contentStrategyBootcampUseCases, googleAdsAnalyticsCareer, googleAdsAnalyticsCourseFeatures, googleAdsAnalyticsUseCases } from "./digitalMarketing";
+import {
+  AwsSolutionsCareer,
+  AwsSolutionsCourseFeatures,
+  AwsSolutionsUseCases,
+  AzureCareer,
+  AzureCourseFeatures,
+  AzureUseCases,
+  CloudArchitectCareer,
+  CloudArchitectCourseFeatures,
+  CloudArchitectUseCases,
+  DevOpsEngineerCareer,
+  DevOpsEngineerCourseFeatures,
+  DevOpsEngineerUseCases,
+  KubernetesCareer,
+  KubernetesCourseFeatures,
+  KubernetesUseCases,
+} from "./cloudCompAndDevOps";
+import {
+  digitalMarketingSpecialistCourseFeatures,
+  digitalMarketingSpecialistUseCases,
+  digitalMarketingSpecialistCareer,
+  seoSemFundamentalsCareer,
+  seoSemFundamentalsCourseFeatures,
+  seoSemFundamentalsUseCases,
+  socialMediaMarketingCareer,
+  socialMediaMarketingCourseFeatures,
+  socialMediaMarketingUseCases,
+  contentStrategyBootcampCareer,
+  contentStrategyBootcampCourseFeatures,
+  contentStrategyBootcampUseCases,
+  googleAdsAnalyticsCareer,
+  googleAdsAnalyticsCourseFeatures,
+  googleAdsAnalyticsUseCases,
+} from "./digitalMarketing";
 
 export const exploreProgramsStack: CoursesContentProps[] = [
   {
@@ -168,7 +201,7 @@ export const exploreProgramsStack: CoursesContentProps[] = [
       title: (
         <>
           What <span className="text-[#f37458]">Generative AI</span> concepts{" "}
-          <span className="text-[#f37458]">will you explore</span>?
+          <span className="text-[#f37458]">will you master</span>?
         </>
       ),
       description:
@@ -203,7 +236,7 @@ export const exploreProgramsStack: CoursesContentProps[] = [
     howItWorks: {
       title: (
         <>
-          What <span className="text-[#f37458]">GANs</span> techniques{" "}
+          What <span className="text-[#f7846f]">GANs</span> techniques{" "}
           <span className="text-[#f37458]">will you master</span>?
         </>
       ),
@@ -239,8 +272,8 @@ export const exploreProgramsStack: CoursesContentProps[] = [
     howItWorks: {
       title: (
         <>
-          How do <span className="text-[#f37458]">LLMs</span> work in{" "}
-          <span className="text-[#f37458]">practical use cases</span>?
+          How do <span className="text-[#f7846f]">LLMs</span> work in{" "}
+          <span className="text-[#f7846f]">practical use cases</span>?
         </>
       ),
       description:
@@ -275,8 +308,8 @@ export const exploreProgramsStack: CoursesContentProps[] = [
     howItWorks: {
       title: (
         <>
-          What <span className="text-[#f37458]">prompt strategies</span>{" "}
-          <span className="text-[#f37458]">will you learn</span>?
+          What <span className="text-[#f7846f]">prompt strategies</span>{" "}
+          <span className="text-[#f7846f]">will you learn</span>?
         </>
       ),
       description:
@@ -416,7 +449,7 @@ export const exploreProgramsStack: CoursesContentProps[] = [
     howItWorks: {
       title: (
         <>
-          What <span className="text-[#f37458]">deep learning techniques</span>{" "}
+          What <span className="text-[#f37458]">deep learning </span>techniques{" "}
           <span className="text-[#f37458]">will you learn</span>?
         </>
       ),
@@ -529,7 +562,7 @@ export const exploreProgramsStack: CoursesContentProps[] = [
       title: (
         <>
           What <span className="text-[#f37458]">Data Analyst</span> skills{" "}
-          <span className="text-[#f37458]">will you gain?</span>
+          <span className="text-[#f37458]">will you gain</span>?
         </>
       ),
       description:
@@ -565,7 +598,7 @@ export const exploreProgramsStack: CoursesContentProps[] = [
       title: (
         <>
           What <span className="text-[#f37458]">Business Analysis</span> skills{" "}
-          <span className="text-[#f37458]">will you gain?</span>
+          <span className="text-[#f37458]">will you gain</span>?
         </>
       ),
       description:
@@ -601,7 +634,7 @@ export const exploreProgramsStack: CoursesContentProps[] = [
       title: (
         <>
           What <span className="text-[#f37458]">Python & ML</span> skills{" "}
-          <span className="text-[#f37458]">will you build?</span>
+          <span className="text-[#f37458]">will you build</span>?
         </>
       ),
       description:
@@ -636,7 +669,7 @@ export const exploreProgramsStack: CoursesContentProps[] = [
       title: (
         <>
           What <span className="text-[#f37458]">Power BI</span> skills{" "}
-          <span className="text-[#f37458]">will you master?</span>
+          <span className="text-[#f37458]">will you master</span>?
         </>
       ),
       description:
@@ -672,7 +705,7 @@ export const exploreProgramsStack: CoursesContentProps[] = [
       title: (
         <>
           What <span className="text-[#f37458]">statistical concepts</span>{" "}
-          <span className="text-[#f37458]">will you apply in business?</span>
+          <span className="text-[#f37458]">will you apply in business</span>?
         </>
       ),
       description:
@@ -709,7 +742,7 @@ export const exploreProgramsStack: CoursesContentProps[] = [
       title: (
         <>
           What <span className="text-[#f37458]">PMP®</span> skills{" "}
-          <span className="text-[#f37458]">will you master?</span>
+          <span className="text-[#f37458]">will you master</span>?
         </>
       ),
       description:
@@ -746,7 +779,7 @@ export const exploreProgramsStack: CoursesContentProps[] = [
       title: (
         <>
           What <span className="text-[#f37458]">Agile</span> skills{" "}
-          <span className="text-[#f37458]">will you learn?</span>
+          <span className="text-[#f37458]">will you learn</span>?
         </>
       ),
       description:
@@ -782,7 +815,7 @@ export const exploreProgramsStack: CoursesContentProps[] = [
       title: (
         <>
           What <span className="text-[#f37458]">Program Management</span>{" "}
-          <span className="text-[#f37458]">skills will you gain?</span>
+          <span className="text-[#f37458]">skills will you gain</span>?
         </>
       ),
       description:
@@ -818,7 +851,7 @@ export const exploreProgramsStack: CoursesContentProps[] = [
       title: (
         <>
           What <span className="text-[#f37458]">MS Project</span>{" "}
-          <span className="text-[#f37458]">skills will you develop?</span>
+          <span className="text-[#f37458]">skills will you develop</span>?
         </>
       ),
       description:
@@ -854,7 +887,7 @@ export const exploreProgramsStack: CoursesContentProps[] = [
       title: (
         <>
           What <span className="text-[#f37458]">risk management</span>{" "}
-          <span className="text-[#f37458]">skills will you gain?</span>
+          <span className="text-[#f37458]">skills will you gain</span>?
         </>
       ),
       description:
@@ -890,7 +923,7 @@ export const exploreProgramsStack: CoursesContentProps[] = [
       title: (
         <>
           What <span className="text-[#f37458]">executive cybersecurity</span>{" "}
-          <span className="text-[#f37458]">skills will you master?</span>
+          <span className="text-[#f37458]">skills will you master</span>?
         </>
       ),
       description:
@@ -926,7 +959,7 @@ export const exploreProgramsStack: CoursesContentProps[] = [
       title: (
         <>
           What <span className="text-[#f37458]">ethical hacking</span>{" "}
-          <span className="text-[#f37458]">skills will you learn?</span>
+          <span className="text-[#f37458]">skills will you learn</span>?
         </>
       ),
       description:
@@ -962,7 +995,7 @@ export const exploreProgramsStack: CoursesContentProps[] = [
       title: (
         <>
           What <span className="text-[#f37458]">network security</span>{" "}
-          <span className="text-[#f37458]">skills will you develop?</span>
+          <span className="text-[#f37458]">skills will you develop</span>?
         </>
       ),
       description:
@@ -998,7 +1031,7 @@ export const exploreProgramsStack: CoursesContentProps[] = [
       title: (
         <>
           What <span className="text-[#f37458]">cloud security</span>{" "}
-          <span className="text-[#f37458]">skills will you build?</span>
+          <span className="text-[#f37458]">skills will you build</span>?
         </>
       ),
       description:
@@ -1034,7 +1067,7 @@ export const exploreProgramsStack: CoursesContentProps[] = [
       title: (
         <>
           What <span className="text-[#f37458]">threat intelligence</span>{" "}
-          <span className="text-[#f37458]">skills will you build?</span>
+          <span className="text-[#f37458]">skills will you build</span>?
         </>
       ),
       description:
@@ -1070,7 +1103,7 @@ export const exploreProgramsStack: CoursesContentProps[] = [
       title: (
         <>
           What <span className="text-[#f37458]">Scrum Master</span>{" "}
-          <span className="text-[#f37458]">skills will you build?</span>
+          <span className="text-[#f37458]">skills will you build</span>?
         </>
       ),
       description:
@@ -1106,7 +1139,7 @@ export const exploreProgramsStack: CoursesContentProps[] = [
       title: (
         <>
           What <span className="text-[#f37458]">SAFe® leadership</span>{" "}
-          <span className="text-[#f37458]">skills will you gain?</span>
+          <span className="text-[#f37458]">skills will you gain</span>?
         </>
       ),
       description:
@@ -1214,7 +1247,7 @@ export const exploreProgramsStack: CoursesContentProps[] = [
       title: (
         <>
           What <span className="text-[#f37458]">Agile</span> skills will your{" "}
-          <span className="text-[#f37458]">team</span> build?
+          <span className="text-[#f37458]">team build</span>?
         </>
       ),
       description:
@@ -1250,7 +1283,7 @@ export const exploreProgramsStack: CoursesContentProps[] = [
       title: (
         <>
           What <span className="text-[#f37458]">ITIL® 4</span> skills will you{" "}
-          <span className="text-[#f37458]">develop?</span>
+          <span className="text-[#f37458]">develop</span>?
         </>
       ),
       description:
@@ -1285,8 +1318,8 @@ export const exploreProgramsStack: CoursesContentProps[] = [
     howItWorks: {
       title: (
         <>
-          What <span className="text-[#f37458]">Enterprise Architecture</span>
-          skills will you <span className="text-[#f37458]">develop?</span>
+          What <span className="text-[#f37458]">Enterprise Architecture</span>{" "}
+          skills will you <span className="text-[#f37458]">develop</span>?
         </>
       ),
       description:
@@ -1322,7 +1355,7 @@ export const exploreProgramsStack: CoursesContentProps[] = [
       title: (
         <>
           What <span className="text-[#f37458]">ServiceNow</span> skills will
-          you <span className="text-[#f37458]">master?</span>
+          you <span className="text-[#f37458]">master</span>?
         </>
       ),
       description:
@@ -1358,7 +1391,7 @@ export const exploreProgramsStack: CoursesContentProps[] = [
       title: (
         <>
           What <span className="text-[#f37458]">Agile ITSM</span> skills will
-          you <span className="text-[#f37458]">develop?</span>
+          you <span className="text-[#f37458]">develop</span>?
         </>
       ),
       description:
@@ -1431,7 +1464,7 @@ export const exploreProgramsStack: CoursesContentProps[] = [
       title: (
         <>
           What <span className="text-[#f37458]">Six Sigma</span> skills will{" "}
-          <span className="text-[#f37458]">you build?</span>
+          <span className="text-[#f37458]">you build</span>?
         </>
       ),
       description:
@@ -1467,7 +1500,7 @@ export const exploreProgramsStack: CoursesContentProps[] = [
       title: (
         <>
           What <span className="text-[#f37458]">Lean Six Sigma</span> skills{" "}
-          <span className="text-[#f37458]">will you build?</span>
+          <span className="text-[#f37458]">will you build</span>?
         </>
       ),
       description:
@@ -1503,7 +1536,7 @@ export const exploreProgramsStack: CoursesContentProps[] = [
       title: (
         <>
           What <span className="text-[#f37458]">Quality Management</span> skills{" "}
-          <span className="text-[#f37458]">will you build?</span>
+          <span className="text-[#f37458]">will you build</span>?
         </>
       ),
       description:
@@ -1539,7 +1572,7 @@ export const exploreProgramsStack: CoursesContentProps[] = [
       title: (
         <>
           What <span className="text-[#f37458]">ISO 9001:2015</span> skills{" "}
-          <span className="text-[#f37458]">will you build?</span>
+          <span className="text-[#f37458]">will you build</span>?
         </>
       ),
       description:
@@ -1575,7 +1608,7 @@ export const exploreProgramsStack: CoursesContentProps[] = [
       title: (
         <>
           What <span className="text-[#f37458]">Root Cause Analysis</span>{" "}
-          skills <span className="text-[#f37458]">will you build?</span>
+          skills <span className="text-[#f37458]">will you build</span>?
         </>
       ),
       description:
@@ -1611,7 +1644,7 @@ export const exploreProgramsStack: CoursesContentProps[] = [
       title: (
         <>
           What <span className="text-[#f37458]">Digital Marketing</span> skills{" "}
-          <span className="text-[#f37458]">will you build?</span>
+          <span className="text-[#f37458]">will you build</span>?
         </>
       ),
       description:
@@ -1647,7 +1680,7 @@ export const exploreProgramsStack: CoursesContentProps[] = [
       title: (
         <>
           What <span className="text-[#f37458]">SEO & SEM</span> skills{" "}
-          <span className="text-[#f37458]">will you build?</span>
+          <span className="text-[#f37458]">will you build</span>?
         </>
       ),
       description:
@@ -1683,7 +1716,7 @@ export const exploreProgramsStack: CoursesContentProps[] = [
       title: (
         <>
           What <span className="text-[#f37458]">Social Media</span> skills{" "}
-          <span className="text-[#f37458]">will you build?</span>
+          <span className="text-[#f37458]">will you build</span>?
         </>
       ),
       description:
@@ -1719,7 +1752,7 @@ export const exploreProgramsStack: CoursesContentProps[] = [
       title: (
         <>
           What <span className="text-[#f37458]">Content Strategy</span> skills{" "}
-          <span className="text-[#f37458]">will you build?</span>
+          <span className="text-[#f37458]">will you build</span>?
         </>
       ),
       description:
@@ -1756,11 +1789,191 @@ export const exploreProgramsStack: CoursesContentProps[] = [
         <>
           What <span className="text-[#f37458]">Google Ads</span> &{" "}
           <span className="text-[#f37458]">Analytics</span> skills{" "}
-          <span className="text-[#f37458]">will you build?</span>
+          <span className="text-[#f37458]">will you build</span>?
         </>
       ),
       description:
         "This course will turn you into an expert in digital marketing with Google Ads and Analytics, teaching you to run campaigns, analyze traffic, and optimize performance for successful marketing strategies.",
     },
-  },          
+  },
+  {
+    id: "cloud-architect-program",
+    techName: "Cloud Architect Program",
+    bannerFeatures: [
+      {
+        icon: <ClockFading className="text-[#f7846f]" />,
+        title: "12 Months",
+        subtitle: "Training Duration",
+      },
+      {
+        icon: <BookOpenCheck className="text-[#f7846f]" />,
+        title: "Flexible Schedule",
+        subtitle: "Weekend & Evening Batches",
+      },
+      {
+        icon: <School className="text-[#f7846f]" />,
+        title: "Live Online",
+        subtitle: "Learning Mode",
+      },
+    ],
+    tagline:
+      "Master multi-cloud infrastructure and architecture strategies to lead enterprise transformation.",
+    howItWorks: {
+      title: (
+        <>
+          What <span className="text-[#f37458]">Cloud Architecture</span> skills{" "}
+          <span className="text-[#f37458]">will you master</span>?
+        </>
+      ),
+      description:
+        "This comprehensive program walks you through cloud infrastructure, hybrid setups, and architectural design patterns across AWS, Azure, and GCP.",
+    },
+    courseFeatures: CloudArchitectCourseFeatures,
+    useCases: CloudArchitectUseCases,
+    career: CloudArchitectCareer,
+  },
+  {
+    id: "aws-solutions-architect",
+    techName: "AWS Solutions Architect",
+    bannerFeatures: [
+      {
+        icon: <ClockFading className="text-[#f7846f]" />,
+        title: "4 Months",
+        subtitle: "Training Duration",
+      },
+      {
+        icon: <BookOpenCheck className="text-[#f7846f]" />,
+        title: "Weekday Evenings",
+        subtitle: "Flexible Timing",
+      },
+      {
+        icon: <School className="text-[#f7846f]" />,
+        title: "Live Online",
+        subtitle: "Learning Mode",
+      },
+    ],
+    tagline:
+      "Become proficient in AWS services and design fault-tolerant, secure cloud systems.",
+    howItWorks: {
+      title: (
+        <>
+          What <span className="text-[#f37458]">AWS Solutions</span> knowledge{" "}
+          <span className="text-[#f37458]">will you gain</span>?
+        </>
+      ),
+      description:
+        "Get hands-on with AWS services, architecture best practices, and tools to design secure, cost-optimized, and scalable systems.",
+    },
+    courseFeatures: AwsSolutionsCourseFeatures,
+    useCases: AwsSolutionsUseCases,
+    career: AwsSolutionsCareer,
+  },
+  {
+    id: "devops-certification",
+    techName: "DevOps Engineer Certification",
+    bannerFeatures: [
+      {
+        icon: <ClockFading className="text-[#f7846f]" />,
+        title: "6 Months",
+        subtitle: "Training Duration",
+      },
+      {
+        icon: <BookOpenCheck className="text-[#f7846f]" />,
+        title: "Weekday & Weekend",
+        subtitle: "Flexible Schedules",
+      },
+      {
+        icon: <School className="text-[#f7846f]" />,
+        title: "Live Online",
+        subtitle: "Learning Mode",
+      },
+    ],
+    tagline:
+      "Learn CI/CD, containerization, and infrastructure automation to accelerate software delivery.",
+    howItWorks: {
+      title: (
+        <>
+          What <span className="text-[#f37458]">DevOps capabilities</span>{" "}
+          <span className="text-[#f37458]">will you build</span>?
+        </>
+      ),
+      description:
+        "From pipelines to container orchestration, this program equips you with the skills to automate, deploy, and manage modern applications.",
+    },
+    courseFeatures: DevOpsEngineerCourseFeatures,
+    useCases: DevOpsEngineerUseCases,
+    career: DevOpsEngineerCareer,
+  },
+  {
+    id: "kubernetes-for-developers",
+    techName: "Kubernetes for Developers",
+    bannerFeatures: [
+      {
+        icon: <ClockFading className="text-[#f7846f]" />,
+        title: "3 Months",
+        subtitle: "Training Duration",
+      },
+      {
+        icon: <BookOpenCheck className="text-[#f7846f]" />,
+        title: "Weekend Sessions",
+        subtitle: "Developer-Friendly",
+      },
+      {
+        icon: <School className="text-[#f7846f]" />,
+        title: "Live Online",
+        subtitle: "Learning Mode",
+      },
+    ],
+    tagline:
+      "Master Kubernetes fundamentals and apply them to real-world app development.",
+    howItWorks: {
+      title: (
+        <>
+          What <span className="text-[#f37458]">Kubernetes skills</span>{" "}
+          <span className="text-[#f37458]">will you apply</span>?
+        </>
+      ),
+      description:
+        "Learn how to build, deploy, and scale containerized applications using Kubernetes, Helm, and monitoring tools in real-world settings.",
+    },
+    courseFeatures: KubernetesCourseFeatures,
+    useCases: KubernetesUseCases,
+    career: KubernetesCareer,
+  },
+  {
+    id: "azure-fundamentals",
+    techName: "Azure Fundamentals",
+    bannerFeatures: [
+      {
+        icon: <ClockFading className="text-[#f7846f]" />,
+        title: "8 Weeks",
+        subtitle: "Training Duration",
+      },
+      {
+        icon: <BookOpenCheck className="text-[#f7846f]" />,
+        title: "Weekday & Weekend",
+        subtitle: "Flexible Learning",
+      },
+      {
+        icon: <School className="text-[#f7846f]" />,
+        title: "Live Online",
+        subtitle: "Learning Mode",
+      },
+    ],
+    tagline:
+      "Gain foundational knowledge to confidently navigate Microsoft Azure cloud services.",
+    howItWorks: {
+      title: (
+        <>
+          What <span className="text-[#f37458]">Azure cloud basics</span>{" "}
+          <span className="text-[#f37458]">will you understand</span>?
+        </>
+      ),
+      description:
+        "This beginner-level course demystifies core Azure services, architecture principles, and identity access management practices.",
+    },
+    courseFeatures: AzureCourseFeatures,
+    useCases: AzureUseCases,
+    career: AzureCareer,
+  },
 ];
