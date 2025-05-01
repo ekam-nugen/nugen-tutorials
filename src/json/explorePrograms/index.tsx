@@ -34,6 +34,23 @@ import {
   mlModelCourseFeatures,
   mlModelUseCases,
 } from "./aiAndMl";
+import {
+  BusinessAnalystCareer,
+  BusinessAnalystCourseFeatures,
+  BusinessAnalystUseCases,
+  DataAnalystCareer,
+  DataAnalystCourseFeatures,
+  DataAnalystUseCases,
+  DataSciencePyCareer,
+  DataSciencePyCourseFeatures,
+  DataSciencePyUseCases,
+  PowerBiInsightsCareer,
+  PowerBiInsightsCourseFeatures,
+  PowerBiInsightsUseCases,
+  StatisticsCareer,
+  StatisticsCourseFeatures,
+  StatisticsUseCases,
+} from "./dataSciAndBusinessAna";
 
 export const exploreProgramsStack: CoursesContentProps[] = [
   {
@@ -396,5 +413,184 @@ export const exploreProgramsStack: CoursesContentProps[] = [
     courseFeatures: AiStrategyCourseFeatures,
     useCases: AiStrategyUseCases,
     career: AiStrategyCareer,
+  },
+  {
+    id: "data-analyst",
+    techName: "Data Analyst",
+    bannerFeatures: [
+      {
+        icon: <ClockFading className="text-[#f7846f]" />,
+        title: "11 Months",
+        subtitle: "Training Duration",
+      },
+      {
+        icon: <BookOpenCheck className="text-[#f7846f]" />,
+        title: "Weekday & Weekend",
+        subtitle: "Flexible Schedules",
+      },
+      {
+        icon: <School className="text-[#f7846f]" />,
+        title: "Live Online + Capstone",
+        subtitle: "Learning Mode",
+      },
+    ],
+    tagline:
+      "Master core data skills to extract, analyze, and visualize business insights using modern tools.",
+    courseFeatures: DataAnalystCourseFeatures,
+    useCases: DataAnalystUseCases,
+    career: DataAnalystCareer,
+    howItWorks: {
+      title: (
+        <>
+          What <span className="text-[#f37458]">Data Analyst</span> skills{" "}
+          <span className="text-[#f37458]">will you gain?</span>
+        </>
+      ),
+      description:
+        "From spreadsheets to SQL to dashboards, this course walks you through every essential for a successful data analyst career.",
+    },
+  },
+  {
+    id: "business-analyst",
+    techName: "Business Analyst",
+    bannerFeatures: [
+      {
+        icon: <ClockFading className="text-[#f7846f]" />,
+        title: "11 Months",
+        subtitle: "Training Duration",
+      },
+      {
+        icon: <BookOpenCheck className="text-[#f7846f]" />,
+        title: "Weekday & Weekend",
+        subtitle: "Flexible Schedules",
+      },
+      {
+        icon: <School className="text-[#f7846f]" />,
+        title: "Live Online",
+        subtitle: "Learning Mode",
+      },
+    ],
+    tagline:
+      "Bridge business goals and data insights to drive strategic decisions.",
+    courseFeatures: BusinessAnalystCourseFeatures,
+    useCases: BusinessAnalystUseCases,
+    career: BusinessAnalystCareer,
+    howItWorks: {
+      title: (
+        <>
+          What <span className="text-[#f37458]">Business Analysis</span> skills{" "}
+          <span className="text-[#f37458]">will you gain?</span>
+        </>
+      ),
+      description:
+        "Gain the tools, frameworks, and communication skills needed to drive analytical decision-making.",
+    },
+  },
+  {
+    id: "data-science-python",
+    techName: "Data Science with Python",
+    bannerFeatures: [
+      {
+        icon: <ClockFading className="text-[#f7846f]" />,
+        title: "6 Months",
+        subtitle: "Training Duration",
+      },
+      {
+        icon: <BookOpenCheck className="text-[#f7846f]" />,
+        title: "Weekends Only",
+        subtitle: "Ideal for Working Professionals",
+      },
+      {
+        icon: <School className="text-[#f7846f]" />,
+        title: "Live + Project-Based",
+        subtitle: "Learning Mode",
+      },
+    ],
+    tagline:
+      "Build a data science career by mastering Python, statistics, and machine learning.",
+    courseFeatures: DataSciencePyCourseFeatures,
+    useCases: DataSciencePyUseCases,
+    career: DataSciencePyCareer,
+    howItWorks: {
+      title: (
+        <>
+          What <span className="text-[#f37458]">Python & ML</span> skills{" "}
+          <span className="text-[#f37458]">will you build?</span>
+        </>
+      ),
+      description:
+        "This course turns you into a confident Python-based data practitioner with real-world projects and job-focused outcomes.",
+    },
+  },
+  {
+    id: "power-bi-data-insights",
+    techName: "Power BI for Data Insights",
+    bannerFeatures: [
+      {
+        icon: <ClockFading className="text-[#f7846f]" />,
+        title: "8 Weeks",
+        subtitle: "Training Duration",
+      },
+      {
+        icon: <BookOpenCheck className="text-[#f7846f]" />,
+        title: "Weekend Classes",
+        subtitle: "Designed for Working Professionals",
+      },
+      {
+        icon: <School className="text-[#f7846f]" />,
+        title: "Live Hands-On",
+        subtitle: "Learning Mode",
+      },
+    ],
+    tagline: "Transform raw data into powerful visual stories with Power BI.",
+    courseFeatures: PowerBiInsightsCourseFeatures,
+    useCases: PowerBiInsightsUseCases,
+    career: PowerBiInsightsCareer,
+    howItWorks: {
+      title: (
+        <>
+          What <span className="text-[#f37458]">Power BI</span> skills{" "}
+          <span className="text-[#f37458]">will you master?</span>
+        </>
+      ),
+      description:
+        "Learn how to connect data, build dashboards, and communicate business insights visually with Power BI.",
+    },
+  },
+  {
+    id: "statistics-business",
+    techName: "Statistics for Business",
+    bannerFeatures: [
+      {
+        icon: <ClockFading className="text-[#f7846f]" />,
+        title: "2 Months",
+        subtitle: "Training Duration",
+      },
+      {
+        icon: <BookOpenCheck className="text-[#f7846f]" />,
+        title: "Weekday Batches",
+        subtitle: "Interactive Live Classes",
+      },
+      {
+        icon: <School className="text-[#f7846f]" />,
+        title: "Live + Practice Labs",
+        subtitle: "Learning Mode",
+      },
+    ],
+    tagline:
+      "Master statistical reasoning to make confident, data-driven decisions.",
+    courseFeatures: StatisticsCourseFeatures,
+    useCases: StatisticsUseCases,
+    career: StatisticsCareer,
+    howItWorks: {
+      title: (
+        <>
+          What <span className="text-[#f37458]">statistical concepts</span>{" "}
+          <span className="text-[#f37458]">will you apply in business?</span>
+        </>
+      ),
+      description:
+        "Learn to use core statistical tools for real business scenarios—from forecasts to decision trees to hypothesis testing.",
+    },
   },
 ];

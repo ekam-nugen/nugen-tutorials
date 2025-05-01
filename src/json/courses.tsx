@@ -85,6 +85,7 @@ export const data = {
   ],
   "Data Science & Business Analytics": [
     {
+      id: "data-analyst",
       name: "Data Analyst",
       duration: "11 Months",
       startDate: "26th Apr '25",
@@ -92,6 +93,7 @@ export const data = {
       activeUsers: 120,
     },
     {
+      id: "business-analyst",
       name: "Business Analyst",
       duration: "11 Months",
       startDate: "22nd Apr '25",
@@ -99,6 +101,7 @@ export const data = {
       activeUsers: 120,
     },
     {
+      id: "data-science-python",
       name: "Data Science with Python",
       duration: "6 Months",
       startDate: "5th May '25",
@@ -106,6 +109,7 @@ export const data = {
       activeUsers: 120,
     },
     {
+      id: "power-bi-data-insights",
       name: "Power BI for Data Insights",
       duration: "8 Weeks",
       startDate: "10th May '25",
@@ -113,6 +117,7 @@ export const data = {
       activeUsers: 120,
     },
     {
+      id: "statistics-business",
       name: "Statistics for Business",
       duration: "2 Months",
       startDate: "12th May '25",
