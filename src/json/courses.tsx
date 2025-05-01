@@ -238,6 +238,7 @@ export const data = {
   ],
   "Cloud Computing & DevOps": [
     {
+      id: "cloud-architect-program",
       name: "Cloud Architect Program",
       duration: "12 Months",
       startDate: "6th May '25",
@@ -245,6 +246,7 @@ export const data = {
       image: "/ai-ml.jpg",
     },
     {
+      id: "aws-solutions-architect",
       name: "AWS Solutions Architect",
       duration: "4 Months",
       startDate: "10th May '25",
@@ -252,6 +254,7 @@ export const data = {
       image: "/ai-ml.jpg",
     },
     {
+      id: "devops-certification",
       name: "DevOps Engineer Certification",
       duration: "6 Months",
       startDate: "14th May '25",
@@ -259,6 +262,7 @@ export const data = {
       image: "/ai-ml.jpg",
     },
     {
+      id: "kubernetes-for-developers",
       name: "Kubernetes for Developers",
       duration: "3 Months",
       startDate: "17th May '25",
@@ -266,6 +270,7 @@ export const data = {
       image: "/ai-ml.jpg",
     },
     {
+      id: "azure-fundamentals",
       name: "Azure Fundamentals",
       duration: "8 Weeks",
       startDate: "20th May '25",
