@@ -43,6 +43,7 @@ export const data = {
   ],
   "AI & Machine Learning": [
     {
+      id: "ml-bootcamp",
       name: "Machine Learning Bootcamp",
       duration: "6 Months",
       startDate: "1st May '25",
@@ -50,6 +51,7 @@ export const data = {
       image: "/ai-ml.jpg",
     },
     {
+      id: "ai-business-leaders",
       name: "AI for Business Leaders",
       duration: "3 Months",
       startDate: "5th May '25",
@@ -57,6 +59,7 @@ export const data = {
       image: "/ai-ml.jpg",
     },
     {
+      id: "deep-learning-tensorflow",
       name: "Deep Learning with TensorFlow",
       duration: "5 Months",
       startDate: "9th May '25",
@@ -64,6 +67,7 @@ export const data = {
       image: "/ai-ml.jpg",
     },
     {
+      id: "ml-model-deployment",
       name: "ML Model Deployment",
       duration: "2 Months",
       startDate: "15th May '25",
@@ -71,6 +75,7 @@ export const data = {
       activeUsers: 120,
     },
     {
+      id: "ai-strategy-ethics",
       name: "AI Strategy & Ethics",
       duration: "6 Weeks",
       startDate: "20th May '25",
