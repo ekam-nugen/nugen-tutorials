@@ -1,42 +1,11 @@
 "use client";
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { motion } from "framer-motion";  // Importing framer-motion
-
-const testimonials = [
-  {
-    name: "Rebecca Chen",
-    role: "Frontend Developer, TechStart Inc.",
-    quote:
-      "The React course completely transformed my career. I went from a junior developer to landing a senior role at a tech startup within 6 months of completing the program.",
-  },
-  {
-    name: "Marcus Johnson",
-    role: "Cloud Solutions Architect, CloudWave Systems",
-    quote:
-      "After trying multiple platforms, TechNexus was the only one that truly prepared me for AWS certification. The instructors were responsive and helpful.",
-  },
-  {
-    name: "Sophia Rodriguez",
-    role: "Security Specialist, DataShield",
-    quote:
-      "The cybersecurity program gave me practical experience with modern security tools and techniques. I identified and patched vulnerabilities at my company within weeks.",
-  },
-  {
-    name: "Daniel Kim",
-    role: "Software Engineer, AppSphere",
-    quote:
-      "I loved the project-based learning. Building real-world apps helped me strengthen my portfolio and land interviews quickly.",
-  },
-  {
-    name: "Aisha Patel",
-    role: "DevOps Engineer, CloudGenix",
-    quote:
-      "Great content and practical exercises. I feel confident working with Kubernetes and Docker in my current role.",
-  },
-];
+import { motion } from "framer-motion";
+import { TESTIMONOAL_DATA_ONE } from "@/src/json/reviews/reviews";
 
 export default function StudentTestimonials() {
+  const testimonials = TESTIMONOAL_DATA_ONE; // Use the imported array
   const [index, setIndex] = useState<number>(0);
 
   const next = () => {
@@ -74,19 +43,25 @@ export default function StudentTestimonials() {
               key={testimonial.name}
               className={`bg-white p-8 rounded-2xl border shadow-md w-[300px] ${
                 idx === 1
-                  ? "scale-105 border-orange-200  border-3 shadow-lg"
+                  ? "scale-105 border-orange-200 border-3 shadow-lg"
                   : "opacity-80"
               }`}
               initial={{ opacity: 0, x: idx === 0 ? -100 : idx === 2 ? 100 : 0 }}
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: idx === 0 ? -100 : idx === 2 ? 100 : 0 }}
               transition={{ duration: 0.5, ease: "easeOut" }}
-              whileHover={{ scale: 1.05, boxShadow: "0 10px 20px rgba(0, 0, 0, 0.15)" }}  // Hover effect
+              whileHover={{
+                scale: 1.05,
+                boxShadow: "0 10px 20px rgba(0, 0, 0, 0.15)",
+              }}
             >
               <div className="text-3xl text-[#ff6b3d] mb-4">❝</div>
-              <p className="text-gray-700 italic mb-6">{testimonial.quote}</p>
+              <p className="text-gray-700 italic mb-6">{testimonial.text}</p>
               <div className="font-semibold text-gray-900">{testimonial.name}</div>
-              <div className="text-sm text-gray-500">{testimonial.role}</div>
+              <div className="text-sm text-gray-500 flex justify-center items-center gap-2">
+                {testimonial.icon}
+                {testimonial.source}
+              </div>
             </motion.div>
           ))}
         </div>
