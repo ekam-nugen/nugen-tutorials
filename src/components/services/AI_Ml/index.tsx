@@ -5,9 +5,9 @@ import DevelopmentProcess, { ProcessItem } from "./ProcessAI";
 import CoreCompetencies, { Competency } from "./CoreCompentencies";
 import * as LucideIcons from "lucide-react";
 // import TechnologyShowcase from "../homePage/courses";
-import ContactUsSection from "../contactUs/contactUs";
-import { FAQSection } from "../exploreCourses/questionSection";
-import ClientSlider from "../OurTeam/partnerSection";
+import ContactUsSection from "../../contactUs/contactUs";
+import { FAQSection } from "../../exploreCourses/questionSection";
+import ClientSlider from "../../OurTeam/partnerSection";
 import BlogSection from "./blog";
 
 const Intelligence = () => {

@@ -18,7 +18,6 @@ import {
   FileBadge,
   ShieldCheck,
   Monitor,
-  Globe,
   Smartphone,
   CheckCircle,
   Cloud,
@@ -475,32 +474,6 @@ export const servicesTechData: Service[] = [
           text: "Explore Frontend Development",
         },
       },
-      {
-        id: "frontend-frameworks",
-        name: "Frameworks & Tools",
-        icon: Globe,
-        items: [
-          {
-            title: "React.js",
-            description:
-              "Create dynamic and modern user interfaces using the popular React library and component-based architecture.",
-          },
-          {
-            title: "UI Frameworks (Tailwind, Bootstrap)",
-            description:
-              "Speed up development with modern CSS frameworks for fast and responsive UI design.",
-          },
-          {
-            title: "State Management (Redux, Context API)",
-            description:
-              "Manage complex application state efficiently for seamless data flow across your application.",
-          },
-        ],
-        link: {
-          href: "/courses/frontEnd",
-          text: "Learn More About Frontend Frameworks",
-        },
-      },
     ],
   },
   {
@@ -533,32 +506,6 @@ export const servicesTechData: Service[] = [
           text: "Discover Backend Development",
         },
       },
-      {
-        id: "backend-devops",
-        name: "Deployment & DevOps",
-        icon: Cloud,
-        items: [
-          {
-            title: "Cloud Hosting (Heroku, AWS)",
-            description:
-              "Deploy your backend applications on platforms like Heroku and AWS with real-world scalability.",
-          },
-          {
-            title: "Containerization with Docker",
-            description:
-              "Package applications with Docker for consistency across environments and smooth deployment.",
-          },
-          {
-            title: "CI/CD Pipelines",
-            description:
-              "Automate your development workflow with continuous integration and deployment pipelines.",
-          },
-        ],
-        link: {
-          href: "/courses/backEnd",
-          text: "Master Backend Deployment Tools",
-        },
-      },
     ],
   },
   {
@@ -589,27 +536,6 @@ export const servicesTechData: Service[] = [
         link: {
           href: "/courses/fullStack",
           text: "Start Your Fullstack Journey",
-        },
-      },
-      {
-        id: "fullstack-career",
-        name: "Career & Capstone",
-        icon: CheckCircle,
-        items: [
-          {
-            title: "Capstone Projects",
-            description:
-              "Build and showcase complete fullstack apps in a portfolio-ready format to impress employers.",
-          },
-          {
-            title: "Job Preparation",
-            description:
-              "Get resume tips, LinkedIn optimization, and mock interviews to kickstart your development career.",
-          },
-        ],
-        link: {
-          href: "/courses/fullStack",
-          text: "Prepare for a Career in Tech",
         },
       },
     ],
