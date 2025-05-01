@@ -170,6 +170,40 @@ import {
   googleAdsAnalyticsCourseFeatures,
   googleAdsAnalyticsUseCases,
 } from "./digitalMarketing";
+import {
+  UxUiCourseFeatures,
+  UxUiUseCases,
+  UxUiCareer,
+  FigmaMasterclassUseCases,
+  FigmaMasterclassCareer,
+  DesignThinkingCourseFeatures,
+  DesignThinkingUseCases,
+  DesignThinkingCareer,
+  InteractionDesignCourseFeatures,
+  InteractionDesignUseCases,
+  InteractionDesignCareer,
+  PrototypingUsabilityCourseFeatures,
+  PrototypingUsabilityUseCases,
+  PrototypingUsabilityCareer,
+  FigmaMasterclassCourseFeatures,
+} from "./productAndDesign";
+import {
+  FullStackDevCourseFeatures,
+  FullStackDevUseCases,
+  FullStackDevCareer,
+  SoftwareEngineeringPrinciplesUseCases,
+  SoftwareEngineeringPrinciplesCareer,
+  CleanCodeArchitectureUseCases,
+  CleanCodeArchitectureCareer,
+  ReactFrontendDevCareer,
+  ReactFrontendDevCourseFeatures,
+  ReactFrontendDevUseCases,
+  NodejsBackendDevCareer,
+  NodejsBackendDevCourseFeatures,
+  NodejsBackendDevUseCases,
+  SoftwareEngineeringPrinciplesCourseFeatures,
+  CleanCodeArchitectureCourseFeatures,
+} from "./softwareDevelopment";
 
 export const exploreProgramsStack: CoursesContentProps[] = [
   {
@@ -1975,5 +2009,366 @@ export const exploreProgramsStack: CoursesContentProps[] = [
     courseFeatures: AzureCourseFeatures,
     useCases: AzureUseCases,
     career: AzureCareer,
+  },
+  {
+    id: "ux-ui-design-certification",
+    techName: "UX/UI Design Certification",
+    bannerFeatures: [
+      {
+        icon: <ClockFading className="text-[#f7846f]" />,
+        title: "4 Months",
+        subtitle: "Training Duration",
+      },
+      {
+        icon: <BookOpenCheck className="text-[#f7846f]" />,
+        title: "Weekends & Weekdays",
+        subtitle: "Flexible Schedule",
+      },
+      {
+        icon: <School className="text-[#f7846f]" />,
+        title: "Live + Capstone Projects",
+        subtitle: "Learning Mode",
+      },
+    ],
+    tagline:
+      "Learn user-centric design, wireframing, prototyping, and tools like Figma and Adobe XD to become a UX/UI design professional.",
+    courseFeatures: UxUiCourseFeatures,
+    useCases: UxUiUseCases,
+    career: UxUiCareer,
+    howItWorks: {
+      title: (
+        <>
+          What <span className="text-[#f37458]">UX/UI Design</span>{" "}
+          <span className="text-[#f37458]">skills will you build?</span>
+        </>
+      ),
+      description:
+        "This certification helps you build hands-on UX/UI design skills with a focus on real-world applications, design systems, and user research techniques to create intuitive digital experiences.",
+    },
+  },
+  {
+    id: "figma-masterclass",
+    techName: "Figma Masterclass",
+    bannerFeatures: [
+      {
+        icon: <ClockFading className="text-[#f7846f]" />,
+        title: "6 Weeks",
+        subtitle: "Training Duration",
+      },
+      {
+        icon: <BookOpenCheck className="text-[#f7846f]" />,
+        title: "Weekends Only",
+        subtitle: "Great for Busy Designers",
+      },
+      {
+        icon: <School className="text-[#f7846f]" />,
+        title: "Live + Hands-On",
+        subtitle: "Learning Mode",
+      },
+    ],
+    tagline:
+      "Master Figma for modern UI design—learn wireframing, prototyping, design systems, and collaboration workflows.",
+    courseFeatures: FigmaMasterclassCourseFeatures,
+    useCases: FigmaMasterclassUseCases,
+    career: FigmaMasterclassCareer,
+    howItWorks: {
+      title: (
+        <>
+          What <span className="text-[#f37458]">Figma</span>{" "}
+          <span className="text-[#f37458]">skills will you build?</span>
+        </>
+      ),
+      description:
+        "This course transforms your UI design workflow by mastering Figma’s full suite—from responsive layouts to team collaboration and prototyping best practices.",
+    },
+  },
+  {
+    id: "design-thinking-innovation",
+    techName: "Design Thinking for Innovation",
+    bannerFeatures: [
+      {
+        icon: <ClockFading className="text-[#f7846f]" />,
+        title: "4 Weeks",
+        subtitle: "Training Duration",
+      },
+      {
+        icon: <BookOpenCheck className="text-[#f7846f]" />,
+        title: "Flexible Schedule",
+        subtitle: "Designed for Teams & Individuals",
+      },
+      {
+        icon: <School className="text-[#f7846f]" />,
+        title: "Live + Workshop Format",
+        subtitle: "Learning Mode",
+      },
+    ],
+    tagline:
+      "Unlock creative problem-solving through a structured approach to innovation using human-centered design.",
+    courseFeatures: DesignThinkingCourseFeatures,
+    useCases: DesignThinkingUseCases,
+    career: DesignThinkingCareer,
+    howItWorks: {
+      title: (
+        <>
+          What <span className="text-[#f37458]">Design Thinking</span>{" "}
+          <span className="text-[#f37458]">skills will you build?</span>
+        </>
+      ),
+      description:
+        "This program equips you with hands-on tools to approach complex problems, prototype solutions, and drive user-centric innovation within any organization.",
+    },
+  },
+  {
+    id: "interaction-design-essentials",
+    techName: "Interaction Design Essentials",
+    bannerFeatures: [
+      {
+        icon: <ClockFading className="text-[#f7846f]" />,
+        title: "5 Weeks",
+        subtitle: "Training Duration",
+      },
+      {
+        icon: <BookOpenCheck className="text-[#f7846f]" />,
+        title: "Weekends & Evenings",
+        subtitle: "Ideal for Working Professionals",
+      },
+      {
+        icon: <School className="text-[#f7846f]" />,
+        title: "Live + Hands-On Projects",
+        subtitle: "Learning Mode",
+      },
+    ],
+    tagline:
+      "Master the principles of intuitive digital interactions and enhance user engagement through better design.",
+    courseFeatures: InteractionDesignCourseFeatures,
+    useCases: InteractionDesignUseCases,
+    career: InteractionDesignCareer,
+    howItWorks: {
+      title: (
+        <>
+          What <span className="text-[#f37458]">Interaction Design</span>{" "}
+          <span className="text-[#f37458]">skills will you develop?</span>
+        </>
+      ),
+      description:
+        "Learn to design seamless user experiences with a focus on usability, accessibility, and behavioral insights, applying best practices in real-world scenarios.",
+    },
+  },
+  {
+    id: "prototyping-usability-testing",
+    techName: "Prototyping & Usability Testing",
+    bannerFeatures: [
+      {
+        icon: <ClockFading className="text-[#f7846f]" />,
+        title: "4 Weeks",
+        subtitle: "Training Duration",
+      },
+      {
+        icon: <BookOpenCheck className="text-[#f7846f]" />,
+        title: "Weekday Evenings",
+        subtitle: "Flexible Schedule",
+      },
+      {
+        icon: <School className="text-[#f7846f]" />,
+        title: "Live + Case Studies",
+        subtitle: "Learning Mode",
+      },
+    ],
+    tagline:
+      "Build interactive prototypes and conduct effective usability testing to create user-friendly designs.",
+    courseFeatures: PrototypingUsabilityCourseFeatures,
+    useCases: PrototypingUsabilityUseCases,
+    career: PrototypingUsabilityCareer,
+    howItWorks: {
+      title: (
+        <>
+          What <span className="text-[#f37458]">Prototyping & Testing</span>{" "}
+          <span className="text-[#f37458]">skills will you master?</span>
+        </>
+      ),
+      description:
+        "This course empowers you to build realistic prototypes and run usability sessions that uncover real user insights, helping shape impactful digital products.",
+    },
+  },
+  {
+    id: "full-stack-developer",
+    techName: "Full Stack Developer Course",
+    bannerFeatures: [
+      {
+        icon: <ClockFading className="text-[#f7846f]" />,
+        title: "6 Months",
+        subtitle: "Training Duration",
+      },
+      {
+        icon: <BookOpenCheck className="text-[#f7846f]" />,
+        title: "Weekends & Weekdays",
+        subtitle: "Flexible Schedule",
+      },
+      {
+        icon: <School className="text-[#f7846f]" />,
+        title: "Live + Project-Based",
+        subtitle: "Learning Mode",
+      },
+    ],
+    tagline:
+      "Become a full-stack developer by mastering both front-end and back-end technologies, including JavaScript, Node.js, React, and more.",
+    courseFeatures: FullStackDevCourseFeatures,
+    useCases: FullStackDevUseCases,
+    career: FullStackDevCareer,
+    howItWorks: {
+      title: (
+        <>
+          What <span className="text-[#f37458]">Full Stack</span>{" "}
+          <span className="text-[#f37458]">skills will you master?</span>
+        </>
+      ),
+      description:
+        "This course prepares you to design, develop, and deploy modern full-stack applications, covering both client-side and server-side technologies.",
+    },
+  },
+  {
+    id: "frontend-development-react",
+    techName: "Frontend Development with React",
+    bannerFeatures: [
+      {
+        icon: <ClockFading className="text-[#f7846f]" />,
+        title: "3 Months",
+        subtitle: "Training Duration",
+      },
+      {
+        icon: <BookOpenCheck className="text-[#f7846f]" />,
+        title: "Weekends & Weekdays",
+        subtitle: "Flexible Schedule",
+      },
+      {
+        icon: <School className="text-[#f7846f]" />,
+        title: "Live + Project-Based",
+        subtitle: "Learning Mode",
+      },
+    ],
+    tagline:
+      "Master React.js and build dynamic, responsive web applications with industry-standard front-end tools and libraries.",
+    courseFeatures: ReactFrontendDevCourseFeatures,
+    useCases: ReactFrontendDevUseCases,
+    career: ReactFrontendDevCareer,
+    howItWorks: {
+      title: (
+        <>
+          What <span className="text-[#f37458]">React</span>{" "}
+          <span className="text-[#f37458]">skills will you master?</span>
+        </>
+      ),
+      description:
+        "This course equips you with the skills to build scalable, interactive web applications using React.js, hooks, and Redux for state management.",
+    },
+  },
+  {
+    id: "backend-development-nodejs",
+    techName: "Backend Development with Node.js",
+    bannerFeatures: [
+      {
+        icon: <ClockFading className="text-[#f7846f]" />,
+        title: "4 Months",
+        subtitle: "Training Duration",
+      },
+      {
+        icon: <BookOpenCheck className="text-[#f7846f]" />,
+        title: "Weekdays & Weekends",
+        subtitle: "Flexible Schedule",
+      },
+      {
+        icon: <School className="text-[#f7846f]" />,
+        title: "Live + Project-Based",
+        subtitle: "Learning Mode",
+      },
+    ],
+    tagline:
+      "Build scalable, server-side applications with Node.js, Express, and MongoDB to power modern web services.",
+    courseFeatures: NodejsBackendDevCourseFeatures,
+    useCases: NodejsBackendDevUseCases,
+    career: NodejsBackendDevCareer,
+    howItWorks: {
+      title: (
+        <>
+          What <span className="text-[#f37458]">Node.js</span>{" "}
+          <span className="text-[#f37458]">skills will you master?</span>
+        </>
+      ),
+      description:
+        "This course will turn you into a backend expert, teaching you how to build RESTful APIs, manage databases, handle authentication, and deploy scalable applications.",
+    },
+  },
+  {
+    id: "software-engineering-principles",
+    techName: "Software Engineering Principles",
+    bannerFeatures: [
+      {
+        icon: <ClockFading className="text-[#f7846f]" />,
+        title: "6 Weeks",
+        subtitle: "Training Duration",
+      },
+      {
+        icon: <BookOpenCheck className="text-[#f7846f]" />,
+        title: "Weekdays & Weekends",
+        subtitle: "Flexible Schedule",
+      },
+      {
+        icon: <School className="text-[#f7846f]" />,
+        title: "Live + Project-Based",
+        subtitle: "Learning Mode",
+      },
+    ],
+    tagline:
+      "Master the core principles of software engineering to design, develop, and maintain high-quality software systems.",
+    courseFeatures: SoftwareEngineeringPrinciplesCourseFeatures,
+    useCases: SoftwareEngineeringPrinciplesUseCases,
+    career: SoftwareEngineeringPrinciplesCareer,
+    howItWorks: {
+      title: (
+        <>
+          What <span className="text-[#f37458]">Software Engineering</span>{" "}
+          <span className="text-[#f37458]">principles will you learn?</span>
+        </>
+      ),
+      description:
+        "This course covers the essential principles of software engineering, including software design patterns, best practices, testing, and version control. You'll build the foundation to develop scalable, maintainable, and efficient software.",
+    },
+  },
+  {
+    id: "clean-code-architecture",
+    techName: "Clean Code and Architecture",
+    bannerFeatures: [
+      {
+        icon: <ClockFading className="text-[#f7846f]" />,
+        title: "8 Weeks",
+        subtitle: "Training Duration",
+      },
+      {
+        icon: <BookOpenCheck className="text-[#f7846f]" />,
+        title: "Weekdays & Weekends",
+        subtitle: "Flexible Schedule",
+      },
+      {
+        icon: <School className="text-[#f7846f]" />,
+        title: "Live + Hands-On",
+        subtitle: "Learning Mode",
+      },
+    ],
+    tagline:
+      "Master clean code practices and software architecture principles to write maintainable and scalable applications.",
+    courseFeatures: CleanCodeArchitectureCourseFeatures,
+    useCases: CleanCodeArchitectureUseCases,
+    career: CleanCodeArchitectureCareer,
+    howItWorks: {
+      title: (
+        <>
+          What <span className="text-[#f37458]">Clean Code</span> and{" "}
+          <span className="text-[#f37458]">Architecture</span> skills will you
+          learn?
+        </>
+      ),
+      description:
+        "This course dives deep into writing clean, readable, and maintainable code. It covers the architecture of software systems and how to structure your code to be scalable, testable, and easy to modify over time.",
+    },
   },
 ];
