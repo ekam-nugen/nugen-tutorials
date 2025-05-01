@@ -20,7 +20,6 @@ const CoursesContent: React.FC<CoursesContentProps> = ({
   return (
     <>
       <CourseBanner
-        title="Become a"
         highlight={techName}
         description={tagline}
         features={bannerFeatures}
