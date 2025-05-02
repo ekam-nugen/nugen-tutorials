@@ -69,7 +69,7 @@ export default function ShowReviewsPage() {
           </div>
         </div>
         <div className="mt-16">
-          <Link href="/contactUs" className="cursor-pointer bg-gradient-to-r from-pink-500 to-orange-500 hover:from-pink-600 hover:to-orange-600 text-white px-10 py-4 rounded-full text-lg shadow-xl font-semibold transform transition-transform duration-300 hover:scale-105">
+          <Link href="/contact-us" className="cursor-pointer bg-gradient-to-r from-pink-500 to-orange-500 hover:from-pink-600 hover:to-orange-600 text-white px-10 py-4 rounded-full text-lg shadow-xl font-semibold transform transition-transform duration-300 hover:scale-105">
             Share Your Story
           </Link>
         </div>

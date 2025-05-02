@@ -75,7 +75,7 @@ export default function TrendingCourses() {
                                 <strong>Cohort Starts:</strong> {program.startDate}
                             </p>
                         </div>
-                        <button onClick={() => router.push(`/${program.id}`)} className="w-full mt-auto py-2.5 bg-[#ff6b3d] text-white font-semibold rounded-lg hover:bg-[#ff5c2a] transition-all shadow-md">
+                        <button onClick={() => router.push(`/${program.id}`)} className="cursor-pointer w-full mt-auto py-2.5 bg-[#ff6b3d] text-white font-semibold rounded-lg hover:bg-[#ff5c2a] transition-all shadow-md">
                             View Program
                         </button>
                     </div>

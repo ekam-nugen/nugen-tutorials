@@ -80,7 +80,7 @@ export default function Header() {
                             </div>
                         ))}
                         <Link
-                            href="/contactUs"
+                            href="/contact-us"
                             className="px-4 py-2 bg-gradient-to-r border border-gray-300 from-orange-400 to-purple-400 text-white rounded-lg duration-200"
                         >
                             Contact Us
@@ -140,7 +140,7 @@ export default function Header() {
                                 )}
                             </div>
                         ))}
-                        <Link href="/contactUs" className="text-black block py-2">
+                        <Link href="/contact-us" className="text-black block py-2">
                             Contact Us
                         </Link>
                     </div>
