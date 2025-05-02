@@ -114,7 +114,7 @@ export const blogSidebar = {
     description: "Get expert developers for your next project.",
     button: {
       label: "Contact Us →",
-      url: "/contactUs",
+      url: "/contact-us",
     },
   },
 };

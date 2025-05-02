@@ -41,7 +41,7 @@ const AboutPage = () => {
           property="og:description"
           content="Discover the vision and team behind Nugen Courses. We're committed to delivering quality IT education through expert-led online training."
         />
-        <meta property="og:url" content="https://www.nugeninfo.com/aboutUs" />
+        <meta property="og:url" content="https://www.nugeninfo.com/about-us" />
         <meta property="og:image" content="/images/about-og.jpg" />
         <meta
           property="og:image:alt"

@@ -38,7 +38,7 @@ export default function Home() {
           property="og:description"
           content="Reach out to Nugen Courses for support, questions, or partnership opportunities. We’re happy to assist you."
         />
-        <meta property="og:url" content="https://www.nugeninfo.com/contactUs" />
+        <meta property="og:url" content="https://www.nugeninfo.com/contact-us" />
         <meta property="og:image" content="/images/contact-og.jpg" />
         <meta
           property="og:image:alt"

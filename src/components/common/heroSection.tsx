@@ -30,7 +30,7 @@ export default function CourseBanner({
         </p>
         <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-12">
           <Link
-            href="/contactUs"
+            href="/contact-us"
             className="inline-flex items-center px-6 py-3 bg-gradient-to-r border border-gray-300 from-orange-400 to-purple-400 text-white cursor-pointer hover:shadow-lg font-semibold rounded-full duration-200"
           >
             <MoveRight size={18} className="mr-2" />

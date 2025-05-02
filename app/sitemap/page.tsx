@@ -13,13 +13,13 @@ const blogSlugify = (title: string) =>
 const Sitemap = () => {
   const staticRoutes = [
     "/",
-    "/aboutUs",
+    "/about-us",
     "/blog",
-    "/contactUs",
+    "/contact-us",
     "/courses",
-    "/exploreCourses",
-    "/ourMission",
-    "/ourTeam",
+    "/explore-courses",
+    "/our-mission",
+    "/our-team",
     "/review",
     "/sitemap",
   ];

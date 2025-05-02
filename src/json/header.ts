@@ -14,5 +14,5 @@ export const HeaderContent: THeaderContent[] = [
     ],
   },
   { label: "Blog", href: "/blog" },
-  { label: "About Us", href: "/aboutUs" },
+  { label: "About Us", href: "/about-us" },
 ];
