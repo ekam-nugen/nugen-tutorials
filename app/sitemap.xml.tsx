@@ -5,11 +5,6 @@ import { blogData } from "@/src/json/blog";
 
 const Sitemap = () => null;
 
-const slugify = (title: string) =>
-  title
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/(^-|-$)+/g, "");
 const blogSlugify = (title: string) =>
   title
     .toLowerCase()

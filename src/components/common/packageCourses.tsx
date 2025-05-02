@@ -164,9 +164,11 @@ const PackageCourseDetails: React.FC<PackageCourseProps> = ({
 
             {/* Right - Single Image with fade */}
             <div className="relative h-80 md:h-[28rem] w-full">
-              <img
+              <Image
                 key={activeIndex}
                 src={useCases[activeIndex]?.image}
+                width={100}
+                height={100}
                 alt={`Use case ${activeIndex + 1}`}
                 className={`w-full h-full object-contain rounded-xl transition-opacity duration-500 ease-in-out ${
                   fade ? "opacity-0" : "opacity-100"
