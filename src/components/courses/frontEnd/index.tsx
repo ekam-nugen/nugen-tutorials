@@ -21,7 +21,6 @@ export default function FrontEnd() {
   return (
     <>
       <CourseBanner
-        title="Become a"
         highlight="Front-End Developer"
         description="Master the art of building stunning, high-performance websites and applications with cutting-edge front-end technologies."
         features={[

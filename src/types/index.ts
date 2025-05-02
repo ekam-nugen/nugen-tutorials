@@ -6,7 +6,6 @@ export interface IBannerFeature {
   subtitle: string;
 }
 export type CourseBannerProps = {
-  title: string;
   highlight: string;
   description: string;
   features: IBannerFeature[];

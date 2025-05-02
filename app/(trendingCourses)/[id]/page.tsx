@@ -27,7 +27,7 @@ export default function Home() {
   if (!tech) {
     return (
       <div className="p-10 text-center text-xl text-red-500">
-        Technology {id} not found 🚫
+        Course {id} not found 🚫
       </div>
     );
   }

@@ -25,13 +25,17 @@ export default function ConceptsCommon({ items }: ConceptsSectionProps) {
         setScaleX(0);
       } else {
         const totalHeight = scrollEnd - scrollStart;
-        const scrolled = Math.min(Math.max(scrollEnd - rect.top, 0), totalHeight);
+        const scrolled = Math.min(
+          Math.max(scrollEnd - rect.top, 0),
+          totalHeight
+        );
         const progress = scrolled / totalHeight;
 
         // Step-wise scaling
-        const steps = items.length - .5;
+        const steps = items.length - 0.5;
         const stepProgress = 1 / steps;
-        const snappedProgress = Math.ceil(progress / stepProgress) * stepProgress;
+        const snappedProgress =
+          Math.ceil(progress / stepProgress) * stepProgress;
 
         setScaleX(Math.min(snappedProgress, 0.9));
       }
@@ -47,13 +51,12 @@ export default function ConceptsCommon({ items }: ConceptsSectionProps) {
     };
   }, [items.length]);
 
-
   return (
     <>
       {/* Desktop Version */}
       <section
         ref={sectionRef}
-        className="hidden md:block relative bg-white py-10 pl-6 pr-20 "
+        className="hidden md:block relative bg-white py-16 pl-6 pr-20 "
       >
         <div className="container w-full mx-auto relative">
           {/* Connecting Line */}

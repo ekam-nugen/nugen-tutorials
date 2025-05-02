@@ -4,42 +4,42 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 
 interface Program {
-    id: string;
-    name: string;
-    duration: string;
-    startDate: string;
-    image: string;
+  id: string;
+  name: string;
+  duration: string;
+  startDate: string;
+  image: string;
 }
 
 const trendingCoursesData: Program[] = [
-    {
-        id: "pmp",
-        name: "PMP® Certification Training",
-        duration: "4 Weeks",
-        startDate: "22nd Apr '25",
-        image: "/project-management.jpg",
-    },
-    {
-        id: "cyber-security",
-        name: "Advanced Executive Program in Cybersecurity",
-        duration: "6 Months",
-        startDate: "23rd Apr '25",
-        image: "/cyberSecurity.jpg",
-    },
-    {
-        id: "scrum-master",
-        name: "Certified ScrumMaster® (CSM)",
-        duration: "3 Days",
-        startDate: "23rd Apr '25",
-        image: "/scrum.jpg",
-    },
-    {
-        id: "ai-ml",
-        name: "Professional Certificate Course in Generative AI and Machine Learning",
-        duration: "11 Months",
-        startDate: "29th Apr '25",
-        image: "/ai_ml.jpg",
-    },
+  {
+    id: "pmp",
+    name: "PMP® Certification Training",
+    duration: "4 Weeks",
+    startDate: "22nd Apr '25",
+    image: "/project-management.jpg",
+  },
+  {
+    id: "cyber-security",
+    name: "Advanced Executive Program in Cybersecurity",
+    duration: "6 Months",
+    startDate: "23rd Apr '25",
+    image: "/cyberSecurity.jpg",
+  },
+  {
+    id: "scrum-master",
+    name: "Certified ScrumMaster® (CSM)",
+    duration: "3 Days",
+    startDate: "23rd Apr '25",
+    image: "/scrum.jpg",
+  },
+  {
+    id: "ai-ml",
+    name: "Professional Certificate Course in Generative AI and Machine Learning",
+    duration: "11 Months",
+    startDate: "29th Apr '25",
+    image: "/ai_ml.jpg",
+  },
 ];
 
 export default function TrendingCourses() {
@@ -80,7 +80,7 @@ export default function TrendingCourses() {
                         </button>
                     </div>
                 ))}
-            </div>
-        </section>
-    );
+        </div>
+    </section>
+  );
 }
