@@ -29,7 +29,7 @@ export default function TechnologyShowcase() {
             <button
               key={category}
               onClick={() => setSelectedCategory(category as Category)}
-              className={`whitespace-nowrap px-5 py-2.5 rounded-full border font-semibold transition-all ${
+              className={`cursor-pointer whitespace-nowrap px-5 py-2.5 rounded-full border font-semibold transition-all ${
                 selectedCategory === category
                   ? "border-[#ff6b3d]/50 bg-[#fff5f0] text-orange-600"
                   : "bg-white text-gray-800 border-gray-200"
@@ -101,8 +101,7 @@ export default function TechnologyShowcase() {
                   "id" in program &&
                   router.push(`/explore-programs/${program.id}`)
                 }
-                className="w-full py-2.5 bg-[#ff6b3d] text-white font-semibold rounded-lg hover:bg-[#ff5c2a] transition-all shadow-md"
-              >
+               className="cursor-pointer w-full py-2.5 bg-[#ff6b3d] text-white font-semibold rounded-lg hover:bg-[#ff5c2a] transition-all shadow-md">
                 View Program
               </button>
             </div>

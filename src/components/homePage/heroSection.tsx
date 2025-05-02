@@ -124,14 +124,14 @@ export default function HeroSection() {
             transition={{ delay: 0.5, duration: 0.6 }}
           >
             <Link
-              href="/exploreCourses"
+              href="/explore-courses"
               className="relative overflow-hidden px-6 py-3 bg-gradient-to-r from-orange-400 to-purple-400 text-white font-semibold rounded-full shadow-lg transform hover:scale-105 transition"
             >
               <span className="absolute inset-0 bg-white opacity-0 hover:opacity-10 transition-opacity duration-300 rounded-full" />
               Explore Courses
             </Link>
             <Link
-              href="/contactUs"
+              href="/contact-us"
               className="px-7 py-3 bg-white text-[#f37458] font-semibold rounded-full border border-[#f37458] hover:bg-white/90 transition"
             >
               Start Free Trial

@@ -72,7 +72,7 @@ const PackageCourseDetails: React.FC<PackageCourseProps> = ({
                   with hands-on training from our best developers.
                 </h2>
                 <button
-                  onClick={() => router.push("/contactUs")}
+                  onClick={() => router.push("/contact-us")}
                   className="bg-gradient-to-r from-[#ff7e5f] to-[#feb47b] cursor-pointer text-white font-bold py-3 px-6 rounded-full flex items-center justify-center gap-2 mx-auto hover:bg-gradient-to-l transition"
                 >
                   Enroll Now
@@ -164,9 +164,11 @@ const PackageCourseDetails: React.FC<PackageCourseProps> = ({
 
             {/* Right - Single Image with fade */}
             <div className="relative h-80 md:h-[28rem] w-full">
-              <img
+              <Image
                 key={activeIndex}
                 src={useCases[activeIndex]?.image}
+                width={100}
+                height={100}
                 alt={`Use case ${activeIndex + 1}`}
                 className={`w-full h-full object-contain rounded-xl transition-opacity duration-500 ease-in-out ${
                   fade ? "opacity-0" : "opacity-100"
@@ -187,7 +189,7 @@ const PackageCourseDetails: React.FC<PackageCourseProps> = ({
             and become job-ready.
           </p>
           <button
-            onClick={() => router.push("/contactUs")}
+            onClick={() => router.push("/contact-us")}
             className="bg-white text-[#ff5f6d] font-bold py-3 px-8 rounded-full hover:bg-gray-100 cursor-pointer transition"
           >
             Enroll Today

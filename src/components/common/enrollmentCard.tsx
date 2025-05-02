@@ -22,7 +22,7 @@ export default function EnrollmentCard() {
             thriving career today!
           </p>
           <button
-            onClick={() => router.push("/contactUs")}
+            onClick={() => router.push("/contact-us")}
             className="bg-white text-[#ff5f6d] font-bold py-3 px-8 rounded-full hover:bg-gray-100 cursor-pointer transition"
           >
             → Enroll Now

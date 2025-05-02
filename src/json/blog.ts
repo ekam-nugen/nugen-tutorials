@@ -103,6 +103,77 @@ export const blogData = [
       description: "Mobile App Specialist at Nugen IT Services.",
     },
   },
+  {
+    role: "UI/UX Designer",
+    highlight: false,
+    title: "Designing Consistent Interfaces with Tailwind CSS at Nugen",
+    author: "Sanya Kapoor",
+    date: "April 30, 2025",
+    featuredImage: "/tailwind-css.jpg",
+    shortDescription:
+      "Discover how Nugen uses Tailwind CSS to streamline UI development and maintain design consistency across projects.",
+    categorie: "Tailwind CSS",
+    sections: [
+      {
+        heading: "Utility-First for Scalable Design",
+        content: [
+          "Tailwind CSS allows our team to build responsive and consistent interfaces rapidly, reducing the need for custom CSS and long debugging sessions.",
+        ],
+      },
+      {
+        heading: "Design System Integration",
+        content: [
+          "With Tailwind, we integrate seamlessly with design systems, enabling our developers and designers to collaborate efficiently using the same language and components.",
+        ],
+      },
+      {
+        heading: null,
+        quote:
+          "Tailwind CSS has transformed how we design—with speed, clarity, and precision.",
+      },
+    ],
+    authorNote: {
+      text: "Written by ",
+      author: "Sanya Kapoor",
+      description: "Senior UI/UX Designer at Nugen IT Services.",
+    },
+  },
+  {
+    role: "Frontend Developer",
+    highlight: false,
+    title: "Crafting Dynamic User Experiences with React at Nugen",
+    author: "Rohan Verma",
+    date: "May 1, 2025",
+    featuredImage: "/react2.png",
+    shortDescription:
+      "Learn how Nugen leverages React to build interactive, high-performance user interfaces across platforms.",
+    categorie: "React",
+    sections: [
+      {
+        heading: "Component-Based Architecture",
+        content: [
+          "React's component-driven development model helps us create reusable UI elements, improving consistency and maintainability across our codebase.",
+        ],
+      },
+      {
+        heading: "Fast Iteration and Performance",
+        content: [
+          "Using React with hooks and virtual DOM diffing, we rapidly prototype and deploy responsive, high-performing applications that scale.",
+        ],
+      },
+      {
+        heading: null,
+        quote:
+          "React is at the heart of everything we build—modular, fast, and intuitive.",
+      },
+    ],
+    authorNote: {
+      text: "Written by ",
+      author: "Rohan Verma",
+      description:
+        "Frontend Developer at Nugen IT Services, specializing in modern JavaScript frameworks.",
+    },
+  },
 ];
 
 export const blogSidebar = {
@@ -114,11 +185,10 @@ export const blogSidebar = {
     description: "Get expert developers for your next project.",
     button: {
       label: "Contact Us →",
-      url: "/contactUs",
+      url: "/contact-us",
     },
   },
 };
-
 
 const testimonials = [
   {

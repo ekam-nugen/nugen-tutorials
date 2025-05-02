@@ -17,7 +17,7 @@ export const services = [
     icon: <Globe color="#ff6b3d" />,
     subtitle: "Develop high-performance, SEO-optimized, and responsive websites.",
     linkTitle: "Learn Web Development",
-    link:"/exploreCourses/webdevelopment",
+    link:"/explore-courses/webdevelopment",
   },
   {
     category: "Full Stack",
@@ -25,7 +25,7 @@ export const services = [
     icon: <Smartphone color="#ff6b3d" />,
     subtitle: "Native & cross-platform mobile apps for iOS and Android.",
     linkTitle: "Explore Mobile Development",  
-    link:"/exploreCourses/appdevelopment",
+    link:"/explore-courses/appdevelopment",
   },
 
   // Frontend
@@ -35,7 +35,7 @@ export const services = [
     icon: <Paintbrush color="#ff6b3d" />,
     subtitle: "Craft intuitive and engaging digital experiences with user-centered design.",
     linkTitle: "Learn About UI/UX",
-    link:"/exploreCourses/uiux",
+    link:"/explore-courses/uiux",
   },
   {
     category: "Frontend",
@@ -43,7 +43,7 @@ export const services = [
     icon: <ShoppingCart color="#ff6b3d" />,
     subtitle: "Build scalable, secure, and user-friendly e-commerce platforms.",
     linkTitle: "Explore E-commerce Solutions",
-    link:"/exploreCourses/cms",
+    link:"/explore-courses/cms",
   },
 
   // Backend
@@ -53,7 +53,7 @@ export const services = [
     icon: <Cloud color="#ff6b3d" />,
     subtitle: "Design, deploy, and manage scalable cloud infrastructure for performance & cost efficiency.",
     linkTitle: "Explore Cloud Services",
-    link:"/exploreCourses/cloud-engineering",
+    link:"/explore-courses/cloud-engineering",
   },
   {
     category: "Backend",
@@ -61,7 +61,7 @@ export const services = [
     icon: <BsRobot color="#ff6b3d" />,
     subtitle: "Gain a competitive edge with AI-powered insights and automation.",
     linkTitle: "Explore AI Solutions",
-    link:"/exploreCourses/intelligence",
+    link:"/explore-courses/intelligence",
   },
   {
     category: "Backend",
@@ -69,7 +69,7 @@ export const services = [
     icon: <FlaskRound color="#ff6b3d" />,
     subtitle: "Ensure software reliability through thorough testing and quality assurance.",
     linkTitle: "Explore QA Services",
-    link:"/exploreCourses/qa",
+    link:"/explore-courses/qa",
   },
   {
     category: "Backend",
@@ -77,7 +77,7 @@ export const services = [
     icon: <Users color="#ff6b3d" />,
     subtitle: "Build your remote dream team with our vetted tech talent.",
     linkTitle: "Hire Dedicated Teams",
-    link:"/exploreCourses/book-an-appointment",
+    link:"/explore-courses/book-an-appointment",
   },
 ];
 
