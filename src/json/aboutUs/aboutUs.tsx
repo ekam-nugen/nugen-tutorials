@@ -11,31 +11,35 @@ export const UserProfiles = [
 export const servicesData = [
   {
     id: 1,
-    title: "WordPress Training",
+    path: "/aws-solutions-architect",
+    title: "AWS Solutions Architect",
     description:
-      "Learn how to manage and maintain WordPress websites effectively.",
+      "Become proficient in AWS services and design fault-tolerant, secure cloud systems.",
     iconPath: "M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z",
     benefits: [
-      "🔧 Plugin & Theme Management",
-      "🔒 Security Best Practices",
-      "📦 Backup & Restore Procedures",
+      "🔧 AWS Cloud Architecture Design",
+      "📈 Serverless Application Deployment",
+      "📦 CloudFront CDN Setup",
     ],
   },
   {
     id: 2,
-    title: "CMS Fundamentals",
-    description: "Understand core concepts of content management systems.",
+    path: "/ethical-hacking-training",
+    title: "Ethical Hacking Training",
+    description:
+      "Master ethical hacking skills to legally assess, penetrate, and secure systems from cyber threats.",
     iconPath:
       "M3 3h18v18H3V3zm16 16V5H5v14h14zM7 7h10v2H7V7zm0 4h10v2H7v-2zm0 4h7v2H7v-2z",
     benefits: [
-      "📁 Content Structuring",
-      "🧰 Custom Workflows",
-      "🔌 Integration Basics",
+      "📁 Vulnerability Assessment",
+      "🛠️ Penetration Testing",
+      "🔌 Network Security",
     ],
   },
   {
     id: 3,
-    title: "UI & UX Design Training",
+    path: "/ux-ui-design-certification",
+    title: "UX/UI Design Certification",
     description: "Learn to design intuitive and user-friendly interfaces.",
     iconPath: "M4 8h16M4 16h16M12 12h.01M8 12h.01M16 12h.01",
     benefits: [
@@ -46,50 +50,58 @@ export const servicesData = [
   },
   {
     id: 4,
-    title: "Web App Development Bootcamp",
-    description: "Build scalable web applications from scratch.",
+    path: "/google-ads-analytics",
+    title: "Google Ads & Analytics",
+    description:
+      "Master Google Ads and Google Analytics to optimize marketing strategies for better ROI.",
     iconPath:
       "M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9",
     benefits: [
-      "🛠️ Project-Based Learning",
-      "🚀 Real-World Frameworks (React, Node)",
-      "🔐 Secure Coding Practices",
+      "🛠️ Search Engine Marketing",
+      "📈 Google Analytics Tracking",
+      "🔍 Paid Search Advertising",
     ],
   },
   {
     id: 5,
-    title: "Website Optimization Training",
-    description: "Master techniques to improve speed and SEO of websites.",
+    path: "/ml-bootcamp",
+    title: "Machine Learning Bootcamp",
+    description:
+      "Master machine learning fundamentals and build end-to-end models.",
     iconPath:
       "M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 16c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6z",
     benefits: [
-      "⚡ Speed Optimization",
-      "🔍 SEO Techniques",
-      "🔧 Performance Monitoring Tools",
+      "⚡ Credit Scoring",
+      "🔍 Fraud Detection",
+      "🔧 Predictive Maintenance",
     ],
   },
   {
     id: 6,
-    title: "Mobile App Development Training",
-    description: "Learn to develop native and cross-platform mobile apps.",
+    path: "/gen-ai-everyone",
+    title: "Generative AI for Everyone",
+    description:
+      "Understand the foundations of generative AI and how it's transforming industries with real-world applications.",
     iconPath:
       "M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z",
     benefits: [
-      "📱 Android & iOS Basics",
-      "🧩 Flutter & React Native",
-      "📤 Deployment & Testing",
+      "📱 AI-Assisted Content Creation",
+      "🧩 Presentation & Slide Generation",
+      "📤 Creative Writing Assistance",
     ],
   },
   {
     id: 7,
-    title: "Web Design & Development Training",
-    description: "Learn the full cycle of web design and development.",
+    path: "/full-stack-developer",
+    title: "Full Stack Developer",
+    description:
+      "Become a full-stack developer by mastering both front-end and back-end technologies.",
     iconPath:
       "M4 3h16a2 2 0 012 2v14a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2zm2 4v10h12V7H6z",
     benefits: [
-      "🌍 HTML, CSS & JavaScript",
-      "🖼️ UI Tools & Frameworks",
-      "💡 End-to-End Website Creation",
+      "🔧 Full Stack Proficiency",
+      "🖥️ Web Application Development",
+      "📚 Continuous Learning",
     ],
   },
 ];
