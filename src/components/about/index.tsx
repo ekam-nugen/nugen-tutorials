@@ -1,11 +1,26 @@
 "use client";
+import { initializeCanvas } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { CircleCheckBig, Users } from "lucide-react";
 import Link from "next/link";
+import React, { useEffect } from "react";
 
 export default function AboutUsSection() {
+  const sectionRef = React.useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    initializeCanvas(sectionRef);
+  }, [sectionRef]);
+
   return (
-    <section className="relative bg-white py-28 px-6 md:px-16 overflow-hidden">
+    <section
+      ref={sectionRef}
+      className="relative bg-white py-28 px-6 md:px-16 overflow-hidden"
+    >
+      <canvas
+        id="canvas"
+        className="absolute inset-0 z-0 pointer-events-none"
+      />
       <div className="absolute -top-20 -left-10 w-96 h-96 bg-[#fca78c] opacity-30 blur-[100px] rounded-full z-0 animate-pulse" />
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#fca78c] opacity-20 blur-[120px] rounded-full z-0 animate-ping" />
       <div className="absolute top-32 left-20 w-32 h-32 border-2 border-[#fca78c] rounded-full opacity-20 z-0" />

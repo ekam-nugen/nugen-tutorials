@@ -5,7 +5,7 @@ export const data = {
       name: "Generative AI for Everyone",
       duration: "8 Weeks",
       startDate: "2nd May '25",
-      image: "/generativeAi.webp",
+      image: "/generativeAi.jpeg",
       activeUsers: 120,
     },
     {
@@ -13,7 +13,7 @@ export const data = {
       name: "Hands-on GANs Workshop",
       duration: "6 Weeks",
       startDate: "7th May '25",
-      image: "/generativeAi.webp",
+      image: "/ganAi.png",
       activeUsers: 120,
     },
     {
@@ -21,7 +21,7 @@ export const data = {
       name: "Large Language Models in Practice",
       duration: "10 Weeks",
       startDate: "10th May '25",
-      image: "/generativeAi.webp",
+      image: "/llmAi.webp",
       activeUsers: 120,
     },
     {
@@ -29,7 +29,7 @@ export const data = {
       name: "Prompt Engineering Fundamentals",
       duration: "4 Weeks",
       startDate: "15th May '25",
-      image: "/generativeAi.webp",
+      image: "/prompt.png",
       activeUsers: 120,
     },
     {
@@ -37,7 +37,7 @@ export const data = {
       name: "NLP with Transformers",
       duration: "3 Months",
       startDate: "20th May '25",
-      image: "/generativeAi.webp",
+      image: "/nlpAi.jpg",
       activeUsers: 120,
     },
   ],
@@ -48,7 +48,7 @@ export const data = {
       duration: "6 Months",
       startDate: "1st May '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/machineLearningImage.jpg",
     },
     {
       id: "ai-business-leaders",
@@ -56,7 +56,7 @@ export const data = {
       duration: "3 Months",
       startDate: "5th May '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/aiBusiness.jpg",
     },
     {
       id: "deep-learning-tensorflow",
@@ -64,14 +64,14 @@ export const data = {
       duration: "5 Months",
       startDate: "9th May '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/tensorFlow.jpg",
     },
     {
       id: "ml-model-deployment",
       name: "ML Model Deployment",
       duration: "2 Months",
       startDate: "15th May '25",
-      image: "/ai-ml.jpg",
+      image: "/modelDevelopment.webp",
       activeUsers: 120,
     },
     {
@@ -79,7 +79,7 @@ export const data = {
       name: "AI Strategy & Ethics",
       duration: "6 Weeks",
       startDate: "20th May '25",
-      image: "/ai-ml.jpg",
+      image: "/aiEthics.webp",
       activeUsers: 120,
     },
   ],
@@ -89,7 +89,7 @@ export const data = {
       name: "Data Analyst",
       duration: "11 Months",
       startDate: "26th Apr '25",
-      image: "/dataScience.jpg",
+      image: "/dataAnalyst.webp",
       activeUsers: 120,
     },
     {
@@ -97,7 +97,7 @@ export const data = {
       name: "Business Analyst",
       duration: "11 Months",
       startDate: "22nd Apr '25",
-      image: "/dataScience.jpg",
+      image: "/businessAnalyst.avif",
       activeUsers: 120,
     },
     {
@@ -105,7 +105,7 @@ export const data = {
       name: "Data Science with Python",
       duration: "6 Months",
       startDate: "5th May '25",
-      image: "/dataScience.jpg",
+      image: "/pythonDataScience.jpg",
       activeUsers: 120,
     },
     {
@@ -113,7 +113,7 @@ export const data = {
       name: "Power BI for Data Insights",
       duration: "8 Weeks",
       startDate: "10th May '25",
-      image: "/dataScience.jpg",
+      image: "/powerBi.jpg",
       activeUsers: 120,
     },
     {
@@ -121,7 +121,7 @@ export const data = {
       name: "Statistics for Business",
       duration: "2 Months",
       startDate: "12th May '25",
-      image: "/dataScience.jpg",
+      image: "/businessStatics.avif",
       activeUsers: 120,
     },
   ],
@@ -131,7 +131,7 @@ export const data = {
       name: "PMP® Certification Training",
       duration: "4 Weeks",
       startDate: "22nd Apr '25",
-      image: "/ai-ml.jpg",
+      image: "/pmpTraning.jpg",
       activeUsers: 120,
     },
     {
@@ -140,7 +140,7 @@ export const data = {
       duration: "6 Weeks",
       startDate: "1st May '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/aglieManagement.jpg",
     },
     {
       id: "pgmp-certification-training",
@@ -148,7 +148,7 @@ export const data = {
       duration: "3 Months",
       startDate: "7th May '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/pgmp.jpg",
     },
     {
       id: "ms-project-training",
@@ -156,7 +156,7 @@ export const data = {
       duration: "4 Weeks",
       startDate: "11th May '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/MspProject.png",
     },
     {
       id: "project-risk-management",
@@ -164,7 +164,7 @@ export const data = {
       duration: "5 Weeks",
       startDate: "17th May '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/riskManagement.webp",
     },
   ],
   "Cyber Security": [
@@ -174,7 +174,7 @@ export const data = {
       duration: "6 Months",
       startDate: "23rd Apr '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/cyber.jpg",
     },
     {
       id: "ethical-hacking-training",
@@ -182,7 +182,7 @@ export const data = {
       duration: "4 Months",
       startDate: "28th Apr '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/ethicalHacking.webp",
     },
     {
       id: "network-security-specialist",
@@ -190,7 +190,7 @@ export const data = {
       duration: "10 Weeks",
       startDate: "2nd May '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/NetworkSecurity.png",
     },
     {
       id: "cloud-security-basics",
@@ -198,7 +198,7 @@ export const data = {
       duration: "2 Months",
       startDate: "6th May '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/cloudSecurity.jpeg",
     },
     {
       id: "cyber-threat-intelligence",
@@ -206,7 +206,7 @@ export const data = {
       duration: "3 Months",
       startDate: "9th May '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/threat.webp",
     },
   ],
   "Agile and Scrum": [
@@ -216,7 +216,7 @@ export const data = {
       duration: "3 Days",
       startDate: "23rd Apr '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/scrum.jpg",
     },
     {
       id: "safe-agilist-certification",
@@ -224,7 +224,7 @@ export const data = {
       duration: "2 Weeks",
       startDate: "30th Apr '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/aglistCertification.webp",
     },
     {
       id: "agile-fundamentals",
@@ -232,7 +232,7 @@ export const data = {
       duration: "1 Month",
       startDate: "5th May '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/aglieFundamental.jpg",
     },
     {
       id: "scrum-product-owner",
@@ -240,7 +240,7 @@ export const data = {
       duration: "2 Weeks",
       startDate: "9th May '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/productOwner.png",
     },
     {
       id: "agile-for-teams",
@@ -248,7 +248,7 @@ export const data = {
       duration: "3 Weeks",
       startDate: "12th May '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/aglieTeams.webp",
     },
   ],
   "Cloud Computing & DevOps": [
@@ -258,7 +258,7 @@ export const data = {
       duration: "12 Months",
       startDate: "6th May '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/cloud.jpg",
     },
     {
       id: "aws-solutions-architect",
@@ -266,7 +266,7 @@ export const data = {
       duration: "4 Months",
       startDate: "10th May '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/awsCertification.jpg",
     },
     {
       id: "devops-certification",
@@ -274,7 +274,7 @@ export const data = {
       duration: "6 Months",
       startDate: "14th May '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/dev.webp",
     },
     {
       id: "kubernetes-for-developers",
@@ -282,7 +282,7 @@ export const data = {
       duration: "3 Months",
       startDate: "17th May '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/Kubernetes.png",
     },
     {
       id: "azure-fundamentals",
@@ -290,7 +290,7 @@ export const data = {
       duration: "8 Weeks",
       startDate: "20th May '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/azure.png",
     },
   ],
   "Business and Leadership": [
@@ -300,7 +300,7 @@ export const data = {
       duration: "8 Months",
       startDate: "10th May '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/leader.webp",
     },
     {
       id: "strategic-thinking",
@@ -308,7 +308,7 @@ export const data = {
       duration: "3 Months",
       startDate: "14th May '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/thinking.jpeg",
     },
     {
       id: "business-communication",
@@ -316,7 +316,7 @@ export const data = {
       duration: "6 Weeks",
       startDate: "18th May '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/communication.jpg",
     },
     {
       id: "change-management",
@@ -324,7 +324,7 @@ export const data = {
       duration: "2 Months",
       startDate: "22nd May '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/change.jpg",
     },
     {
       id: "innovation-growth",
@@ -332,7 +332,7 @@ export const data = {
       duration: "1 Month",
       startDate: "25th May '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/growth.png",
     },
   ],
   "Software Development": [
@@ -342,7 +342,7 @@ export const data = {
       duration: "9 Months",
       startDate: "15th May '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/fullStack.jpg",
     },
     {
       id: "frontend-development-react",
@@ -350,7 +350,7 @@ export const data = {
       duration: "4 Months",
       startDate: "20th May '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/frontend.jpeg",
     },
     {
       id: "backend-development-nodejs",
@@ -358,7 +358,7 @@ export const data = {
       duration: "5 Months",
       startDate: "24th May '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/back-end.png",
     },
     {
       id: "software-engineering-principles",
@@ -366,7 +366,7 @@ export const data = {
       duration: "6 Weeks",
       startDate: "28th May '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/software.jpg",
     },
     {
       id: "clean-code-architecture",
@@ -374,7 +374,7 @@ export const data = {
       duration: "3 Months",
       startDate: "30th May '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/cleanCode.jpg",
     },
   ],
   "Product and Design": [
@@ -384,7 +384,7 @@ export const data = {
       duration: "6 Months",
       startDate: "5th May '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/ui.jpg",
     },
     {
       id: "figma-masterclass",
@@ -392,7 +392,7 @@ export const data = {
       duration: "2 Months",
       startDate: "9th May '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/figma.jpg",
     },
     {
       id: "design-thinking-innovation",
@@ -400,7 +400,7 @@ export const data = {
       duration: "4 Weeks",
       startDate: "13th May '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/design.jpeg",
     },
     {
       id: "interaction-design-essentials",
@@ -408,7 +408,7 @@ export const data = {
       duration: "3 Months",
       startDate: "17th May '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/interactionDesign.avif",
     },
     {
       id: "prototyping-usability-testing",
@@ -416,7 +416,7 @@ export const data = {
       duration: "1 Month",
       startDate: "22nd May '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/prototype.jpg",
     },
   ],
   "IT Service and Architecture": [
@@ -426,7 +426,7 @@ export const data = {
       duration: "2 Weeks",
       startDate: "3rd May '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/itil.webp",
     },
     {
       id: "enterprise-architecture-fundamentals",
@@ -434,7 +434,7 @@ export const data = {
       duration: "2 Months",
       startDate: "8th May '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/erpArc.webp",
     },
     {
       id: "it-service-management-servicenow",
@@ -442,7 +442,7 @@ export const data = {
       duration: "3 Months",
       startDate: "13th May '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/itService.jpg",
     },
     {
       id: "agile-itsm-practices",
@@ -450,7 +450,7 @@ export const data = {
       duration: "6 Weeks",
       startDate: "18th May '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/itsm.jpg",
     },
     {
       id: "it-strategy-governance",
@@ -458,7 +458,7 @@ export const data = {
       duration: "5 Weeks",
       startDate: "22nd May '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/strategy.jpg",
     },
   ],
   "Quality Management": [
@@ -468,7 +468,7 @@ export const data = {
       duration: "1 Month",
       startDate: "4th May '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/greenSigma.jpg",
     },
     {
       id: "lean-six-sigma-yellow-belt",
@@ -476,7 +476,7 @@ export const data = {
       duration: "2 Weeks",
       startDate: "9th May '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/sigmaYellow.jpg",
     },
     {
       id: "quality-management-systems",
@@ -484,7 +484,7 @@ export const data = {
       duration: "2 Months",
       startDate: "13th May '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/quality.jpg",
     },
     {
       id: "iso-9001-2015-training",
@@ -492,7 +492,7 @@ export const data = {
       duration: "4 Weeks",
       startDate: "18th May '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/iso.jpg",
     },
     {
       id: "root-cause-analysis-workshop",
@@ -500,7 +500,7 @@ export const data = {
       duration: "3 Weeks",
       startDate: "23rd May '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/rootCause.avif",
     },
   ],
   "Digital Marketing": [
@@ -510,7 +510,7 @@ export const data = {
       duration: "7 Months",
       startDate: "8th May '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/digitalMarketing.jpeg",
     },
     {
       id: "seo-sem-fundamentals",
@@ -518,7 +518,7 @@ export const data = {
       duration: "2 Months",
       startDate: "12th May '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/seoAndSem.jpg",
     },
     {
       id: "social-media-marketing",
@@ -526,7 +526,7 @@ export const data = {
       duration: "3 Months",
       startDate: "16th May '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/socialMedia.jpg",
     },
     {
       id: "content-strategy-bootcamp",
@@ -534,7 +534,7 @@ export const data = {
       duration: "4 Weeks",
       startDate: "21st May '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/content.jpg",
     },
     {
       id: "google-ads-analytics",
@@ -542,7 +542,7 @@ export const data = {
       duration: "1 Month",
       startDate: "25th May '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/googleAdd.webp",
     },
   ],
 };

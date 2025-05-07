@@ -1,10 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Link from "next/link";
 import { techTags } from "./languageSection";
+import { initializeCanvas } from "@/lib/utils";
 
 export const TechnologySection = () => {
+  const sectionRef = React.useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    initializeCanvas(sectionRef);
+  }, [sectionRef]);
   return (
-    <div className="bg-gradient-to-r from-white via-[#fff1eb] to-white px-4 py-10 flex flex-col items-center">
+    <section
+      ref={sectionRef}
+      className="bg-gradient-to-r from-white via-[#fff1eb] cursor-pointer to-white px-4 py-10 flex flex-col items-center"
+    >
+      <canvas
+        id="canvas"
+        className="absolute inset-0 z-0 pointer-events-none"
+      />
       <div className="w-full max-w-6xl text-center">
         <h2 className="text-lg sm:text-xl md:text-2xl text-[#ffbb9f] font-semibold mb-2">
           Nugen I.T Courses
@@ -26,6 +39,6 @@ export const TechnologySection = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
