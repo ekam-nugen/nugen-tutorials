@@ -138,10 +138,7 @@ export default function Header() {
                   {item.children ? (
                     <div ref={dropdownRef}>
                       <button
-                        onClick={() => {
-                          toggleDropdown(item.label);
-                          setIsMobileMenuOpen(false);
-                        }}
+                        onClick={() => toggleDropdown(item.label)}
                         className="flex items-center justify-between w-full"
                       >
                         <div className="text-black hover:text-[#ff6b3d] font-medium flex items-center cursor-pointer">
@@ -170,6 +167,7 @@ export default function Header() {
                             <Link
                               key={subItem.label}
                               href={subItem?.href}
+                              onClick={() => setIsMobileMenuOpen(false)}
                               className="px-8 py-2 text-black hover:bg-gray-100"
                             >
                               {subItem.label}
