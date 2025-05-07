@@ -5,7 +5,7 @@ export const data = {
       name: "Generative AI for Everyone",
       duration: "8 Weeks",
       startDate: "2nd May '25",
-      image: "/generativeAi.webp",
+      image: "/generativeAi.jpeg",
       activeUsers: 120,
     },
     {
@@ -300,7 +300,7 @@ export const data = {
       duration: "8 Months",
       startDate: "10th May '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/leader.webp",
     },
     {
       id: "strategic-thinking",
@@ -308,7 +308,7 @@ export const data = {
       duration: "3 Months",
       startDate: "14th May '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/thinking.jpeg",
     },
     {
       id: "business-communication",
@@ -316,7 +316,7 @@ export const data = {
       duration: "6 Weeks",
       startDate: "18th May '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/communication.jpg",
     },
     {
       id: "change-management",
@@ -324,7 +324,7 @@ export const data = {
       duration: "2 Months",
       startDate: "22nd May '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/change.jpg",
     },
     {
       id: "innovation-growth",
@@ -332,7 +332,7 @@ export const data = {
       duration: "1 Month",
       startDate: "25th May '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/growth.png",
     },
   ],
   "Software Development": [
@@ -426,7 +426,7 @@ export const data = {
       duration: "2 Weeks",
       startDate: "3rd May '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/itil.webp",
     },
     {
       id: "enterprise-architecture-fundamentals",
@@ -434,7 +434,7 @@ export const data = {
       duration: "2 Months",
       startDate: "8th May '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/erpArc.webp",
     },
     {
       id: "it-service-management-servicenow",
@@ -442,7 +442,7 @@ export const data = {
       duration: "3 Months",
       startDate: "13th May '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/itService.jpg",
     },
     {
       id: "agile-itsm-practices",
@@ -450,7 +450,7 @@ export const data = {
       duration: "6 Weeks",
       startDate: "18th May '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/itsm.jpg",
     },
     {
       id: "it-strategy-governance",
@@ -458,7 +458,7 @@ export const data = {
       duration: "5 Weeks",
       startDate: "22nd May '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/strategy.jpg",
     },
   ],
   "Quality Management": [
