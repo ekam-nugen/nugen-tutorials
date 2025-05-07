@@ -1,10 +1,25 @@
 "use client";
+import { initializeCanvas } from "@/lib/utils";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import React, { useEffect } from "react";
 
 export default function AboutUsSection() {
+  const sectionRef = React.useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    initializeCanvas(sectionRef);
+  }, [sectionRef]);
+
   return (
-    <section className="relative bg-white py-28 px-6 md:px-16 overflow-hidden">
+    <section
+      ref={sectionRef}
+      className="relative bg-white py-28 px-6 md:px-16 overflow-hidden"
+    >
+      <canvas
+        id="canvas"
+        className="absolute inset-0 z-0 pointer-events-none"
+      />
       <div className="absolute -top-20 -left-10 w-96 h-96 bg-[#fca78c] opacity-30 blur-[100px] rounded-full z-0 animate-pulse" />
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#fca78c] opacity-20 blur-[120px] rounded-full z-0 animate-ping" />
       <div className="absolute top-32 left-20 w-32 h-32 border-2 border-[#fca78c] rounded-full opacity-20 z-0" />
@@ -40,10 +55,16 @@ export default function AboutUsSection() {
           viewport={{ once: true }}
           transition={{ delay: 0.4, duration: 0.6 }}
         >
-          <Link href="/our-team" className="inline-flex items-center px-6 py-3 bg-gradient-to-r border border-gray-300 from-orange-400 to-purple-400 text-white cursor-pointer hover:shadow-lg font-semibold rounded-full duration-200">
+          <Link
+            href="/our-team"
+            className="inline-flex items-center px-6 py-3 bg-gradient-to-r border border-gray-300 from-orange-400 to-purple-400 text-white cursor-pointer hover:shadow-lg font-semibold rounded-full duration-200"
+          >
             Meet Our Team
           </Link>
-          <Link href="/our-mission" className="bg-white text-[#f37458] px-7 py-3 rounded-full font-semibold border border-[#f37458] backdrop-blur-md shadow-sm hover:bg-[#fff0eb] cursor-pointer transition-all duration-300">
+          <Link
+            href="/our-mission"
+            className="bg-white text-[#f37458] px-7 py-3 rounded-full font-semibold border border-[#f37458] backdrop-blur-md shadow-sm hover:bg-[#fff0eb] cursor-pointer transition-all duration-300"
+          >
             Our Mission
           </Link>
         </motion.div>
