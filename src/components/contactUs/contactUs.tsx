@@ -54,11 +54,11 @@ const ContactUsSection = () => {
           <p className="mb-4 leading-relaxed text-sm">
             <strong>📍 Address:</strong>
             <br />
-            C-196/A, Times Square Building,
+            Second floor, ST Square Building Plot No C-167, Phase 8B,
             <br />
-            Ground Floor, Sector 74, SAS Nagar,
+             Industrial Area, Sector 74, Sahibzada Ajit Singh Nagar,
             <br />
-            Mohali, Punjab, 160071
+             Mohali, Punjab 160071.
           </p>
           <p className="mb-2 text-sm">
             <strong>📞 Phone :</strong> +91 78148 52571
