@@ -55,6 +55,18 @@ export default function TestimonialStatic({
           className="bg-gradient-to-r from-pink-500 to-orange-500 hover:from-pink-600 hover:to-orange-600 text-white px-10 py-4 rounded-full shadow-xl transform transition-transform duration-300 hover:scale-105 text-sm font-medium"
         >
           Read More Reviews
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 23 16"
+            fill="none"
+            className="inline-block ml-1"
+          >
+            <path
+              d="M22.7071 8.7071C23.0976 8.31658 23.0976 7.68342 22.7071 7.29289L16.3431 0.928931C15.9526 0.538406 15.3195 0.538406 14.9289 0.928931C14.5384 1.31946 14.5384 1.95262 14.9289 2.34314L20.5858 8L14.9289 13.6569C14.5384 14.0474 14.5384 14.6805 14.9289 15.0711C15.3195 15.4616 15.9526 15.4616 16.3431 15.0711L22.7071 8.7071ZM8.74228e-08 9L22 9L22 7L-8.74228e-08 7L8.74228e-08 9Z"
+              fill="white"
+            />
+          </svg>
         </Link>
         <div className="flex justify-center items-center gap-6 mt-10 flex-wrap">
           <Image src="/award-logo-1.svg" alt="Google" width={100} height={35} />

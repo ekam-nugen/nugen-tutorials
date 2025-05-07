@@ -6,6 +6,7 @@ import Particles from "react-tsparticles";
 import { useCallback } from "react";
 import { loadSlim } from "tsparticles-slim";
 import type { Engine } from "tsparticles-engine";
+import { ArrowUpRight, BookMarked } from "lucide-react";
 
 export default function HeroSection() {
   const particlesInit = useCallback(async (engine: Engine) => {
@@ -94,7 +95,6 @@ export default function HeroSection() {
         </div>
       </div>
       <div className="relative z-10 py-24 px-6">
-
         {/* Hero Content */}
         <div className="relative z-20 max-w-5xl mx-auto text-center px-4 md:px-6 pt-32 md:py-32">
           <motion.h1
@@ -125,16 +125,18 @@ export default function HeroSection() {
           >
             <Link
               href="/explore-courses"
-              className="relative overflow-hidden px-6 py-3 bg-gradient-to-r from-orange-400 to-purple-400 text-white font-semibold rounded-full shadow-lg transform hover:scale-105 transition"
+              className="flex justify-center items-center overflow-hidden px-6 py-3 bg-gradient-to-r from-orange-400 to-purple-400 text-white font-semibold rounded-full shadow-lg transform hover:scale-105 transition"
             >
-              <span className="absolute inset-0 bg-white opacity-0 hover:opacity-10 transition-opacity duration-300 rounded-full" />
+              {/* <span className="absolute inset-0 bg-white opacity-0 hover:opacity-10 transition-opacity duration-300 rounded-full" /> */}
+              <BookMarked className="w-4 h-4 mr-1" strokeWidth={3} />
               Explore Courses
             </Link>
             <Link
               href="/contact-us"
-              className="px-7 py-3 bg-white text-[#f37458] font-semibold rounded-full border border-[#f37458] hover:bg-white/90 transition"
+              className="px-7 py-3 bg-white text-[#f37458] flex justify-center items-center font-semibold rounded-full border border-[#f37458] hover:bg-white/90 transition"
             >
               Start Free Trial
+              <ArrowUpRight className="w-4 h-4 ml-1 text-[#f37458" strokeWidth={3}/>
             </Link>
           </motion.div>
 
