@@ -4,7 +4,10 @@ import Image from "next/image";
 import google from "../../../public/award-logo-1.svg";
 import trustpilot from "../../../public/trustpilot-logo.png";
 import Link from "next/link";
-import { TESTIMONOAL_DATA_ONE, TESTIMONOAL_DATA_TWO } from "@/src/json/reviews/reviews";
+import {
+  TESTIMONOAL_DATA_ONE,
+  TESTIMONOAL_DATA_TWO,
+} from "@/src/json/reviews/reviews";
 
 export default function ShowReviewsPage() {
   const allTestimonials = [...TESTIMONOAL_DATA_ONE, ...TESTIMONOAL_DATA_TWO];
@@ -16,7 +19,7 @@ export default function ShowReviewsPage() {
           Nugen It Service
         </h2>
         <p className="text-gray-600 mb-10 max-w-2xl mx-auto text-lg">
-          Hear what our clients have to say about their experience at
+          Hear what our clients have to say about their experience at{" "}
           <span className="font-semibold text-pink-500">Nugen</span>!
         </p>
 
@@ -69,7 +72,10 @@ export default function ShowReviewsPage() {
           </div>
         </div>
         <div className="mt-16">
-          <Link href="/contact-us" className="cursor-pointer bg-gradient-to-r from-pink-500 to-orange-500 hover:from-pink-600 hover:to-orange-600 text-white px-10 py-4 rounded-full text-lg shadow-xl font-semibold transform transition-transform duration-300 hover:scale-105">
+          <Link
+            href="/contact-us"
+            className="cursor-pointer bg-gradient-to-r from-pink-500 to-orange-500 hover:from-pink-600 hover:to-orange-600 text-white px-10 py-4 rounded-full text-lg shadow-xl font-semibold transform transition-transform duration-300 hover:scale-105"
+          >
             Share Your Story
           </Link>
         </div>
