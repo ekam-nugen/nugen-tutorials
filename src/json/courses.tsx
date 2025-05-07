@@ -131,7 +131,7 @@ export const data = {
       name: "PMP® Certification Training",
       duration: "4 Weeks",
       startDate: "22nd Apr '25",
-      image: "/ai-ml.jpg",
+      image: "/pmpTraning.jpg",
       activeUsers: 120,
     },
     {
@@ -140,7 +140,7 @@ export const data = {
       duration: "6 Weeks",
       startDate: "1st May '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/aglieManagement.jpg",
     },
     {
       id: "pgmp-certification-training",
@@ -148,7 +148,7 @@ export const data = {
       duration: "3 Months",
       startDate: "7th May '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/pgmp.jpg",
     },
     {
       id: "ms-project-training",
@@ -156,7 +156,7 @@ export const data = {
       duration: "4 Weeks",
       startDate: "11th May '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/MspProject.png",
     },
     {
       id: "project-risk-management",
@@ -164,7 +164,7 @@ export const data = {
       duration: "5 Weeks",
       startDate: "17th May '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/riskManagement.webp",
     },
   ],
   "Cyber Security": [
@@ -174,7 +174,7 @@ export const data = {
       duration: "6 Months",
       startDate: "23rd Apr '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/cyber.jpg",
     },
     {
       id: "ethical-hacking-training",
@@ -182,7 +182,7 @@ export const data = {
       duration: "4 Months",
       startDate: "28th Apr '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/ethicalHacking.webp",
     },
     {
       id: "network-security-specialist",
@@ -190,7 +190,7 @@ export const data = {
       duration: "10 Weeks",
       startDate: "2nd May '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/NetworkSecurity.png",
     },
     {
       id: "cloud-security-basics",
@@ -198,7 +198,7 @@ export const data = {
       duration: "2 Months",
       startDate: "6th May '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/cloudSecurity.jpeg",
     },
     {
       id: "cyber-threat-intelligence",
@@ -206,7 +206,7 @@ export const data = {
       duration: "3 Months",
       startDate: "9th May '25",
       activeUsers: 120,
-      image: "/ai-ml.jpg",
+      image: "/cyberThreat.jpg",
     },
   ],
   "Agile and Scrum": [
