@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import NugenLogo from "../../public/logo.png";
+import NugenLogo from "../../public/image.png";
 import { FooterSections, SocialLinks } from "../json/footer";
 
 export default function Footer() {
@@ -15,10 +15,10 @@ export default function Footer() {
               alt="Logo"
               width={350}
               height={150}
-              className="h-20 w-auto"
+              className="h-16 w-auto"
             />
           </Link>
-          <div className="text-xs pl-4 min-w-auto text-balance ">
+          <div className="text-xs pl-4 min-w-auto  pt-2 text-balance ">
             Second floor, ST Square Building Plot No C-167, Phase 8B, Industrial
             Area, Sector 74, Mohali, Punjab 160071.
           </div>
