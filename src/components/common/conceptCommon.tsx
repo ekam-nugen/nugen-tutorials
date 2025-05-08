@@ -101,7 +101,7 @@ export default function ConceptsCommon({ items }: ConceptsSectionProps) {
       {/* Mobile Version */}
       <section className="block lg:hidden bg-white px-4">
         <div className="flex flex-col md:flex-row md:items-center justify-center space-x-1 md:space-x-14 pl-1 md:pl-6">
-          <div className="flex flex-col px-28 md:px-2 gap-4 md:gap-6">
+          <div className="flex flex-col px-16 md:px-2 gap-4 md:gap-6">
             {items.map((text, idx) => (
               <div key={idx} className="flex text-nowrap items-center gap-4 ">
                 <div className="min-w-5 min-h-5 md:w-8 md:h-8 rotate-45 border-2 border-gray-700 bg-white flex items-center justify-center">
