@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { ChevronDown, Menu, UserRound, X } from "lucide-react";
-import NugenLogo from "../../public/logo.png";
+import NugenLogo from "../../public/image.png";
 import { HeaderContent, THeaderContent } from "../json/header";
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -43,7 +43,7 @@ export default function Header() {
                 alt="Logo"
                 width={350}
                 height={150}
-                className="h-16 w-auto"
+                className="h-10 w-auto"
               />
             </Link>
           </div>
