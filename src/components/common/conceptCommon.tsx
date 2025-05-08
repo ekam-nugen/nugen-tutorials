@@ -1,7 +1,8 @@
 "use client";
 
+import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
-
+import CoursesImage from "../../../public/clients/courses.svg";
 interface ConceptsSectionProps {
   items: string[];
 }
@@ -56,7 +57,7 @@ export default function ConceptsCommon({ items }: ConceptsSectionProps) {
       {/* Desktop Version */}
       <section
         ref={sectionRef}
-        className="hidden md:block relative bg-white py-16 pl-6 pr-20 "
+        className="hidden lg:block relative bg-white py-16 pl-6 pr-20 "
       >
         <div className="container w-full mx-auto relative">
           {/* Connecting Line */}
@@ -98,16 +99,33 @@ export default function ConceptsCommon({ items }: ConceptsSectionProps) {
       </section>
 
       {/* Mobile Version */}
-      <section className="block md:hidden bg-white py-3 px-4">
-        <div className="space-y-4">
-          {items.map((text, idx) => (
-            <div key={idx} className="flex text-nowrap items-center gap-4">
-              <div className="min-w-5 min-h-5 rotate-45 border-2 border-gray-700 bg-white flex items-center justify-center">
-                <div className="w-3 h-3 bg-[#f37458] rounded-sm"></div>
+      <section className="block lg:hidden bg-white px-4">
+        <div className="flex flex-col md:flex-row md:items-center justify-center space-x-1 md:space-x-14 pl-1 md:pl-6">
+          <div className="flex flex-col px-28 md:px-2 gap-4 md:gap-6">
+            {items.map((text, idx) => (
+              <div key={idx} className="flex text-nowrap items-center gap-4 ">
+                <div className="min-w-5 min-h-5 md:w-8 md:h-8 rotate-45 border-2 border-gray-700 bg-white flex items-center justify-center">
+                  <div className="w-3 h-3 md:w-5 md:h-5 bg-[#f37458] rounded-sm"></div>
+                </div>
+                <p className="text-[#334155] text-sm md:text-md font-semibold">
+                  {text}
+                </p>
               </div>
-              <p className="text-[#334155] text-sm">{text}</p>
-            </div>
-          ))}
+            ))}
+          </div>
+
+          {/* Image Section */}
+          <div className="relative h-80 md:h-[28rem] w-full md:w-1/2">
+            <Image
+              src={CoursesImage}
+              width={100}
+              height={100}
+              alt={"Courses"}
+              className={
+                "w-full h-full object-contain rounded-xl transition-opacity duration-500 ease-in-out"
+              }
+            />
+          </div>
         </div>
       </section>
     </>

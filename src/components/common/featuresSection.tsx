@@ -13,7 +13,7 @@ export default function FeaturesSection({
   features,
 }: Readonly<FeaturesSectionProps>) {
   return (
-    <section className="bg-gradient-to-r from-white via-[#fff1eb] to-white py-16">
+    <section className="bg-gradient-to-r from-white via-[#fff1eb] to-white py-12">
       <div className="max-w-7xl mx-auto px-4 flex flex-col lg:flex-row items-start gap-12">
         {/* Left Section */}
         <div className="lg:w-1/2">
