@@ -1,3 +1,4 @@
+"use client";
 import AddReviewPage from "@/src/components/addReview";
 import Loader from "@/src/components/common/Loader";
 import { useEffect, useState } from "react";
